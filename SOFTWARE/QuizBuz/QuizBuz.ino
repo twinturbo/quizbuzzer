@@ -1,6 +1,10 @@
+/*
+Quizbuzz by R Clayton 
+For Arduino Nano 
+ */
 
+ 
 long randNumber;
-
 char receivedChar = "";
 int team = 0;
 int readystate = 1;

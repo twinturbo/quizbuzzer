@@ -57,6 +57,7 @@ void soundoutput() {
      digitalWrite(buzz1, HIGH); digitalWrite(buzz2, HIGH); digitalWrite(buzz3, HIGH); digitalWrite(buzz4, HIGH); digitalWrite(buzz5, HIGH); digitalWrite(buzz6, HIGH);
      readystate = 1;
      score();
+     PORTC = B00011111;
    }
 
 
@@ -76,6 +77,7 @@ void soundoutput() {
      digitalWrite(buzz1, HIGH); digitalWrite(buzz2, HIGH); digitalWrite(buzz3, HIGH); digitalWrite(buzz4, HIGH); digitalWrite(buzz5, HIGH); digitalWrite(buzz6, HIGH);
      readystate = 1;
      score();
+     PORTC = B00011111;
    }
 
 
@@ -96,6 +98,7 @@ void soundoutput() {
    score();
    digitalWrite(buzz1, HIGH); digitalWrite(buzz2, HIGH); digitalWrite(buzz3, HIGH); digitalWrite(buzz4, HIGH); digitalWrite(buzz5, HIGH); digitalWrite(buzz6, HIGH);
    readystate = 1;
+   PORTC = B00011111;
   }
 
   //RESET
