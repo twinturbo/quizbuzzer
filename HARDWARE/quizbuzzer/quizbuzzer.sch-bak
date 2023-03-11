@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Quiz Buzzer"
+Date "2023-02-24"
+Rev "V0.1.0"
+Comp "Tobin Stage"
+Comment1 "By TwinTurbo"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -495,23 +495,23 @@ $EndComp
 $Comp
 L power:+5V #PWR09
 U 1 1 63C1AEEE
-P 6100 5850
-F 0 "#PWR09" H 6100 5700 50  0001 C CNN
-F 1 "+5V" V 6115 5978 50  0000 L CNN
-F 2 "" H 6100 5850 50  0001 C CNN
-F 3 "" H 6100 5850 50  0001 C CNN
-	1    6100 5850
+P 6100 5950
+F 0 "#PWR09" H 6100 5800 50  0001 C CNN
+F 1 "+5V" V 6115 6078 50  0000 L CNN
+F 2 "" H 6100 5950 50  0001 C CNN
+F 3 "" H 6100 5950 50  0001 C CNN
+	1    6100 5950
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 63C1C460
-P 6100 5950
-F 0 "#PWR010" H 6100 5700 50  0001 C CNN
-F 1 "GND" V 6105 5822 50  0000 R CNN
-F 2 "" H 6100 5950 50  0001 C CNN
-F 3 "" H 6100 5950 50  0001 C CNN
-	1    6100 5950
+P 6100 5850
+F 0 "#PWR010" H 6100 5600 50  0001 C CNN
+F 1 "GND" V 6105 5722 50  0000 R CNN
+F 2 "" H 6100 5850 50  0001 C CNN
+F 3 "" H 6100 5850 50  0001 C CNN
+	1    6100 5850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -811,8 +811,8 @@ L Mechanical:MountingHole_Pad H?
 U 1 1 6432BBA6
 P 6750 1300
 AR Path="/642DAA34/6432BBA6" Ref="H?"  Part="1" 
-AR Path="/6432BBA6" Ref="H?"  Part="1" 
-F 0 "H?" H 6850 1349 50  0000 L CNN
+AR Path="/6432BBA6" Ref="H2"  Part="1" 
+F 0 "H2" H 6850 1349 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6850 1258 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6750 1300 50  0001 C CNN
 F 3 "~" H 6750 1300 50  0001 C CNN
@@ -824,8 +824,8 @@ L Mechanical:MountingHole_Pad H?
 U 1 1 6432C848
 P 7000 1300
 AR Path="/642DAA34/6432C848" Ref="H?"  Part="1" 
-AR Path="/6432C848" Ref="H?"  Part="1" 
-F 0 "H?" H 7100 1349 50  0000 L CNN
+AR Path="/6432C848" Ref="H3"  Part="1" 
+F 0 "H3" H 7100 1349 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7100 1258 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 7000 1300 50  0001 C CNN
 F 3 "~" H 7000 1300 50  0001 C CNN
@@ -837,8 +837,8 @@ L Mechanical:MountingHole_Pad H?
 U 1 1 6432D114
 P 7250 1300
 AR Path="/642DAA34/6432D114" Ref="H?"  Part="1" 
-AR Path="/6432D114" Ref="H?"  Part="1" 
-F 0 "H?" H 7350 1349 50  0000 L CNN
+AR Path="/6432D114" Ref="H4"  Part="1" 
+F 0 "H4" H 7350 1349 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7350 1258 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 7250 1300 50  0001 C CNN
 F 3 "~" H 7250 1300 50  0001 C CNN
@@ -854,10 +854,10 @@ Connection ~ 7000 1200
 Wire Wire Line
 	7000 1200 7250 1200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 6432E9A8
 P 7250 1200
-F 0 "#PWR?" H 7250 950 50  0001 C CNN
+F 0 "#PWR0103" H 7250 950 50  0001 C CNN
 F 1 "GND" V 7255 1072 50  0000 R CNN
 F 2 "" H 7250 1200 50  0001 C CNN
 F 3 "" H 7250 1200 50  0001 C CNN
