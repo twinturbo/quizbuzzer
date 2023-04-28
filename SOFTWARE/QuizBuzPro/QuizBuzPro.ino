@@ -6,38 +6,16 @@ For Arduino Mega Pro Mini
 
 //Physical Pin Assignment
 //digital reciver reads
-int TEAM_1 = 37;
-int TEAM_2 = 38;
-int TEAM_3 = 39;
-int TEAM_4 = 40;
-int TEAM_5 = 41;
-int TEAM_6 = 42;
-int TEAM_7 = 43;
-int TEAM_8 = 44;
-int TEAM_9 = 45;
-int TEAM_10 = 46;
+int TEAM_[10] = {37,38,39,40,41,42,43,43,45,46};
 
 //digital button reads
-int BUT_1 = 29;
-int BUT_2 = 30;
-int BUT_3 = 31;
-int BUT_4 = 32;
-int BUT_5 = 33;
-int BUT_6 = 34;
-int BUT_7 = 35;
-int BUT_8 = 46;
+int BUT_[8] = {29,30,31,32,33,34,35,36};
+int RESET = BUT_[1];
+int CORRECT = BUT_[2];
+int WRONG = BUT_[3];
 
 //digital write lamps
-int BUZZ_1 = 11;  
-int BUZZ_2 = 12;  
-int BUZZ_3 = 13;  
-int BUZZ_4 = 22; 
-int BUZZ_5 = 23; 
-int BUZZ_6 = 24; 
-int BUZZ_7 = 25; 
-int BUZZ_8 = 26; 
-int BUZZ_9 = 27;
-int BUZZ_10 = 28;
+int BUZZ_[10] = {11,12,13,22,23,24,25,26};
 
 //digital mp3
 int PORTB_1 = 4;
@@ -56,40 +34,9 @@ int DMX_RX = 19;
 int DMX_TX = 18;
 
 //AUXILIARY
-int AUX_1 = 17;
-int AUX_2 = 16;
-int AUX_3 = 15;
-int AUX_4 = 14;
-int AUX_5 = A0;
-int AUX_6 = A1;
-int AUX_7 = A2;
-int AUX_8 = A3;
-int AUX_9 = A4;
-int AUX_10 = A5;
-int AUX_11 = A6;
-int AUX_12 = A7;
-int AUX_13 = A8;
-int AUX_14 = A9;
-int AUX_15 = A10;
-int AUX_16 = A11;
-int AUX_17 = A12;
-int AUX_18 = A13;
-int AUX_19 = A14;
-int AUX_20 = A15;
-int AUX_21 = 47;
-int AUX_22 = 48;
-int AUX_23 = 49;
-int AUX_24 = 3;
-int AUX_25 = 8;
-int AUX_26 = 9;
-int AUX_27 = 10;
-
-
+int AUX_[27] = {17,16,15,14,A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,47,48,49,3,8,9,10};
 // 
 
-
-
- 
 long randNumber;
 char receivedChar = "";
 int team = 0;
@@ -100,15 +47,12 @@ String ts3 = "  SUO  - Stacey"; // Sumbag Uni Oxford
 String ts4 = "  DEER - Mohammed"; // University of No Eye Deer.
 String ts5 = "  LTU  - Tones"; // Llowda Tones University 
 String ts6 = "  ULC  - Halliday"; // university of life 
+String ts7 = "  ---  - Halliday"; // university of life 
+String ts8 = "  ---  - Halliday"; // university of life 
+String ts9 = "  ---  - Halliday"; // university of life 
+String ts10 = " ---  - Halliday"; // university of life 
 
-
-int t1 = 0;
-int t2 = 0;
-int t3 = 0;
-int t4 = 0;
-int t5 = 0;
-int t6 = 0;
-
+int SCORE_[10]  = {0,0,0,0,0,0,0,0};
 //int busy = A4;
 
 //not sure why this needs to be here and not in the IF.
@@ -128,34 +72,13 @@ void setup() {
   for (int x=1 ; x<10; x++){ 
    pinMode(TEAM_[x], INPUT_PULLUP);
   }
-  /*pinMode(TEAM_2,INPUT_PULLUP);
-  pinMode(TEAM_3,INPUT_PULLUP);
-  pinMode(TEAM_4,INPUT_PULLUP);
-  pinMode(TEAM_5,INPUT_PULLUP);
-  pinMode(TEAM_6,INPUT_PULLUP);
-  pinMode(TEAM_7,INPUT_PULLUP);
-  pinMode(TEAM_8,INPUT_PULLUP);
-  pinMode(TEAM_9,INPUT_PULLUP);
-  pinMode(TEAM_10,INPUT_PULLUP);*/
-  
-  
-  
-  pinMode(A5,INPUT);
-  pinMode(A6,INPUT);
-  pinMode(A7,INPUT);
-    
-  pinMode(BUZZ_1,OUTPUT);
-  pinMode(BUZZ_2,OUTPUT);
-  pinMode(BUZZ_3,OUTPUT);
-  pinMode(BUZZ_4,OUTPUT);
-  pinMode(BUZZ_5,OUTPUT);
-  pinMode(BUZZ_6,OUTPUT);
-  digitalWrite(BUZZ_1,HIGH);
-  digitalWrite(BUZZ_2,HIGH);
-  digitalWrite(BUZZ_3,HIGH);
-  digitalWrite(BUZZ_4,HIGH);
-  digitalWrite(BUZZ_5,HIGH);
-  digitalWrite(BUZZ_6,HIGH);
+  for (int x=1 ; x<8; x++){ 
+   pinMode(BUT_[x], INPUT_PULLUP);
+  }
+  for (int x=1 ; x<10; x++){ 
+   pinMode(BUZZ_[x], OUTPUT);
+   digitalWrite(BUZZ_[x],HIGH);
+  }
   score();
   lampcheck();
 }
@@ -164,12 +87,16 @@ void loop() {
   //read quiz buttons
   delay(200);
   if (readystate == 1) {
-  if (digitalRead(TEAM_1) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts1); Serial.println(" Answered"); t1++; readystate = 0; receivedChar = 'k' ;  digitalWrite(BUZZ_1, LOW); soundoutput(); }
-  if (digitalRead(TEAM_2) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts2); Serial.println(" Answered"); t2++; readystate = 0; receivedChar = 'W' ;  digitalWrite(BUZZ_2, LOW); soundoutput(); }
-  if (digitalRead(TEAM_3) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts3); Serial.println(" Answered"); t3++; readystate = 0; receivedChar = 's' ;  digitalWrite(BUZZ_3, LOW); soundoutput(); }
-  if (digitalRead(TEAM_4) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts4); Serial.println(" Answered"); t4++; readystate = 0; receivedChar = 'm' ;  digitalWrite(BUZZ_4, LOW); soundoutput(); }
-  if (digitalRead(TEAM_5) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts5); Serial.println(" Answered"); t5++; readystate = 0; receivedChar = 't' ;  digitalWrite(BUZZ_5, LOW); soundoutput(); }
-  if (digitalRead(TEAM_6) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts6); Serial.println(" Answered"); t6++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_6, LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[1]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts1); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'k' ;  digitalWrite(BUZZ_[1], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[2]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts2); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 'W' ;  digitalWrite(BUZZ_[2], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[3]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts3); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 's' ;  digitalWrite(BUZZ_[3], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[4]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts4); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 'm' ;  digitalWrite(BUZZ_[4], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[5]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts5); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 't' ;  digitalWrite(BUZZ_[5], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[6]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts6); Serial.println(" Answered"); SCORE_[6]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[6], LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[7]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts7); Serial.println(" Answered"); SCORE_[7]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[7], LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[8]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts8); Serial.println(" Answered"); SCORE_[8]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[86], LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[9]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts9); Serial.println(" Answered"); SCORE_[9]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[9], LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[10]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts10); Serial.println(" Answered"); SCORE_[10]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[10], LOW);  soundoutput(); }   
   
   }
  
@@ -183,9 +110,13 @@ void loop() {
   //Serial.print("a5 "); Serial.println(analogRead(A5));
   //Serial.print("a6 "); Serial.println(analogRead(A6));
   //Serial.print("a7 "); Serial.println(analogRead(A7));
-  if (analogRead(A5) > 500 ){  receivedChar = 'r' ; soundoutput(); } //reset
-  if (analogRead(A6) > 500 ){  receivedChar = 'D' ; soundoutput(); } //incorrect
+  //if (analogRead(A5) > 500 ){  receivedChar = 'r' ; soundoutput(); } //reset
+  //if (analogRead(A6) > 500 ){  receivedChar = 'D' ; soundoutput(); } //incorrect
   //if (analogRead(A7) >= 1000 ){ receivedChar = 'B' ; soundoutput; } //bonus
+  if (digitalRead(RESET) == 1 ) {  receivedChar = 'r' ; soundoutput(); } //reset
+  if (digitalRead(WRONG) == 1 ) {  receivedChar = 'D' ; soundoutput(); } //incorrect
+  //if (digitalRead(CORRECT) == 1 ) {  receivedChar = 'r' ; soundoutput(); } //correct 
+  //if (digitalRead(BONUS) == 1 ) {  receivedChar = 'B' ; soundoutput(); } //bonus
   
     
  }

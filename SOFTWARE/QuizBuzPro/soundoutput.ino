@@ -5,7 +5,13 @@ void soundoutput() {
   if (receivedChar == 'm' ) { PORTC = B00011011;  team = 4;   score();  } //TEAM_4 sound 0004
   if (receivedChar == 't' ) { PORTC = B00011010;  team = 5;   score();  } //TEAM_5 sound 0005
   if (receivedChar == 'h' ) { PORTC = B00011001;  team = 6;   score();  } //TEAM_6 sound 0006
-  
+  if (receivedChar == 'sa' ) { PORTC = B00011100;  team = 7;   score();  } //TEAM_3 sound 0003
+  if (receivedChar == 'ma' ) { PORTC = B00011011;  team = 8;   score();  } //TEAM_4 sound 0004
+  if (receivedChar == 'ta' ) { PORTC = B00011010;  team = 9;   score();  } //TEAM_5 sound 0005
+  if (receivedChar == 'ha' ) { PORTC = B00011001;  team = 10;   score();  } //TEAM_6 sound 0006
+
+ 
+  //Music  
   if (receivedChar == '1' ) { PORTC = B00011000;  delay(500); } //007 Gladiator
   if (receivedChar == '2' ) { PORTC = B00010111;  delay(500); } //008 Schindler 
   if (receivedChar == '3' ) { PORTC = B00010110;  delay(500); } //009 Dovark 9th 
@@ -33,10 +39,10 @@ void soundoutput() {
   if (receivedChar == 'p' ) { PORTC = B00000010; delay(500); } // 29 No No No Techno
   if (receivedChar == 'q' ) { PORTC = B00000001; delay(500); } // 30 plonker
   
-  
-   
+  //reset MP3
   PORTC = B00011111;
-  
+
+  //Play a wrong Chune
   if (receivedChar == 'w' ) {
      randNumber = random(1,6);
      Serial.print("wrong"); Serial.println(randNumber);
@@ -48,13 +54,14 @@ void soundoutput() {
      if (randNumber == 6 ) { PORTC = B00000001; delay(500);  Serial.println(randNumber);} 
      
      Serial.println("decrement");
-     if (team == 1 ) t1 -=2 ; 
-     if (team == 2 ) t2 -=2 ;
-     if (team == 3 ) t3 -=2 ;
-     if (team == 4 ) t4 -=2 ;
-     if (team == 5 ) t5 -=2 ;
-     if (team == 6 ) t6 -=2 ;
-     digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
+     if (team == 1 ) SCORE_[1] -=2 ; 
+     if (team == 2 ) SCORE_[2] -=2 ;
+     if (team == 3 ) SCORE_[3] -=2 ;
+     if (team == 4 ) SCORE_[4] -=2 ;
+     if (team == 5 ) SCORE_[5] -=2 ;
+     if (team == 6 ) SCORE_[6] -=2 ;
+     //digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
+     OUTOFF();
      readystate = 1;
      score();
      PORTC = B00011111;
@@ -68,13 +75,14 @@ void soundoutput() {
       if (randNumber == 6 ) { PORTC = B00001001; delay(500); } // 22 winner
       if (randNumber == 7 ) { PORTC = B00001000; delay(500); } // 23 yay 
      if (randNumber == 8 ) { PORTC = B00000111; delay(500); } // 24 zing
-     if (team == 1 ) t1++ ; 
-     if (team == 2 ) t2++ ;
-     if (team == 3 ) t3++ ;
-     if (team == 4 ) t4++ ;
-     if (team == 5 ) t5++ ;
-     if (team == 6 ) t6++ ;
-     digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
+     if (team == 1 ) SCORE_[1]++ ; 
+     if (team == 2 ) SCORE_[2]++ ;
+     if (team == 3 ) SCORE_[3]++ ;
+     if (team == 4 ) SCORE_[4]++ ;
+     if (team == 5 ) SCORE_[5]++ ;
+     if (team == 6 ) SCORE_[6]++ ;
+     //digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
+     OUTOFF();
      readystate = 1;
      score();
      PORTC = B00011111;
@@ -96,7 +104,8 @@ void soundoutput() {
    
    
    score();
-   digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
+   OUTOFF();
+    
    readystate = 1;
    PORTC = B00011111;
   }
