@@ -5,10 +5,10 @@ void soundoutput() {
   if (receivedChar == 'm' ) { PORTC = B00011011;  team = 4;   score();  } //TEAM_4 sound 0004
   if (receivedChar == 't' ) { PORTC = B00011010;  team = 5;   score();  } //TEAM_5 sound 0005
   if (receivedChar == 'h' ) { PORTC = B00011001;  team = 6;   score();  } //TEAM_6 sound 0006
-  if (receivedChar == 'sa' ) { PORTC = B00011100;  team = 7;   score();  } //TEAM_3 sound 0003
-  if (receivedChar == 'ma' ) { PORTC = B00011011;  team = 8;   score();  } //TEAM_4 sound 0004
-  if (receivedChar == 'ta' ) { PORTC = B00011010;  team = 9;   score();  } //TEAM_5 sound 0005
-  if (receivedChar == 'ha' ) { PORTC = B00011001;  team = 10;   score();  } //TEAM_6 sound 0006
+  if (receivedChar == 's' ) { PORTC = B00011100;  team = 7;   score();  } //TEAM_3 sound 0003
+  if (receivedChar == 'm' ) { PORTC = B00011011;  team = 8;   score();  } //TEAM_4 sound 0004
+  if (receivedChar == 't' ) { PORTC = B00011010;  team = 9;   score();  } //TEAM_5 sound 0005
+  if (receivedChar == 'h' ) { PORTC = B00011001;  team = 10;   score();  } //TEAM_6 sound 0006
 
  
   //Music  

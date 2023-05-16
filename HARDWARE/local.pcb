@@ -32,6 +32,11 @@
     (45 "Margin" user)
     (46 "B.CrtYd" user "B.Courtyard")
     (47 "F.CrtYd" user "F.Courtyard")
+<<<<<<< HEAD
+=======
+    (48 "B.SilkS" user)
+    (49 "F.SilkS" user)
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
   )
 
   (setup
@@ -289,6 +294,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7ad31f49-aa85-46cf-8cb4-3ea892053011))
     (fp_line (start 6.05 1.2) (end 6.05 -1.2)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 14aa74d8-7945-4b5f-98cd-8e307cdd96ec))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.35 -0.95) (end 0.35 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4423da1e-9caa-49de-b14b-ca9b609762a2))
+    (fp_line (start 0.35 0.95) (end 4.65 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 62f28e3d-0aff-465d-acd9-becf317c48fd))
+    (fp_line (start 4.65 -0.95) (end 0.35 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2495bbfe-f850-40a3-a33a-562aef364707))
+    (fp_line (start 4.65 0.95) (end 4.65 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a01881a3-edf9-4d42-b6b7-b8cd4bf73b20))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 529f8659-59d7-498d-9428-938b3febce30))
     (pad "2" thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -351,6 +367,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 350c4ab0-1888-42cf-a8c7-9f8fde015f2f))
     (fp_line (start 6.05 1.2) (end 6.05 -1.2)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 954dcb34-7032-4073-b971-03c2eb26ea4a))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.35 -0.95) (end 0.35 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4b37ebbf-bb5c-4e27-97a4-7aa5768f3b36))
+    (fp_line (start 0.35 0.95) (end 4.65 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4fbf4c0e-4b44-478b-a6e9-31f3d10e8d1f))
+    (fp_line (start 4.65 -0.95) (end 0.35 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b5d0e657-fed1-4254-821c-0442625d1aab))
+    (fp_line (start 4.65 0.95) (end 4.65 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 27413ba8-b856-4ec5-b5df-abb2c8c7975a))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pintype "passive") (tstamp e0aa1368-afe9-4f5c-a70f-a5ff84c43b94))
     (pad "2" thru_hole circle (at 5 0 180) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -385,7 +412,11 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1e509dc5-643c-4260-8a4c-1a3f3c71c173)
     )
+<<<<<<< HEAD
     (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
+=======
+    (fp_text user "${REFERENCE}" (at 5.47 0) (layer "F.SilkS")
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b4437746-8908-4cde-b936-0fa730184518)
     )
@@ -437,6 +468,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 5b67b737-f9bc-4c9a-8e91-0941a800ebf9))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b3587937-ecb1-4543-8d8d-9d9369c2f91c))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e576b41c-23c7-4a83-8c04-25a8bbafde48))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 55641f3f-c1d8-4c79-9ad2-868c1307d1ac))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9472fbbf-55a2-49a2-8df4-4e1cd6bc4f20))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e9f94da5-f9c0-45da-9977-02b9b6c3adb3))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3f3f5cc1-46c3-489d-a623-7610b4b7abd3))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6415ff0c-8c00-4858-a320-e665cad0ba09))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0bf2d7af-0938-482c-8b1c-c6fc5bc60d83))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4080316f-395f-458c-9d5a-17a05e16da22))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 429523f1-32fe-4b69-9999-0654a4619f97))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pinfunction "K") (pintype "passive") (tstamp da8b8d52-5c4a-4605-b430-62fb3d9317b5))
     (pad "2" thru_hole oval (at 10.16 0) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -523,6 +575,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 86554c2c-fdc1-48e1-8e76-1b5d6f708c51))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 314ff32a-da0e-464b-a2ce-6f1608e66864))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0481d043-b22d-41fb-856c-5e6fad4f13a5))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fabf8566-ba5a-48b9-b427-f364e9dec0fc))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 693c5665-075e-44c8-8542-1ba155e36e10))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b98405b2-e327-4fb8-bbd0-3e9d99dd89b2))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 344d1464-78b8-4da8-979e-f1054540de21))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 42ecfbca-3b06-4972-b8b8-523bf61e0475))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ae5b09a1-2eef-44df-a415-6d865041542c))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 30ffd9f2-3d48-4d1d-9dca-b31264f324cd))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d9d80bcb-0e28-4608-82f3-96a9fa8fa277))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp ebca27ea-1929-4ad7-a506-117abc82cc5e))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -609,6 +682,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp bf8d81a5-c146-4e14-b291-7f9063399f70))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp cb0d08d2-7460-424c-8332-8deb14e352b5))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 79ad26fc-9f0b-489e-9de4-1cb934c2a0f1))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 65bd04ca-c158-418c-a9bf-c26ccaaefc13))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 78b35c75-1343-455d-8591-ec532b8004d3))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp cd1c23bc-e36a-4325-89f6-a2f3c097b410))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ce8f995e-9f21-48a6-b187-5e6fcadc2e84))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 64aadd6d-512a-4e5e-a1f1-55e4e1fd99b5))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 27fd1d30-e724-4a53-96c8-ea0a0606c991))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 13a42469-bda9-487b-90cc-683edaab78ad))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 106ff1a1-50ed-4a8b-9597-8c961905dbda))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp 47bbf0c8-e37f-4b69-aa0d-2476cab0c5b4))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -695,6 +789,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 81f40fea-124a-411a-bbb8-afbc95fd9771))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp cc31a50b-c1a9-4ce5-9b74-03e4b43b3110))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 17cd251e-de07-4acf-b4dc-bf6098cdeacb))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2884b858-a5d2-4814-bc86-07cbc1b74e1c))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c9334edc-57e5-4aae-b9ff-50c92734c6f9))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5082f217-5279-4286-88e4-25f253e9a232))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp db634964-f469-4af0-826f-d68000fa0fd2))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3e1e236f-30d3-4ad4-a3a6-02b78adf8b0d))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8c21ed8e-63a0-4455-9150-b798110d76d7))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4de029b1-259b-4294-962c-103f518883d0))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fdb2f000-78a9-4b5e-a5fd-d7570af69c25))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp a6ab5435-bd2c-49fb-9122-b408261107aa))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -751,6 +866,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2b9fef26-60fa-4a82-bf7d-d5f46fd767f1))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ba566399-acf2-4cdb-89c0-3734ec2d54d5))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 96a63d7e-9b69-42d1-bdea-5dfcacafd799))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp dac158ef-5ac2-4a6f-9089-cff42a752635))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp 3e43c0b2-c51c-4190-9b34-e4ec95fcd059))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 9 "Net-(D6-K)") (pinfunction "K") (pintype "passive") (tstamp 8cdf55a0-8d4b-459a-9079-495e864de08c))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -807,6 +931,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 5a7a5091-5bbc-4f75-99d5-48be2e0bc745))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 8a7a38c8-dc6b-4e5d-b7b8-98ef654b92d0))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 059428d9-54eb-43fd-911f-cbc1955df230))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 48cd7209-4f4e-4f41-83a8-3f79aa80411d))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp f13e26f8-c553-420d-acd1-e7af85f4c0cb))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 11 "Net-(D7-K)") (pinfunction "K") (pintype "passive") (tstamp 74bab9e9-d748-4c08-8ea7-c7b2acd3a37c))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -863,6 +996,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp c12dbab0-bfc0-4792-a4e3-35148a1b5766))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4a6ab2ff-fde0-4564-a057-7a091f09b8ac))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6c889634-ac5b-420d-a0bb-f3b020171942))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp aae511bc-5cf8-4374-a266-4e727b0d4594))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp da8cd5cd-06fd-47cc-9881-6da5e6307ed5))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 13 "Net-(D8-K)") (pinfunction "K") (pintype "passive") (tstamp 3b2e5f0d-346b-40b1-988f-eeaf73ae6626))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -919,6 +1061,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 48061233-168f-49eb-9a6f-8e8ef5082b1d))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 0cd20b2e-489d-485b-a1a5-148302122252))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 980fd6e3-109d-43f3-9c9f-43197f005a13))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d054ad2b-297d-439d-bf2c-ec94d36ab817))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp b3f90de5-b9bc-4147-8b91-6bc5cf0ae14d))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 15 "Net-(D9-K)") (pinfunction "K") (pintype "passive") (tstamp 55e8c039-d939-4a97-91c4-d2810bad5299))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1005,6 +1156,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b9898be6-83c1-4f93-866c-c78f15b1d613))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 48923a48-3f2d-4609-a36c-2247d0e1e732))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b54236c0-d399-4285-8783-88fa8363a8db))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp faa6529f-3c3c-4383-a47c-5d194c6309b2))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 757cdf8e-6384-41a0-9ac8-32fca9c4eb03))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 691a2818-a2c2-4e55-8fed-861cb6f72120))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 89aa34c1-b625-40fa-b4a3-68c32c762adb))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 03e067b9-cb7c-42db-96f8-b51db7cbbae9))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 29515994-63f5-490f-a6b8-8628f8e9f574))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 56c3d99a-b74f-417e-a808-cfc2501649a3))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 88fb4df7-984f-4556-8fbb-e9dbc5cf661e))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp 4bcc93b2-ed36-452f-8038-86c17950425f))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1037,6 +1209,13 @@
     )
     (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
+<<<<<<< HEAD
+=======
+      (tstamp 8d5dd518-41dc-42f6-85bb-0bc26e968d6d)
+    )
+    (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
+        (effects (font (size 1 1) (thickness 0.15)))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
       (tstamp 3ecc0f75-32db-4d64-9f43-43ffafe851fc)
     )
     (fp_text user "${REFERENCE}" (at 5.47 0) (layer "F.SilkS")
@@ -1091,6 +1270,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 3a7573af-add6-4c77-9e4f-c192818d201e))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7edeb4ad-f413-4bba-b4e0-40c62cfb335d))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 091ce24f-8721-4fa3-81f8-e41507d75e70))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c9a75242-8dab-41b0-9ffe-951be175bf6f))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c5a1258a-6a2f-4bd1-9f1e-0cc2de3eb3a2))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4080f1a3-db2e-4542-b7e4-df90910b0e75))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 26039b66-25f6-4bc6-8395-251b4eb4961e))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 72ab1052-1213-41de-a22b-e5df754fe991))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 953d4853-0780-4e58-a57b-11851d0e394e))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 46532030-60e5-4f45-97da-f8e95ea18578))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 804ebbad-bc44-453f-9706-0d3ec9da018f))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp 465425bb-eebc-4d38-b6b4-c6c3f430bfe2))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1121,6 +1321,13 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9a1c10b9-e946-4195-bbdc-1d3ed014e5e2)
     )
+<<<<<<< HEAD
+=======
+    (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
+        (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp ffa1e177-3f63-46e1-ae2b-52ac04e790c8)
+    )
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (fp_text user "${REFERENCE}" (at 5.47 0) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0a956c9d-90bf-45b6-9990-275405e495ee)
@@ -1177,6 +1384,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp be7b38d5-cba6-4767-af1d-19e7df1b663e))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 58cf9229-b915-4016-9344-103db95822ee))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d3395e8e-0b79-42b9-817d-0828ba8eb0fb))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 04a347aa-77b2-488f-b714-d677f5e9e469))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp df8f007e-d826-4843-bc8c-f39e3da35406))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6a19f965-a774-4a9e-b021-e1e062baf8ae))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a129625b-3310-49b2-aa97-0be181d17e49))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5b20f7b2-cac7-4668-958e-613c4ee5ce87))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 56c79916-7a7a-404b-970f-09e8d60f8efa))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp bf0d9d60-fe53-437d-9a32-e4762f156389))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c0860a4f-5c81-43d2-b88d-4397a86002cd))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp a68b540a-8614-4f8a-81cf-aee7cbc70955))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1209,6 +1437,13 @@
     )
     (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
         (effects (font (size 1 1) (thickness 0.15)))
+<<<<<<< HEAD
+=======
+      (tstamp c5c5e004-3d89-4ab3-94ed-8f93e1cecb3b)
+    )
+    (fp_text user "K" (at 0 -2.1) (layer "F.SilkS")
+        (effects (font (size 1 1) (thickness 0.15)))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
       (tstamp 2ffe1f3e-eebc-45db-bde5-598839b8f0d2)
     )
     (fp_text user "${REFERENCE}" (at 5.47 0) (layer "F.SilkS")
@@ -1263,6 +1498,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 187abbc0-6dff-4714-bdaa-d8263368e5de))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 12c78270-9ce3-483d-acfe-eea647371373))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f879b46f-12a2-45aa-860f-cf5c010d95ea))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 344e1d14-1893-40e2-9dac-4c189145053d))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3030a91c-8cba-4293-9f78-a4a6b09ab8a7))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ac11a478-c03e-4135-bdaf-a195ee53e7f5))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp cad229ba-3e4f-458b-89da-00d73d9ad6bc))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2f8f7227-97f1-4e83-a04d-68687df06d47))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a1084d51-39f1-4f41-a33c-a3ad7936c0a1))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5e5332db-30cd-4d29-8853-2a6f07d7bdc7))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 71ba93c7-fdca-405a-9b40-7a54173bf7d0))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp 41293fc4-c6a4-4a2b-95b9-e95558a6e9d8))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1319,6 +1575,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f23eddd4-e99d-4ed0-a92b-bb6ee5abaa15))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp be5cb9fe-08a0-411e-b319-6c89d8f4fbd2))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 029b5ad3-b9b2-43fe-9a15-355d27b80b4a))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8f501dfe-a994-4f2a-90bb-693a1c72ec54))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp 45009bb7-4a18-4653-b46f-325c0eeaacef))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 21 "Net-(D14-K)") (pinfunction "K") (pintype "passive") (tstamp bc42bc74-9971-46e6-b55f-0bbfa45fb218))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1375,6 +1640,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9a2ca364-009d-4599-ba7f-05c152e31ec8))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 3fd66569-5a0a-46ff-bce3-b5119ece0cbc))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 01354475-fca1-4a2a-a49f-8b2dc4197430))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d4f238b2-55df-4754-baf7-1d1895971d65))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp cc75a938-5a3f-4acc-9d08-f6c83dc0bf74))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 23 "Net-(D15-K)") (pinfunction "K") (pintype "passive") (tstamp 0b0ccfde-8ca5-499b-ac9b-a37de307cc51))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1431,6 +1705,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp dd9befda-f3ba-4676-ac09-b8047524d284))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d0adf145-300c-41db-b2eb-5196d45796e4))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7519488e-c785-43ef-a31e-ebf9573be9ce))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f1596264-e854-4ae0-9ffd-b62309ad6df6))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp b528b9c4-da21-40c7-9507-72294f83b0b5))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 25 "Net-(D16-K)") (pinfunction "K") (pintype "passive") (tstamp 064efa21-012a-4e77-9df2-4af9be2133d8))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1487,6 +1770,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 69eb2965-74d9-4139-adc7-a200e69fd544))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 3c6f7136-ea04-4c85-a8d2-4bb8dcccfbef))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4013371d-1acb-4fb2-85ba-c0c7df2f4674))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6f7bfbff-9ae9-4be3-81e7-af299a6d6381))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp 57ad6645-c548-4c8a-a90e-53d9cfd4e993))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 27 "Net-(D17-K)") (pinfunction "K") (pintype "passive") (tstamp 94c5a6f6-0a4a-45a9-9ae7-e2083292a0f4))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1573,6 +1865,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4be04b43-aee0-4665-9e25-ce54afaa7410))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 737525e4-e1cb-4829-8494-be615cf7dfcd))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b8576649-8365-4234-9af3-a966a993b67e))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp edd7adfe-4843-4cf3-8a69-0ab82279f808))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 29297fe4-67f1-49f1-9520-ebca41359fef))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7803b3c8-5860-421f-a90d-5b03b31f4f5f))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 00e0055e-244a-4dc9-bfc0-a3e34140b35c))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9fdd9ca7-353e-4453-b0bf-ff0d182c817d))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 74797942-d130-4564-823b-f3a6eaae5979))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 38255124-0501-4140-9865-83a6bcdc6a69))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d9ca7234-6c61-4771-8891-18d777864154))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp dcd1cd93-4f30-4191-bb94-b9dbf05a63e2))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1629,6 +1942,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 859cf8ff-e199-46be-a02f-2e53eea22e32))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 624a96dc-2815-4b1a-8c70-1ac575846ef5))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e3553a14-b1e6-4216-a1e4-1f26dca71336))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a7fc44f4-e2cf-4480-9b8e-d1a8c23c84b2))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp bbad5a7f-6320-4410-a0a8-f6c39a945f6a))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 30 "Net-(D19-K)") (pinfunction "K") (pintype "passive") (tstamp 49b575bd-b309-4e77-b9fd-e4e5b6b37f2f))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1715,6 +2037,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7ceec9f4-672a-4aaa-8c61-3f866d2e19d4))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2f022095-4313-41b4-b418-e1c2b1136870))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 56e8c7b1-0e81-4502-b53f-772642294c12))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c035ee19-169b-463e-9976-9b634707d9c5))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 94831dd2-b287-4551-bc1b-6001d6248b49))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp acc13dd6-9605-4bd3-8047-7abe5c2f33be))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5eaaf8ad-141d-4d79-b826-0da9e51df960))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c44a7af5-4366-499a-8f7e-0a22f40043f2))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0660db7a-3fed-4260-bc88-8b01e55f7bfc))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 127029fb-af35-4df0-bdca-65e0f4a7e74c))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp af56cdfb-23c8-4d46-9471-dd6759fc6866))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp a3f62a12-ec5b-4b88-93fe-3aea02ff925c))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -1771,6 +2114,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4f600a4f-4e60-44f0-9f07-5cf9cb5895d2))
     (fp_line (start 4.5 3.25) (end 4.5 -3.25)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f09b939f-38d5-4dee-8215-4186b4a6a904))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.23 -1.469694) (end -1.23 1.469694)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ba009d86-4ec1-4ea3-a9d4-ed02070969e6))
+    (fp_arc (start -1.23 -1.469694) (mid 4.17 0.000016) (end -1.230016 1.469666)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 89dceee6-a5b3-4478-8a4a-2f72e5a9ab55))
+    (fp_circle (center 1.27 0) (end 3.77 0)
+      (stroke (width 0.1) (type solid)) (fill none) (layer "F.SilkS") (tstamp a059853c-3889-4e7b-a30e-0b29164cb54c))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
       (net 33 "Net-(D21-K)") (pinfunction "K") (pintype "passive") (tstamp 44862717-b6d5-4b25-afce-8fe9c92ce59e))
     (pad "2" thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers "*.Cu" "*.Mask")
@@ -1833,6 +2185,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 6cd7785f-1583-4916-9b03-e6459c4379a2))
     (fp_line (start 1.8 24.65) (end 1.8 -1.8)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 58bf140e-5856-4855-8210-270f00477276))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -0.635) (end -0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6849e376-52b0-45f2-ab12-45b34f6c2a82))
+    (fp_line (start -1.27 24.13) (end -1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4268db0a-e912-48de-8329-2c04dbb83023))
+    (fp_line (start -0.635 -1.27) (end 1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d9693837-20e1-463e-a93d-419dd13ace47))
+    (fp_line (start 1.27 -1.27) (end 1.27 24.13)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3c527ea2-b805-4e44-a1df-192bce1dc6d7))
+    (fp_line (start 1.27 24.13) (end -1.27 24.13)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 226b2594-ad51-420f-b048-55b50c629ace))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "Pin_1") (pintype "passive") (tstamp 6fa75598-30b9-459b-a7d3-335f2bd08376))
     (pad "2" thru_hole oval (at 0 2.54 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -1913,6 +2278,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4799cba8-c084-4b9b-8f45-8be8dc098d9a))
     (fp_line (start 1.75 9.4) (end -1.8 9.4)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ba175344-1102-4aab-bbbb-9d25c6077838))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c23cb950-9482-4021-8723-fb1ad75f81ef))
+    (fp_line (start -1.27 8.89) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0d3b77a8-fbd9-49a6-90d4-ec463735f9b5))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f4eb3aa4-fe8e-43c6-bb56-ac60c43ed7fa))
+    (fp_line (start 1.27 -0.635) (end 1.27 8.89)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6f40b312-857c-4b0b-9068-59ff5dcf73da))
+    (fp_line (start 1.27 8.89) (end -1.27 8.89)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1ca77e83-8c41-456d-b84f-284c8b336b38))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "Pin_1") (pintype "passive") (tstamp c107a16a-f961-41fc-b194-dd3a09c16b20))
     (pad "2" thru_hole oval (at 0 2.54 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -2005,6 +2383,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 41a9f997-5838-4ad3-89b0-ab017fe06987))
     (fp_line (start 2 2) (end 1 2)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 014e6380-6178-4920-827d-03657be994c9))
+<<<<<<< HEAD
+=======
+    (fp_line (start -13.7 -4.5) (end -13.7 4.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 732da71f-dd1a-4394-be4e-2df723fc39f5))
+    (fp_line (start -13.7 4.5) (end 0.8 4.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a1e8ec6d-2332-4e37-b257-2bdfa418c139))
+    (fp_line (start -10.2 -4.5) (end -10.2 4.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1f44dffa-a1f9-46bf-9f7c-14e54e4b991f))
+    (fp_line (start -0.003213 -4.505425) (end 0.8 -3.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0fa59bd0-e5ed-4b5f-a3fd-5c18a4d18084))
+    (fp_line (start 0 -4.5) (end -13.7 -4.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4fbaa958-dd3f-462d-a1a3-1e0965848338))
+    (fp_line (start 0.8 4.5) (end 0.8 -3.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 331a3dc9-f086-4e7a-88a0-b1e73b28f7a4))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 90) (size 3.5 3.5) (drill oval 1 3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp de4721bc-7e95-4861-82db-1112578d0ad4))
     (pad "2" thru_hole roundrect (at -6 0 90) (size 3 3.5) (drill oval 1 3) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.25)
@@ -2097,6 +2490,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp db0532b6-c67d-44f0-84bc-7589bb0842eb))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b440ac6b-67ab-46d0-9408-ae8d497e1596))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b8d09b15-f4c4-4e8b-b08d-ba817a1d2ae2))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8f6d4422-dec9-4023-bb0e-c0eb88a421b6))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp eccb4048-bd65-4179-bb5f-13edf494f163))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e25f6e50-3fc3-42e6-8c6b-fbcbb1066dfd))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp cbca11cd-0cb0-4621-a7ca-15f306bd38c9))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp cbe9f89d-6b2b-4e8f-8e29-3f8cd0b9bcc9))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 103 "Net-(J15-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 38f5b372-e443-4818-b0d4-c062a644696c))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2187,6 +2595,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f72ae398-0893-4aec-a8ed-1a04d2cfc6bf))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 39e80813-4ead-4398-8237-8c75b7b92017))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 86a33777-2f68-45ff-9e72-c86eb24d9c28))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d68e0b40-c348-4140-ac07-dc44e1a5c9f1))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 23735316-dc5e-4351-aa56-b4d9dd3554e1))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b033e822-8dc6-4c6b-ade7-fe226c99033b))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c6c20899-7dca-4b1e-99b0-b5a3e137b82e))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d0ce77f7-2180-4a2b-89f8-20968a5ba4fb))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 104 "Net-(J16-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 0627dc6f-297d-4a20-8eaa-54c05722e0c2))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2277,6 +2700,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 327f3be3-640b-464e-be02-f4d88c29c68b))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 86f8e21d-3b2a-4223-9496-4d6c91f259b6))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp eaa552fc-df05-40ce-939c-d785cca216e6))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0c128dd8-85f7-4a29-94e1-eacd2d1a509b))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b7375fb7-6bac-49eb-af11-87f5f26d9861))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 41177aaf-20b5-4cf4-a697-b2b17f4faaa3))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 06a8a14e-782e-458b-b8d5-7d1edc02b045))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0e811f90-9b66-4918-90fd-74abbf05924b))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 106 "Net-(J18-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 5eba32ea-da01-4919-8ea2-72d74191cafd))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2367,6 +2805,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 607b8ae0-7aa8-4bee-aa1e-104103285253))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 5d4ea3c4-02a2-4456-88e7-07b40bfba13f))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp bfb5e677-8551-4609-9dcf-e8ce8c3f85bb))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 71114fa9-74ea-4cd6-b80f-f0469d7dd177))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fc6237ff-5836-47cc-9bbc-beec19d50796))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fda3f897-bf89-4754-a5e3-f3356eee7cbb))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a700cb4e-d809-433b-ba51-96d36f9c4313))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 49203625-0ca9-4df6-b3dd-2cc4dac1c23a))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 107 "Net-(J19-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 883c7b78-8313-4dd1-8d36-f36f2f89cfd3))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2457,6 +2910,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b531d329-89b7-4010-b5ed-92e8abee3024))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 43815ecb-8ff2-40f2-beb0-2ffc1f210749))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1bffc263-5165-42fc-b654-fea0c59ffc16))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 076aaf42-0978-4d99-b660-74cf3af0fcfd))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f1eaa22a-8a14-4347-9861-ab5db3414058))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 29bf4345-54d2-4429-92f8-45aeb1bcb477))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a41caf8b-7f07-4d74-89ae-bae69a25dea8))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ae8934f1-dded-4116-9f9a-7464bb28a4e5))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 108 "Net-(J20-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 2855272b-9556-48a5-9e5a-0d4906048046))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2547,6 +3015,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp cac9df22-fb78-4176-965d-46fbb3042d6f))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4b625a09-8d14-44a2-9b72-93d5e8b8fbd9))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a057eaf3-48fc-4826-b15d-0f2850cd7877))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 01328f03-7f07-4138-8d46-8f87dc66d281))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3427a219-45c7-4cf5-b72b-088082753fff))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7afcb965-5062-4ec8-9502-98630308df60))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d46bd9f6-60da-466a-b8ee-3be48c100c76))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 95c61d74-44cc-452d-b8c5-92a35cd36b35))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 109 "Net-(J21-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp e4c83d3a-cd97-48f1-b689-e39c3bb1c84d))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2637,6 +3120,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp fadb972a-18ba-432e-ba2a-43ac7ad2ae49))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 05bb810a-70f5-4b7b-8ee0-c84c4dcbf8fc))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 88eeb8ce-15d3-46aa-9141-e300593e5856))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 95f7529b-cba4-4fee-843f-c0affec7d987))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1973d66a-1cf0-48c8-98d1-50a7420497de))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3ae9d22b-73dd-4e6c-9834-66cdc34eaeed))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c741fb22-bf72-49fe-a942-eb10d67e65cc))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e3b9f32e-4c02-44b4-834c-bb2ad34d0603))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 110 "Net-(J22-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp f4ab8f8d-a4eb-4c7b-9ad9-f7edb9921fc4))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2727,6 +3225,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp aaacb40c-7448-4b14-b5f9-e0adaf20bb95))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 72f89356-887c-443f-a237-7de85da8e46c))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3dfab4da-685e-4c6d-a543-12858c1b2e15))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 58280332-ad00-4042-a923-9f2fefbf2377))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ae4c3238-a66f-4bad-a1fe-528dacf551bc))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 889686a8-88bf-4df6-b17b-f83b1ed088e7))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d47a0698-0782-47a6-aa2a-e03a2feb3732))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 21981015-dcb9-4d4f-8bfc-e71f70b5379e))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 111 "Net-(J23-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 10628e9a-fe87-4ee7-b5e7-38282a99ae7b))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2817,6 +3330,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp caaaa6eb-5788-4fb3-9445-0d06ad05666c))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9660d5dd-76d7-4649-ba8d-4302267aba1a))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7958671c-ecf0-47ea-b373-b1317da2db3a))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6e0efab9-d437-42ab-aeb2-7bc8e57d3076))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 26d9526a-81ff-4c1b-be4d-bbc128ea9a78))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7fa2938c-5ad5-404a-b731-809935180bef))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ecc63a76-f7b0-442a-8165-edd4ef47c51e))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 754bea9f-ae22-4750-bc79-a020305d06b2))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 122 "Net-(J24-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 2e5b5d6c-edee-443c-a9c8-f9439b757ca9))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -2913,6 +3441,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 974c596b-6ffe-45c0-af6a-5219c2b0a2a3))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 94036553-63d7-4731-96fe-139f74885a6f))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 5946c0c3-ab19-4282-8124-0db388188860))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp a3ebc653-9ed1-4b2f-989c-c3e2f43edcb2))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 1b1caaf4-73d8-4968-b1a8-b6f549bc8481))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp cc4d3e8c-ec6b-4be5-a20c-e69e9a747f8f))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 9c281114-1265-4e06-b6f0-d9b026fe06dd))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3013,6 +3552,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 647baa75-1984-4b2b-a77c-b46df4700f76))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 274ecc84-1ca8-4b80-b108-f116f97ef1b7))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 065bdab7-fc15-46ab-a507-cc86ff087027))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp ee69f88b-be32-4df3-97cc-0cd592980808))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 307d50c1-8479-49db-93ca-d7e46ca02004))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 919aeff7-95d9-49f3-bb11-4d88599bdae4))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 68ae96c5-c5c1-4eda-8e9b-f687975bff45))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3113,6 +3663,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 5b3e0c4c-c766-4841-96e6-ff578b012fcf))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 468f1858-8dda-4126-9233-6933a39426fa))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 83c151eb-5a88-4f4a-acc2-aec77903c45a))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp d6f60f84-6e4d-4ba9-99d4-aa2cbc56af69))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp a8ecabf5-afc3-4155-9c57-7f9a102465c3))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 2b3b487f-2389-43f7-a79d-a4747b095e59))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp eee00532-802e-499d-a0d0-4303eb1e5d37))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3213,6 +3774,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 58111d10-b92e-4deb-a1c6-9c0618396ba0))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp c3346b35-6bfe-44d0-8504-19a1b432929f))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0b25e6f3-a7ab-4794-ac95-ab6f304f00a0))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 8dbedfec-36a8-4677-86ac-ecdad04dcc03))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 70eba858-c2b2-46d3-8772-532576f22e0a))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 18b39b62-8f21-4c8f-b8f1-33162c25b10c))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp dc4882df-0589-4339-a959-919e1a4a30c8))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3313,6 +3885,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 147bfc66-7d7a-496c-9937-dc52da70c12a))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 206a3b05-d889-40ff-bd88-9d03f5fa4200))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp adf620e2-7624-4c7d-80de-5e054850a201))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0dccee36-5c13-4c89-ba07-03e5f3dfaffe))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp a96ca2f3-21fb-456b-b1c5-701ec8fc61e1))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp ffcb6e2f-bfc8-4598-9437-2351d7231d47))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 45e56541-1d4f-451f-bc17-dcbbe2f51038))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3413,6 +3996,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 8facc192-6728-4c6f-96b7-86b92c08a00a))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 3cdb7951-b51b-4ed6-a0ca-db5e5ffe662e))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 9d5784a5-3f14-4a37-a953-5b1d61f82ad5))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 1f2d62b6-c4bf-4d0a-92a9-62d5278010df))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 1e74197b-bde9-454c-b989-bc95624f191d))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 2dcef754-7252-4142-8652-97c3e40eb47b))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp ebccc503-6873-4ae7-b953-0125078176ad))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3513,6 +4107,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp aeff9308-690d-4428-aca5-4241135dba03))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ee00e831-896f-4a33-9ab6-341b17b502a2))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 7a61e2ca-57e3-4fd1-b064-c2b4fece4e38))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp cb90b2e5-864e-4aa4-804c-d2c417cf83e8))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 6b9b9780-6e03-4fd7-befe-889058886182))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 3b54c649-53dc-4fa2-b646-4e5516be210b))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp db132225-e809-4b99-8b2f-7eb5e8dad5aa))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3613,6 +4218,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9d4baf0e-6199-4631-9480-c232009e39f1))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 1106201e-17cf-4e64-ae30-a3d228b27390))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp d75f29f2-6e94-4180-9e86-f5583f1ac287))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp a871155d-c795-4350-9ed1-f6a3293d3483))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp c0003fbe-1418-4c04-b0f6-14f6862a3875))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 6636dc69-7b57-449d-aae2-723a9da6bec4))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 73a00abe-1770-4724-b288-eec511ddf1e7))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3713,6 +4329,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b71076c6-d7f7-4eed-b7b2-b22bc0709a2b))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2e4acef7-2794-46ec-8394-51970bee0edc))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 42ececd0-a64d-4a41-8131-d0eea351e2cc))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0b398902-0d16-46ba-b1d3-5726c0e5b615))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 6c21a93e-9698-48f8-b5f4-65417939b54e))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp b7da0a7d-235b-4fee-acf8-d8b3ec7dadb5))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 2ad04d6d-c6c5-4d31-a9e9-0a97d967678a))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3813,6 +4440,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp cf5952d4-7854-4c0f-aee0-6fa392629e7c))
     (fp_line (start 18.55 -7.95) (end 18.55 7.95)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 220c04ed-1982-4ddd-a6f0-a7a4e7595d5c))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.3 -7.7) (end 18.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 0abdbe74-f16a-4587-8264-591dbd7974ae))
+    (fp_line (start -1.3 7.7) (end -1.3 -7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 8876703f-b177-4611-b3b6-9d2517dc580e))
+    (fp_line (start 18.3 -7.7) (end 18.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 82d9f587-380d-4d55-9c3a-6cb7af7b0f5c))
+    (fp_line (start 18.3 7.7) (end -1.3 7.7)
+      (stroke (width 0.12) (type solid)) (layer "F.SilkS") (tstamp 40f69a54-00f9-4ba4-a0f8-559b00ed32f6))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0 180) (size 3 3) (drill 1.3) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pintype "passive") (tstamp 8d8306d1-2365-4230-bad6-a1700f10a3c6))
     (pad "2" thru_hole circle (at 1.95 6.05 180) (size 2.5 2.5) (drill 1) (layers "*.Cu" "*.Mask")
@@ -3875,6 +4513,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp c68a6221-2493-4af8-9d96-5c296e7830ea))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ecc2348b-3f9d-49eb-aeae-b91b7f05a7c9))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1dbd5dc1-44a1-4eff-b756-2693f4c057aa))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp bf2072ac-c241-4338-9db9-c01620b3dddf))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f843f4bc-398a-4260-a971-486a415cd94f))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 709460c5-1a41-4aa1-9805-50493f8c587d))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -3935,6 +4582,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 8fccd424-c50d-4d50-8743-9fc74fab01aa))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9a8484e4-47d4-4963-b283-b3cbd1c67007))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 907bbc38-60b4-4f27-aae4-86323332d51d))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 36a0e9d6-1daa-44ea-9452-00f8da78a3cb))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp faaee113-b714-4c09-b2c3-7b492009b1f1))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 24759326-5d53-4680-bf6d-c9dc6acdc1c3))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -3995,6 +4651,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 33d8a7db-9bec-41ed-b78f-1874f03410ee))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2595726c-6c9b-4f49-8087-23735bc398b1))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 52104770-33e2-4b7b-8a0f-4cb3927993da))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 48578d06-7373-486c-9ed4-bd1bae527b48))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp eedc4b89-2e16-4a8a-a2cd-29a543a269e3))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 11947011-fb5a-4922-9d6c-55a4b922765e))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4055,6 +4720,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 33203738-fbda-4312-b928-e491bc869a33))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7639a84a-f42f-4ba3-a332-7d70922608a5))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2c39a729-24ea-4304-b5f8-44cc1c762283))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d4b50d94-a116-42bd-ad53-ae3666df864a))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 18c581cf-bc8a-4a42-a9aa-03761de79b83))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp c21f2aec-2996-4347-a3a2-a4fc171d4702))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4115,6 +4789,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 1ece096d-764c-42ce-8adb-170349cbf7a2))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 8a7ff54a-2885-4f8c-876d-0a5c65ea2b15))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ed4af809-1130-42f5-90af-138a09a76b5a))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b171db63-1528-4414-9fc3-fddbff95d6fb))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 19d3ac9f-9507-4de7-9d50-2c7db4aa57e4))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 02a27f62-236f-481a-bbfd-c7ae9160efd4))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4175,6 +4858,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9ef6c256-9896-449a-9be7-3f8c4ffd23e6))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f272e40f-e838-4e49-b9b3-1ce12f70ce7e))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6b673915-26b1-444a-9647-0b6e3a45d7f0))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1671d3ea-b539-4c84-9ee0-fa48837666fa))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1dcb4b50-3650-4ff6-b6e6-1fffabc73de3))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 0281b13d-16d4-4adb-9e07-60e27e016c11))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4235,6 +4927,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9ca5406d-9ec3-4ea4-b6aa-5c19c5085f97))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b9832d5e-ad3c-48cd-8b31-a22f934d59ec))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8b14ed0d-bd9d-41a4-922b-28b98eba1ce9))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9f449020-a3ee-477e-9e2f-bd9275e82bbb))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0f4a2fa4-6c73-4119-b2a7-a9f06850865b))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 96a1b7f3-c06e-4288-96e9-56d817e407fd))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4295,6 +4996,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 1a2115a0-3e0c-4d9e-a4cd-188189a9e398))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 6dab7f30-3aad-465e-92aa-a84fbe2cb7ab))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 78fc2307-7b1b-4ec1-b431-b662eb8cedca))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3ef00391-302c-4ba4-973c-6a78d7973a3b))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1804c83e-8c09-4b93-b014-fe11b38a06e6))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 40d3e0be-4651-43e3-a3be-1216bbd597ea))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4355,6 +5065,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 6d8d0e58-95dc-4a04-b96e-e204f7aa123a))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 096b9805-a9d9-4b10-a190-b47d0b22067f))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 73b3ffa9-93dc-4227-af4c-1b6f7ba49188))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1873aa5b-f5d2-40ec-b1c0-4104ef3808ac))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 351b2e41-8594-40a2-ad04-c57e18fb9d19))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp 15811499-8d37-4ea8-933a-3bde04f06077))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4415,6 +5134,15 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 614ada4d-2540-40fb-908b-232b1ba5d0c2))
     (fp_line (start 6.09 2.01) (end 6.09 -2.73)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 0f2efe0a-6b4a-4693-b3b1-72a27a856cf9))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.8 1.75) (end 4.3 1.75)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 558b9a22-12f0-41b6-b42c-0e29b6e6b7c9))
+    (fp_arc (start 0.786375 1.753625) (mid 0.248779 -0.949055) (end 2.54 -2.48)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 280a71ee-3bc4-4dd8-a014-389dddc7220a))
+    (fp_arc (start 2.54 -2.48) (mid 4.831221 -0.949055) (end 4.293625 1.753625)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3c9574f7-5c1d-405f-99d8-c485d89d5137))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "E") (pintype "passive") (tstamp e13f3c4f-4d1d-4f1a-a859-03ae2cc383ab))
     (pad "2" thru_hole circle (at 2.54 0 180) (size 1.5 1.5) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4483,6 +5211,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp af75b3e9-ccb5-47c1-ba6e-607aa78458e3))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 464f071f-344c-4165-90f9-7ff8ed397bb4))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 59e198ae-cdd1-47b1-b04c-08e1acac40b9))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3759e0be-a8d9-42cc-b6f0-ef07a50cf292))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 515e243c-6087-45fc-bf13-ea180c352604))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1d55b220-3c8b-4662-9e01-a9af95a95022))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0422ce0b-1d5f-4179-a477-91a4ce24dcd8))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b0e1c57c-cfe8-4a82-bbec-909cbf48b475))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 112 "Lamp1") (pintype "passive") (tstamp cf03e2b2-fafa-4d4e-b0ae-8814bbc17889))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4549,6 +5292,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 97d3dc1c-5639-4e38-a204-24479065431d))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 44372e61-32af-4ee2-ae35-3d64926d7d04))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0b455f60-455c-4c67-9c2e-528496842060))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c7f0ccd4-56d8-43e9-a1f5-073f317b8b47))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a6e4dc27-3dc7-4d22-87f2-4c6f6f466f7c))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9452989d-bf9d-49f5-95cd-599d78282324))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp aad5ed1d-8580-4430-8713-387b38004fbf))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 990a55c5-5735-4400-aad7-06bd3ea11f2b))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 113 "Lamp3") (pintype "passive") (tstamp 7d655de2-eab1-4a2f-bcfc-144ff2cf777d))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4615,6 +5373,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 703aebf3-7876-4099-b9a7-dc502497064d))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 50a95649-ab0c-4416-b21d-6474a4e19911))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d224b4e5-7fe5-476d-9458-cd5b122eceb0))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 39a3e0d3-e660-4ee4-b311-0ebeedc539ef))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 18165079-7d27-4f10-9471-6fe16d9a369c))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f3c89dea-a30c-4ca3-8616-8d5577c01e66))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7a1c24df-9104-4496-b4fa-fd4a903055e9))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ec424f49-8c96-47bd-9eb5-0ea6aa992c74))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 114 "Lamp5") (pintype "passive") (tstamp ef0f4f1a-8eea-43e4-aa8f-635ab6937c19))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4681,6 +5454,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 5a099f26-81b1-4fca-9812-3a70ccd0d7d2))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 48370b69-ee17-4dec-97df-68e5cb0532bb))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a2314d2c-c9c1-4df7-83b7-c86782b6284e))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1856bf5c-74c5-4494-b1a1-2e8544073c61))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 345cf26e-1498-4fba-9af9-0adfbc586537))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0ec02728-e212-4b08-b12d-bd11d52bddbd))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9b29ae1d-e3fa-4187-bc5d-ee22612e14c5))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 274ccf44-266e-4a9d-9860-1f1f92ae8077))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 115 "Lamp7") (pintype "passive") (tstamp 01535fa7-d066-40b9-a4b1-ec3cbe46cb01))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4747,6 +5535,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d4e998b3-384b-4b32-8ea8-70bdfa8b2fee))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ce251fa3-4161-424e-a466-ceeff7c8dcce))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 60dce39f-7cc1-4041-9f05-60b82a69f687))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5422c7f7-96d7-4b5c-aed8-f9275ba6cbe2))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4684762b-ac12-485e-a1ac-91aa0f2dac24))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 44c883a5-3c35-48fe-a978-77b07380dfea))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 29708ece-48d3-4819-8c0a-2b4d92acdb17))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8491204e-1319-4fd1-a6a0-6fec87c50dca))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 116 "Lamp2") (pintype "passive") (tstamp 5316e911-1fb8-42ff-88ce-eb757c86ec85))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4813,6 +5616,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4025a271-b993-4197-a80a-b135f6cecfbb))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f1872490-534e-4992-9bc6-6664bec5b183))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7ec04df2-15ce-4e92-84b7-1f578e37f144))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0ec47334-9c3f-46d5-91bc-3a54d1f24aec))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a92233ac-6f28-46a2-bbd7-5a4751aceb3c))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 77afebc9-9823-4ae4-973f-d66f5979875f))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 13047133-9e44-4ec3-ab66-46475906f799))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2748b3f5-9b20-4b7f-ba5f-480a104d47b1))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 117 "Lamp4") (pintype "passive") (tstamp 84cd52dd-f0fd-4908-ac71-fa9a29d343f8))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4879,6 +5697,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 164c74db-2162-42c4-8168-28fe06f13f88))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 350d2caf-a4ba-452d-b820-2e3603d85127))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1cbe3c01-dfad-4d8b-a35b-ce2ac34e8c18))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5f47a8d2-5d86-4e24-abaf-6b4272ffaef6))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6d5ad26f-14b2-4d66-bb00-8936e6090d7c))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8dc53677-804a-446f-ad0d-030260256fcb))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e54caf22-7a99-4bdf-9d7e-199bba77cb01))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e6ee5c59-246e-4795-a233-69d3d7ec35c2))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 118 "Lamp6") (pintype "passive") (tstamp d79549cc-f494-4102-8d2a-22a9f82d59f5))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -4945,6 +5778,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp be800ee8-b5df-4fcb-bacb-50153d7ba428))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 79c137cc-4bc2-436c-b198-cbcdcf2283ad))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8501104a-fdf7-44db-a93c-644f447bcbf2))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 855414f1-6cd6-4ef1-a972-8de2e7370cdb))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 139e3942-6b8d-4671-80f7-56910dc0ee8c))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 29d59ddd-b14d-4844-9baf-e2d6491215c5))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d63d0b5b-87ab-4e16-96ec-01ae8a758464))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7bc24098-9628-494f-b3e5-8842b28bde27))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 119 "Lamp8") (pintype "passive") (tstamp f4fc4b6c-0a5d-4166-96e8-83b385fbfd0e))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -5011,6 +5859,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d8dcb902-8c7c-408d-8eba-da0ebe84e2a9))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp b7443c5d-ebda-4a59-b8c4-84aaabee295b))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp dbd12bf8-0f18-4f34-9411-010e03b1222e))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c91b4434-ac51-4f15-8021-83509749b027))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c1fe2c8c-d8b0-48f3-a78b-736cb3037644))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp bad24225-155c-4cb4-9846-ea435ecf7d45))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 17c9ee54-0f7e-417e-b067-3d630c3007f4))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2af5ff91-dd3f-4c3f-8d1f-fd98735e1a81))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 120 "Lamp9") (pintype "passive") (tstamp 9e0adfd3-779e-423f-8310-6db5a9501288))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -5077,6 +5940,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 73fe65b1-675a-4ae6-b46e-ead0057ddae4))
     (fp_line (start 11.21 1.5) (end 11.21 -1.5)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 003ccd2a-04da-49b2-8ed8-ec715d697336))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 1.93 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 23a97664-94eb-4604-bee9-f49b5a4f3470))
+    (fp_line (start 1.93 -1.25) (end 1.93 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 53017522-72c0-4557-a10b-2d86c2c19a6a))
+    (fp_line (start 1.93 1.25) (end 8.23 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8dc3e064-2e5b-4523-91b4-ab7c0035426d))
+    (fp_line (start 8.23 -1.25) (end 1.93 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3dd02f2d-e519-46b3-9a95-995aae0fc803))
+    (fp_line (start 8.23 1.25) (end 8.23 -1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 03a6388d-4d97-48ac-b36a-fa1e2ee76e22))
+    (fp_line (start 10.16 0) (end 8.23 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 17b4ef0f-9c18-4d7e-88a3-095435108992))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 121 "Lamp10") (pintype "passive") (tstamp f009d366-2564-43e5-974e-416473385a76))
     (pad "2" thru_hole oval (at 10.16 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -5147,6 +6025,23 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 59b68e26-b599-4878-aeb9-d920ce0236e4))
     (fp_line (start 7.79 1.51) (end 7.79 -3.4)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f1e94748-5ab4-418a-b276-85e9d7bfc9f1))
+<<<<<<< HEAD
+=======
+    (fp_line (start -2.46 -3.15) (end -2.46 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3ec88377-80db-460d-9e83-f0d695d8490d))
+    (fp_line (start -2.46 -1.88) (end 7.54 -1.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8b600fd0-5e6c-4b2d-8d52-f393181137e2))
+    (fp_line (start -2.46 1.25) (end 7.54 1.25)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7044df9a-590f-4c2a-bd30-c9f330c2d17a))
+    (fp_line (start 0.69 -3.15) (end 0.69 -1.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b4252395-92d0-4d3e-8098-7e80ae8c7179))
+    (fp_line (start 4.39 -3.15) (end 4.39 -1.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9cbcb02f-716a-422f-abd4-b74f37ef6a1b))
+    (fp_line (start 7.54 -3.15) (end -2.46 -3.15)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5c3b273e-604f-4ebe-868a-f1f2fb141adc))
+    (fp_line (start 7.54 1.25) (end 7.54 -3.15)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e4cf9150-d889-4b18-b043-4f0f9689c81a))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.905 2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 2 "+12V") (pinfunction "IN") (pintype "power_in") (tstamp 7ee972a2-f968-4da2-adf2-38ddbb4a3be1))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.905 2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -7772,6 +8667,17 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ebea1d39-1ec3-44d0-87f9-74e2cb326624))
     (fp_line (start 6.05 1.2) (end 6.05 -1.2)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7d36028e-ed56-4a4a-b2b4-04be7500105d))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.35 -0.95) (end 0.35 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 69c14912-5834-4d49-828c-6b743a757510))
+    (fp_line (start 0.35 0.95) (end 4.65 0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 95b33c83-a142-4c4e-8627-99da8ccaf6bd))
+    (fp_line (start 4.65 -0.95) (end 0.35 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8f811f2a-06b2-406c-b040-8a2bbd4696b6))
+    (fp_line (start 4.65 0.95) (end 4.65 -0.95)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5f6bfdc8-b291-4feb-bcba-7ba882b7163a))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole circle (at 0 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pintype "passive") (tstamp 8b1b7246-bee8-4473-8d27-4d335130e75d))
     (pad "2" thru_hole circle (at 5 0) (size 1.6 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
@@ -7834,6 +8740,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d4611495-2df7-4ae8-8167-b41bdcdb1711))
     (fp_line (start 1.75 29.7) (end -1.8 29.7)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2156d668-dddc-43f7-b556-f801bac5f589))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp aeabf21c-aad1-4965-988e-e96e33248272))
+    (fp_line (start -1.27 29.21) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fd03bd52-acb3-4006-8488-b66db376494c))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5d6f46b7-7bcc-4b53-88c1-1e8276f07267))
+    (fp_line (start 1.27 -0.635) (end 1.27 29.21)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 43a3af24-e9b0-462e-8711-de1b3666f497))
+    (fp_line (start 1.27 29.21) (end -1.27 29.21)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5f69787a-3302-4729-ad0f-4b1f3cc423ce))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 1f40f2ce-e274-4bda-84f1-d60c78ccbbaa))
     (pad "2" thru_hole oval (at 0 2.54 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8064,6 +8983,27 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 409270ec-8b2d-4575-8ce8-c7dac0fce4e0))
     (fp_line (start 11.51 1.6) (end 11.51 -1.6)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 357b120e-caa4-4812-921e-816025256924))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0 0) (end 2.48 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 4fc4f98e-732a-4457-b16d-5a8f15e69337))
+    (fp_line (start 2.48 -1.35) (end 2.48 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1c00eaa2-b5a6-4c95-8bd2-5d93ec05f04b))
+    (fp_line (start 2.48 1.35) (end 7.68 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2946458e-bf70-44ec-a7c5-9e7e4331e31c))
+    (fp_line (start 3.16 -1.35) (end 3.16 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7216a7f6-b97e-44b5-a37e-34ce8338bb2a))
+    (fp_line (start 3.26 -1.35) (end 3.26 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0bbddbec-8e49-41b0-8e67-dc1b15137efe))
+    (fp_line (start 3.36 -1.35) (end 3.36 1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ef9564d5-4c43-408d-81fb-e78c5f28c435))
+    (fp_line (start 7.68 -1.35) (end 2.48 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a6282644-33a1-4221-9738-bc2fe14b2c6d))
+    (fp_line (start 7.68 1.35) (end 7.68 -1.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 0f303411-ac5b-47c0-b30e-04770c4f629d))
+    (fp_line (start 10.16 0) (end 7.68 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2d8ec397-3f05-40b2-9e03-12068ef55943))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
       (net 3 "+5V") (pinfunction "K") (pintype "passive") (tstamp a50ce612-0f27-414e-84c3-53895d13bcca))
     (pad "2" thru_hole oval (at 10.16 0 180) (size 2.2 2.2) (drill 1.1) (layers "*.Cu" "*.Mask")
@@ -8154,6 +9094,21 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 33abb87c-beb1-4e4a-be61-a693fcf5017f))
     (fp_line (start 4.31 3.38) (end 4.31 -3.42)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 8536ffd5-68c7-49e9-88f7-ec6d97ef9eea))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -2.92) (end -1.27 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d83d140b-4ab1-410f-9c47-96301a37767d))
+    (fp_line (start -1.27 -0.5) (end -0.562893 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 53cfc457-0662-4b57-97fc-10a1c84065fd))
+    (fp_line (start -1.27 2.88) (end 3.81 2.88)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c4c67549-3654-41d2-85e8-2eabb49702ff))
+    (fp_line (start -0.562893 0) (end -1.27 0.5)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7c00f825-03c3-41ce-825e-b31416b742f1))
+    (fp_line (start 3.81 -2.92) (end -1.27 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ad077404-cfaf-4129-902c-c6e42784a1d4))
+    (fp_line (start 3.81 2.88) (end 3.81 -2.92)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d23f06f3-8407-4e2b-aad2-3b513fadfc9f))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole roundrect (at 0 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask") (roundrect_rratio 0.1436775862)
       (net 105 "Net-(J17-Pin_1)") (pinfunction "Pin_1") (pintype "passive") (tstamp 4face5b4-b70f-4d24-bb3e-0ae640f76858))
     (pad "2" thru_hole oval (at 2.54 0) (size 1.74 2.19) (drill 1.19) (layers "*.Cu" "*.Mask")
@@ -8216,6 +9171,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 4e9c6df9-394d-4899-9cfc-775e86e74f2d))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 402eaddd-36ab-4210-91ff-0c7ffe7c0344))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 5bceca2a-9a86-4898-8e52-e5eadbac9bde))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 00ac32ef-ae3a-4d4f-aa5a-aeca42750292))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e6b2eb36-5cbd-4240-9228-790f4f0c63d9))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 63b641f9-4b08-4135-92fe-a74b182cd503))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 437912df-5c15-48b6-b8bb-98b5389ab435))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 9d6ebd4c-c4f9-481c-b9cb-3f52b4a8aec8))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8288,6 +9256,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 56843e37-9ef5-4040-bfdc-cce4a26b476e))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp cc7120a7-7c3b-4910-bf77-2b3d45c7c7c9))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6362fb7c-24ea-4fc5-8472-e763afd62a87))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1e861745-7ccf-48cf-857f-b1d4d404c8c3))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 11c9e168-5f82-47db-8ba6-1b4c5f0d28f7))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ec8b7636-828a-4041-8fc4-e9b1775b3a09))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6c408533-ee39-4e95-9351-1a58234f4d1e))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp a16846e4-ea40-416e-91f0-a5e2f5ff528a))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8360,6 +9341,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ed8ad2d6-11de-4cc5-98f6-22f0dd3f6643))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 0aa54294-6262-46e4-bcef-7d31746405b1))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 3214441b-236e-458f-a7c2-d9dcdc8254ac))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 185749a1-f199-4ec8-9060-bbcf03a1d382))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7608d76b-7fe6-4450-8405-7e7058f076d7))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 401d789e-a044-424d-b668-4999333f947e))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d00026ad-0858-4382-8364-8cc8a5edcc84))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 5c329d6d-006c-4b18-893c-bbb2bfb3dd27))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8432,6 +9426,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 742cc1a0-87de-404c-b4cb-daace09f930a))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 89a6e9e8-5e73-407e-a997-baf57f6f89ac))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d56e4a03-f655-4a84-8996-fc1723c9b915))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 8f265ebf-907b-487a-8c9b-d62d54faeb09))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a0846928-89b5-418f-b8c2-a6a0e6f121c1))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9174d96c-8c84-446e-8ff8-43e4c9426ab2))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 9c25991c-bdea-48cc-840f-8ec9cedb4bfc))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp e985aea0-a8fc-412f-90b2-93089e334ccd))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8504,6 +9511,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp ff82d1a9-314d-4ea4-a2a0-775a453974f4))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 903c8b45-d989-453f-8511-2a842e99c50b))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 510e1fa5-4b6e-4e36-9780-5a5d61da3b24))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1ab2ecde-dbeb-49ed-ba23-8d82d91ec133))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp fb542f33-ed77-4ddf-8a3a-07fed2ae0b0a))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp efa26c44-466c-4863-9b00-304131718e45))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a6ccb297-ee96-4f68-b716-6ecd617f7712))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp b575d7b3-7583-4a7b-9d74-4518de34994a))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8576,6 +9596,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 04890bfd-ad42-49a4-abd5-b46d923799a0))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d9915929-ad6b-4b7a-b4a7-d860a219a4e9))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1c67d270-a83a-4681-a171-711bfb342106))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp bd5d202c-e61b-45f3-9814-5057b65db08d))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b9c66655-29a0-4d53-91ee-2e88131530b8))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp f0a1499c-00e1-4672-8d63-5c3bfe548aea))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2dbff24a-a61e-4c81-a307-e8f652921e69))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 01cba83e-8aaa-4b2f-a154-5b73b9fff7ae))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8648,6 +9681,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 7afda6d7-b3e3-45ed-86ac-7bc8d1ba5155))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 51033b3a-9e43-4f03-816c-b05d8be3f559))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 557d39aa-f45e-4a56-b123-ebd3619b5ea3))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 217ed7a3-68fe-4c74-a4da-8a0895ece86b))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 1d9f76d7-cdba-4f0a-971f-7d983d3829bb))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 61b56533-20d6-4fb1-a920-a4e3a25b33cc))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 65d541d9-10b8-4f8b-b4b4-c345741e2f2d))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 0017993b-fcd5-4f46-8116-5d2f7429d6a3))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8720,6 +9766,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 6944ee43-ee1e-4364-9a5e-925d72ee73a6))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d7f1eab9-fc0c-4191-b122-8a65256ce282))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ffee5faf-e772-43ae-b144-1bf04dad3ba9))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp b76f9e90-4bf1-41dc-8ad3-990362ac05d0))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e50cac56-061e-4d06-8804-a2bc3f7b9f28))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 7cb585e7-37d3-42dd-8178-2d0c43200e4b))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp ac215dbf-f7c3-43d9-b419-935af53e4a29))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 83ce6b1b-af35-4206-912e-f531fe12b9e6))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8792,6 +9851,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp a0b1ab96-31c3-4ff6-b06e-d4a03d0ca513))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 9168ef84-759a-42b3-a032-f238e155033e))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 143146d3-ba78-4476-9312-408c7d9dce7a))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6c3d1cbd-4719-4f8b-a684-a37c667e6916))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp dbd90e64-2569-4ae8-9b57-317dab80989a))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 45a49f47-f8c9-4f83-b73d-7baddbbd951e))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 16e9023a-d130-46d7-af4b-32a8bf3c43e0))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp c1992cf9-0f6b-4aa4-8302-02f971414ec9))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8864,6 +9936,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 405d7361-8797-49f1-acca-67826b2bb4c4))
     (fp_line (start 1.75 17) (end -1.8 17)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 22e7dafb-7788-40e5-bb32-c3251c64052f))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 834c5062-6f4f-4764-af76-778c76a3b1c5))
+    (fp_line (start -1.27 16.51) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 52dee1ea-a2d5-4890-99a6-24202f4e153d))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a6b9dab6-9880-49ae-8417-b9b69d47019a))
+    (fp_line (start 1.27 -0.635) (end 1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2b1bafc8-39e4-4a89-95db-636f8945da25))
+    (fp_line (start 1.27 16.51) (end -1.27 16.51)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp caa2bb58-bf92-466c-bd2a-6a4d25b457de))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp cd4da4af-4d9a-4b34-8ec0-ec2067da2ebb))
     (pad "2" thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -8900,11 +9985,19 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0516ac4d-2e02-43b9-8aba-3eded977104f)
     )
+<<<<<<< HEAD
     (fp_text value "Conn_02x14_Odd_Even" (at 1.27 35.35 90) (layer "F.SilkS")
+=======
+    (fp_text value "Conn_02x12_Odd_Even" (at 1.27 30.27 90) (layer "F.SilkS")
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5b2ad870-f585-4c79-a74b-f061aee2a06f)
     )
+<<<<<<< HEAD
     (fp_text user "${REFERENCE}" (at 1.27 16.51 180) (layer "F.SilkS")
+=======
+    (fp_text user "${REFERENCE}" (at 1.27 13.97) (layer "F.SilkS")
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 881559f0-eb74-4cda-8c7e-6f56f850b533)
     )
@@ -8939,9 +10032,25 @@
     (fp_line (start -1.8 34.8) (end 4.35 34.8)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 43e7e456-60b6-4cb6-b5d5-6fa97e809b4f))
     (fp_line (start 4.35 -1.8) (end -1.8 -1.8)
+<<<<<<< HEAD
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f1657f9b-8309-4e0b-94d6-70a72256bb88))
     (fp_line (start 4.35 34.8) (end 4.35 -1.8)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 29286623-bbbe-4f5f-a820-db8b18621845))
+=======
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 045f98d8-93f8-452a-8297-3b5b62928d72))
+    (fp_line (start 4.35 29.75) (end 4.35 -1.8)
+      (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 2b15ad56-f756-4c1a-908a-622b76a14ea7))
+    (fp_line (start -1.27 0) (end 0 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 2fa25730-c532-4620-9d9f-1bbf0257093c))
+    (fp_line (start -1.27 29.21) (end -1.27 0)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 209f96c3-aa2c-468c-a73b-1b32abe53056))
+    (fp_line (start 0 -1.27) (end 3.81 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 577fd725-1913-45c4-a16e-7d827730f0d0))
+    (fp_line (start 3.81 -1.27) (end 3.81 29.21)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 6c3b2510-b1da-4ae8-8763-1d43a194ee5e))
+    (fp_line (start 3.81 29.21) (end -1.27 29.21)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 55d01691-e3e6-4fbd-9e67-e825e2f2e338))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 132 "AUX-HEAD-1") (pinfunction "Pin_1") (pintype "passive") (tstamp a5efdcda-498a-40f0-952e-8052ce0cbd63))
     (pad "2" thru_hole oval (at 2.54 0 90) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -9020,7 +10129,11 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 560926f9-f27d-43df-b33b-15c896fc8a0e)
     )
+<<<<<<< HEAD
     (fp_text value "DMX" (at 0 7.85 90) (layer "F.SilkS")
+=======
+    (fp_text value "I2C" (at 0 7.85 90) (layer "F.SilkS")
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3cbbc850-71f5-4716-b162-49a169fca7be)
     )
@@ -9058,6 +10171,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 17b626bf-bed0-4600-a791-8ac5b6f438cc))
     (fp_line (start 1.75 6.85) (end -1.8 6.85)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp dda9a2e7-bc04-40cd-b402-bb4c606fd2fa))
+<<<<<<< HEAD
+=======
+    (fp_line (start -1.27 -1.27) (end 0.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp eb6b9c9c-9d54-4a6a-b2d7-021db4630e12))
+    (fp_line (start -1.27 6.35) (end -1.27 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 72402a16-8f65-4caa-86c9-005bddda771c))
+    (fp_line (start 0.635 -1.27) (end 1.27 -0.635)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a5980db2-9a96-4ab5-967e-cbaf31bd36c3))
+    (fp_line (start 1.27 -0.635) (end 1.27 6.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp cccd75a4-3aff-4226-a677-8ef90027cb96))
+    (fp_line (start 1.27 6.35) (end -1.27 6.35)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp d9f8e2ed-d734-4dbb-b637-a10cce4f813f))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
       (net 1 "GND") (pinfunction "Pin_1") (pintype "passive") (tstamp c57283eb-460b-47a5-a48b-1aef70cd1d59))
     (pad "2" thru_hole oval (at 0 2.54 270) (size 1.7 1.7) (drill 1) (layers "*.Cu" "*.Mask")
@@ -9124,6 +10250,19 @@
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp d01fd7c2-2e0a-4d8d-84e2-39bbe5069657))
     (fp_line (start 9.1 9.15) (end 9.1 -1.55)
       (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 399fd942-9a5e-4958-8801-5e9c2d762160))
+<<<<<<< HEAD
+=======
+    (fp_line (start 0.635 -0.27) (end 1.635 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 741f6f13-01ef-4f07-b187-99c874cdb232))
+    (fp_line (start 0.635 8.89) (end 0.635 -0.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp c036eb0c-5acb-4e0e-8c6e-1bcb1465dc44))
+    (fp_line (start 1.635 -1.27) (end 6.985 -1.27)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp a590ee24-ef60-45be-a891-20ab59cb1736))
+    (fp_line (start 6.985 -1.27) (end 6.985 8.89)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp e6ceb402-204c-4392-accf-dcadc9ffdede))
+    (fp_line (start 6.985 8.89) (end 0.635 8.89)
+      (stroke (width 0.1) (type solid)) (layer "F.SilkS") (tstamp 43862d5c-a774-4417-8ad9-2f8a4b201f13))
+>>>>>>> e642d0d0847a528bb4b218930e20128bbea525a2
     (pad "1" thru_hole rect (at 0 0) (size 2.4 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 164 "unconnected-(U2-RO-Pad1)") (pinfunction "RO") (pintype "output+no_connect") (tstamp 1c41877c-2bfd-4558-a383-849d4dc37588))
     (pad "2" thru_hole oval (at 0 2.54) (size 2.4 1.6) (drill 0.8) (layers "*.Cu" "*.Mask")
