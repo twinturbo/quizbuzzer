@@ -2384,11 +2384,6 @@
     (uuid fa611607-5ff5-4ef3-b43c-fe9b8d2aa3a6)
   )
 
-  (text "quizbuzzer V0.1.0" (at 179.07 171.45 0)
-    (effects (font (size 2.9972 2.9972)) (justify left bottom))
-    (uuid 37ebc7f0-1f84-4dd9-9ad4-4f2941581cba)
-  )
-
   (global_label "Lamp2" (shape output) (at 137.16 53.34 0)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 026bfd56-8ef2-46da-a14c-d73c44c9a3fb)
@@ -4776,7 +4771,7 @@
     (property "Reference" "J26" (at 17.2212 38.7604 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "I2C" (at 15.24 41.91 0)
+    (property "Value" "DMX" (at 15.24 41.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" (at 16.51 38.1 0)

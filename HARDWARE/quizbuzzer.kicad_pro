@@ -1067,7 +1067,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "specctra_dsn": "",
+      "specctra_dsn": "quizbuzzer.dsn",
       "step": "",
       "vrml": ""
     },

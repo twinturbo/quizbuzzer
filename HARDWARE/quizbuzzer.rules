@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2852)
+    (start_pass_no 6668)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,27 +63,27 @@
     )
   )
   (class "kicad_default"
-    GND +12V +5V "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(D5-Pad2)" "Net-(D6-Pad2)"
-    "Net-(D6-Pad1)" "Net-(D7-Pad2)" "Net-(D7-Pad1)" "Net-(D8-Pad2)" "Net-(D8-Pad1)" "Net-(D9-Pad2)" "Net-(D9-Pad1)" "Net-(D10-Pad2)"
-    "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad2)" "Net-(D14-Pad1)" "Net-(D15-Pad2)" "Net-(D15-Pad1)" "Net-(D16-Pad2)"
-    "Net-(D16-Pad1)" "Net-(D17-Pad2)" "Net-(D17-Pad1)" "Net-(D18-Pad2)" "Net-(D19-Pad2)" "Net-(D19-Pad1)" "Net-(D20-Pad2)" "Net-(D21-Pad2)"
-    "Net-(D21-Pad1)" "Net-(J1-Pad9)" "Net-(J1-Pad8)" "Net-(J1-Pad7)" "Net-(J1-Pad6)" "Net-(J1-Pad5)" "Net-(J1-Pad4)" "Net-(J1-Pad3)"
-    "Net-(J1-Pad2)" "Net-(J2-Pad10)" "Net-(J2-Pad9)" "Net-(J2-Pad8)" "Net-(J2-Pad7)" "Net-(J2-Pad6)" "Net-(J2-Pad5)" "Net-(J2-Pad4)"
-    "Net-(J2-Pad3)" SDA SCL "Net-(J5-Pad7)" Rec1 "Net-(J5-Pad5)" "Net-(J5-Pad4)" "Net-(J5-Pad3)"
-    "Net-(J6-Pad7)" Rec2 "Net-(J6-Pad5)" "Net-(J6-Pad4)" "Net-(J6-Pad3)" "Net-(J6-Pad1)" "Net-(J7-Pad7)" Rec3
-    "Net-(J7-Pad5)" "Net-(J7-Pad4)" "Net-(J7-Pad3)" "Net-(J8-Pad7)" Rec4 "Net-(J8-Pad5)" "Net-(J8-Pad4)" "Net-(J8-Pad3)"
-    "Net-(J9-Pad7)" Rec9 "Net-(J9-Pad5)" "Net-(J9-Pad4)" "Net-(J9-Pad3)" "Net-(J10-Pad7)" Rec5 "Net-(J10-Pad5)"
-    "Net-(J10-Pad4)" "Net-(J10-Pad3)" "Net-(J11-Pad7)" Rec6 "Net-(J11-Pad5)" "Net-(J11-Pad4)" "Net-(J11-Pad3)" "Net-(J12-Pad7)"
-    Rec7 "Net-(J12-Pad5)" "Net-(J12-Pad4)" "Net-(J12-Pad3)" "Net-(J13-Pad7)" Rec8 "Net-(J13-Pad5)" "Net-(J13-Pad4)"
-    "Net-(J13-Pad3)" "Net-(J14-Pad7)" Rec10 "Net-(J14-Pad5)" "Net-(J14-Pad4)" "Net-(J14-Pad3)" "Net-(J15-Pad1)" "Net-(J16-Pad1)"
-    "Net-(J17-Pad1)" "Net-(J18-Pad1)" "Net-(J19-Pad1)" "Net-(J20-Pad1)" "Net-(J21-Pad1)" "Net-(J22-Pad1)" "Net-(J23-Pad1)" "Net-(J24-Pad1)"
-    Lamp1 Lamp3 Lamp5 Lamp7 Lamp2 Lamp4 Lamp6 Lamp8
-    Lamp9 Lamp10 "Net-(XA1-PadVIN)" "Net-(XA1-Pad3V3)" "Net-(XA1-PadAREF)" "Net-(XA1-PadD0)" "Net-(XA1-PadD1)" "Net-(XA1-PadD3)"
-    "Net-(XA1-PadD15)" "Net-(XA1-PadD17)" "Net-(XA1-PadD19)" "Net-(XA1-PadD2)" "Net-(XA1-PadD14)" "Net-(XA1-PadD16)" "Net-(XA1-PadD18)" "Net-(XA1-PadA1)"
-    "Net-(XA1-PadA0)" "Net-(XA1-PadA2)" "Net-(XA1-PadA3)" "Net-(XA1-PadA5)" "Net-(XA1-PadA4)" "Net-(XA1-PadA6)" "Net-(XA1-PadA7)" "Net-(XA1-PadA8)"
-    "Net-(XA1-PadA9)" "Net-(XA1-PadA10)" "Net-(XA1-PadA11)" "Net-(XA1-PadA12)" "Net-(XA1-PadA13)" "Net-(XA1-PadA14)" "Net-(XA1-PadA15)" "Net-(XA1-PadD39)"
-    "Net-(XA1-PadD40)" "Net-(XA1-PadD41)" "Net-(XA1-PadD42)" "Net-(XA1-PadD43)" "Net-(XA1-PadRST1)" "Net-(XA1-PadSCK)" "Net-(XA1-PadMISO)" "Net-(XA1-PadMOSI)"
-    "Net-(J2-Pad11)"
+    GND +12V +5V "Net-(D2-A)" "Net-(D3-A)" "Net-(D4-A)" "Net-(D5-A)" "Net-(D6-A)"
+    "Net-(D6-K)" "Net-(D7-A)" "Net-(D7-K)" "Net-(D8-A)" "Net-(D8-K)" "Net-(D9-A)" "Net-(D9-K)" "Net-(D10-A)"
+    "Net-(D11-A)" "Net-(D12-A)" "Net-(D13-A)" "Net-(D14-A)" "Net-(D14-K)" "Net-(D15-A)" "Net-(D15-K)" "Net-(D16-A)"
+    "Net-(D16-K)" "Net-(D17-A)" "Net-(D17-K)" "Net-(D18-A)" "Net-(D19-A)" "Net-(D19-K)" "Net-(D20-A)" "Net-(D21-A)"
+    "Net-(D21-K)" "Net-(J1-Pin_9)" "Net-(J1-Pin_8)" "Net-(J1-Pin_7)" "Net-(J1-Pin_6)" "Net-(J1-Pin_5)" "Net-(J1-Pin_4)" "Net-(J1-Pin_3)"
+    "Net-(J1-Pin_2)" "PORTB_1" "PORTB_2" "PORTB_3" "PORTB_4" "PORTB_5" "PORTB_6" "PORTB_7"
+    "PORTB_8" SDA SCL "MP3_EN" Rec1 "unconnected-(J5-Pin_7-Pad7)" "unconnected-(J5-Pin_5-Pad5)" "unconnected-(J5-Pin_4-Pad4)"
+    "unconnected-(J5-Pin_3-Pad3)" Rec2 "unconnected-(J6-Pin_7-Pad7)" "unconnected-(J6-Pin_5-Pad5)" "unconnected-(J6-Pin_4-Pad4)" "unconnected-(J6-Pin_3-Pad3)" Rec3 "unconnected-(J7-Pin_7-Pad7)"
+    "unconnected-(J7-Pin_5-Pad5)" "unconnected-(J7-Pin_4-Pad4)" "unconnected-(J7-Pin_3-Pad3)" Rec4 "unconnected-(J8-Pin_7-Pad7)" "unconnected-(J8-Pin_5-Pad5)" "unconnected-(J8-Pin_4-Pad4)" "unconnected-(J8-Pin_3-Pad3)"
+    Rec9 "unconnected-(J9-Pin_7-Pad7)" "unconnected-(J9-Pin_5-Pad5)" "unconnected-(J9-Pin_4-Pad4)" "unconnected-(J9-Pin_3-Pad3)" Rec5 "unconnected-(J10-Pin_7-Pad7)" "unconnected-(J10-Pin_5-Pad5)"
+    "unconnected-(J10-Pin_4-Pad4)" "unconnected-(J10-Pin_3-Pad3)" Rec6 "unconnected-(J11-Pin_7-Pad7)" "unconnected-(J11-Pin_5-Pad5)" "unconnected-(J11-Pin_4-Pad4)" "unconnected-(J11-Pin_3-Pad3)" Rec7
+    "unconnected-(J12-Pin_7-Pad7)" "unconnected-(J12-Pin_5-Pad5)" "unconnected-(J12-Pin_4-Pad4)" "unconnected-(J12-Pin_3-Pad3)" Rec8 "unconnected-(J13-Pin_7-Pad7)" "unconnected-(J13-Pin_5-Pad5)" "unconnected-(J13-Pin_4-Pad4)"
+    "unconnected-(J13-Pin_3-Pad3)" Rec10 "unconnected-(J14-Pin_7-Pad7)" "unconnected-(J14-Pin_5-Pad5)" "unconnected-(J14-Pin_4-Pad4)" "unconnected-(J14-Pin_3-Pad3)" "Net-(J15-Pin_1)" "Net-(J16-Pin_1)"
+    "Net-(J17-Pin_1)" "Net-(J18-Pin_1)" "Net-(J19-Pin_1)" "Net-(J20-Pin_1)" "Net-(J21-Pin_1)" "Net-(J22-Pin_1)" "Net-(J23-Pin_1)" Lamp1
+    Lamp3 Lamp5 Lamp7 Lamp2 Lamp4 Lamp6 Lamp8 Lamp9
+    Lamp10 "Net-(J24-Pin_1)" "Net-(J26-Pin_2)" "Net-(J26-Pin_3)" "unconnected-(XA1-PadVIN)" "unconnected-(XA1-3.3V-Pad3V3)" "unconnected-(XA1-RESET-PadRST)" "unconnected-(XA1-PadAREF)"
+    "unconnected-(XA1-D0_RX0-PadD0)" "unconnected-(XA1-D1_TX0-PadD1)" "AUX-HEAD-3" "AUX-HEAD-1" "DMX-RX" "AUX-HEAD-4" "AUX-HEAD-2" "DMX-TX"
+    "AUX-HEAD-6" "AUX-HEAD-5" "AUX-HEAD-7" "AUX-HEAD-8" "AUX-HEAD-10" "AUX-HEAD-9" "AUX-HEAD-11" "AUX-HEAD-12"
+    "AUX-HEAD-13" "AUX-HEAD-14" "AUX-HEAD-15" "AUX-HEAD-16" "AUX-HEAD-17" "AUX-HEAD-18" "AUX-HEAD-19" "AUX-HEAD-27"
+    "AUX-HEAD-21" "AUX-HEAD-20" "AUX-HEAD-22" "AUX-HEAD-24" "AUX-HEAD-23" "AUX-HEAD-25" "AUX-HEAD-26" "unconnected-(XA1-RESET-PadRST1)"
+    "unconnected-(XA1-SPI_SCK-PadSCK)" "unconnected-(XA1-SPI_MISO-PadMISO)" "unconnected-(XA1-SPI_MOSI-PadMOSI)" "unconnected-(U2-RO-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
