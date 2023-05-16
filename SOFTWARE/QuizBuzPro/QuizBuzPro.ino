@@ -63,12 +63,12 @@ int SCORE_[10]  = {0,0,0,0,0,0,0,0};
 //int busy = A4;
 
 //not sure why this needs to be here and not in the IF.
-int TEAM_1bp = 0;
+/* int TEAM_1bp = 0;
 int TEAM_2bp = 0;
 int TEAM_3bp = 0;
 int TEAM_4bp = 0;
 int TEAM_5bp = 0;
-int TEAM_6bp = 0;
+int TEAM_6bp = 0;*/
 
 
 void setup() {
