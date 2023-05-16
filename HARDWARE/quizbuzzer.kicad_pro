@@ -798,6 +798,10 @@
       },
       {
         "netclass": "Default",
+        "pattern": "Net-(J6-Pad1)"
+      },
+      {
+        "netclass": "Default",
         "pattern": "Net-(J6-Pad3)"
       },
       {
