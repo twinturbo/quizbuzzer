@@ -10,6 +10,8 @@
 #  #    21/12/22   20:31   RC   S     V0.1.0 Initial Version Completed,  Labels, Values, Footprints.                                    #
 #  #4   24/02/22   XX:XX   RC   SP    V0.1.0 Updated and Sent for Printing.                                                               #
 #  #5   11/03/23   16:00   RC   SP    V0.1.1 Power input reverse, MP3 moved to board corner, Mega moved sor space, recivers moved for fit #
+#  #6   16/05/23   12:43   RC   C     Significant Code Updates Prior, Compiled correctly.                                                 #
+#  #7   16/05/23   12:43   RC   C     Code  V0.2.0 Baselined - Aded DMXSerial Library updating ~line33 to define USART1 in DMXSerial_avr.h in the library#
 ###########################################################################################################################################
 
 

@@ -1,7 +1,14 @@
+#include <DMXSerial.h>
+#include <DMXSerial_avr.h>
+#include <DMXSerial_megaavr.h>
+
 /*
 Quizbuzz by R Clayton 
 For Arduino Mega Pro Mini
- */
+V0.2.0
+
+*/
+
 
 
 //Physical Pin Assignment
