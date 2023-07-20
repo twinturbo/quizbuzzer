@@ -22,6 +22,8 @@ int CORRECT = BUT_[2];
 int WRONG = BUT_[3];
 
 //digital write lamps
+
+//IS THIS CORRECT??
 int BUZZ_[10] = {11,12,13,22,23,24,25,26};
 
 //digital mp3
