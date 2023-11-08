@@ -2,6 +2,10 @@
 #include <DMXSerial_avr.h>
 #include <DMXSerial_megaavr.h>
 
+//int myArray[] = {10,20,30,40,50};
+//for (int xy : myArray) { } // for each element in the array  Serial.println(xy);
+
+
 /*
 Quizbuzz by R Clayton 
 For Arduino Mega Pro Mini
@@ -13,28 +17,38 @@ V0.2.0
 
 //Physical Pin Assignment
 //digital reciver reads
-int TEAM_[10] = {37,38,39,40,41,42,43,43,45,46};
+// 8 Teams
+//Need to set portL as input
+int TEAM_[] = {XX,XX,XX,XX,XX,XX,XX,XX};
+
 
 //digital button reads
-int BUT_[8] = {29,30,31,32,33,34,35,36};
+//8-11-23  updated array values to new Version Board 
+// Need to set portC as input
+int BUT_[] = {42,43,44,45,46,47,48,49};
 int RESET = BUT_[1];
 int CORRECT = BUT_[2];
 int WRONG = BUT_[3];
 
 //digital write lamps
-
 //IS THIS CORRECT??
-int BUZZ_[10] = {11,12,13,22,23,24,25,26};
+//8-11-23  updated array values to new Version Board 
+int BUZZ_[] = {22,23,24,25,26,27,28,29};
+
 
 //digital mp3
-int PORTB_1 = 4;
-int PORTB_2 = 5;
-int PORTB_3 = 6;
-int PORTB_4 = 7;
-int PORTB_5 = 50;
-int PORTB_6 = 51;
-int PORTB_7 = 52;
-int PORTB_8 = 53;
+// 8/11/23 - updated pins , 
+// need to decrement port number by 1, 
+//need to set portB as output.
+
+int PORTB_1 = 53;
+int PORTB_2 = 52;
+int PORTB_3 = 51;
+int PORTB_4 = 50;
+int PORTB_5 = 10
+int PORTB_6 = 11
+int PORTB_7 = 12
+int PORTB_8 = 13
 int MP3_EN = 2;
 
 
@@ -43,8 +57,28 @@ int DMX_RX = 19;
 int DMX_TX = 18;
 
 //AUXILIARY
+// All worong
 int AUX_[27] = {17,16,15,14,A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,47,48,49,3,8,9,10};
 // 
+
+
+/* Unverified from here
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  
+ *  
+ */
+
+
+
+
+
+
+
 
 long randNumber;
 char receivedChar = "";
