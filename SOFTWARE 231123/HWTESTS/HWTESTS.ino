@@ -34,27 +34,24 @@ void loop() {
   delay(500);
   digitalWrite(11,LOW);
   delay(200);*/
-  PORTB = B11111111; 
-  //digitalWrite(PORTB_1,HIGH);
-  /*digitalWrite(PORTB_2,HIGH);
-  digitalWrite(PORTB_3,HIGH);
-  digitalWrite(PORTB_4,HIGH);
-  digitalWrite(PORTB_5,HIGH);
-  digitalWrite(PORTB_6,HIGH);
-  digitalWrite(PORTB_7,HIGH);
-  digitalWrite(PORTB_8,HIGH);*/
-  delay(2000);
+  PORTB = B01111111;
+  delay(2000); 
+  PORTB = B10111111;
+  delay(2000); 
   PORTB = B11011111;
-  //digitalWrite(PORTB_1,LOW);
-  /*digitalWrite(PORTB_2,LOW);
-  digitalWrite(PORTB_3,LOW);
-  digitalWrite(PORTB_4,LOW);
-  digitalWrite(PORTB_5,LOW);
-  digitalWrite(PORTB_6,LOW);
-  digitalWrite(PORTB_7,LOW);
-  digitalWrite(PORTB_8,LOW);*/
-  delay(1000); 
-
-  
-  
+  delay(2000); 
+  PORTB = B11101111;
+  delay(2000); 
+  PORTB = B11101111;
+  delay(2000); 
+  PORTB = B11110111;
+  delay(2000); 
+  PORTB = B11111011;
+  delay(2000); 
+  PORTB = B11111101;
+  delay(2000); 
+  PORTB = B11111110;
+  delay(2000); 
+  PORTB = B11111111;
+  delay(2000); 
 }

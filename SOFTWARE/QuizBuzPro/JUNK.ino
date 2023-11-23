@@ -1,9 +1,0 @@
-  /*pinMode(TEAM_[2], INPUT_PULLUP);
-  pinMode(TEAM_3,INPUT_PULLUP);
-  pinMode(TEAM_4,INPUT_PULLUP);
-  pinMode(TEAM_5,INPUT_PULLUP);
-  pinMode(TEAM_6,INPUT_PULLUP);
-  pinMode(TEAM_7,INPUT_PULLUP);
-  pinMode(TEAM_8,INPUT_PULLUP);
-  pinMode(TEAM_9,INPUT_PULLUP);
-  pinMode(TEAM_10,INPUT_PULLUP);*/
