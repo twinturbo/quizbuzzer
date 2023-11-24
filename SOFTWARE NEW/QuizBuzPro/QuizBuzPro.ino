@@ -19,6 +19,9 @@ V0.2.0
 // 8 Teams
 //Need to set portL as input
 int TEAM_[] = {42,43,44,45,46,47,48,49};
+int DMX_X_[] = {0,0,0,0,0,0};
+int DMX_Y_[] = {0,0,0,0,0,0};
+int DMX_Z_[] = {0,0,0,0,0,0};
 
 
 //digital button reads
@@ -122,6 +125,9 @@ void setup() {
   for (int x=0 ; x<8; x++){ 
    pinMode(BUT_[x], INPUT_PULLUP);
   }
+
+
+  DMX_SETUP();
   /*for (int x=0 ; x<8; x++){ 
    pinMode(BUZZ_[x], OUTPUT);
    digitalWrite(BUZZ_[x],HIGH);
