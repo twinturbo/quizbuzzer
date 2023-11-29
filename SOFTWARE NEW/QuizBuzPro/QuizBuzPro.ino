@@ -2,15 +2,10 @@
 #include <DMXSerial_avr.h>
 #include <EEPROM.h>
 
-//int myArray[] = {10,20,30,40,50};
-//for (int xy : myArray) { } // for each element in the array  Serial.println(xy);
-
-
 /*
 Quizbuzz by R Clayton 
 For Arduino Mega Pro Mini
 V0.2.0
-
 */
 
 
@@ -19,10 +14,18 @@ V0.2.0
 //digital reciver reads
 // 8 Teams
 //Need to set portL as input
-int TEAM_[] = {42,43,44,45,46,47,48,49};
+int TEAM_[] = {44,45,46,47,48,49};
 int DMX_X_[] = {0,0,0,0,0,0};
 int DMX_Y_[] = {0,0,0,0,0,0};
 int DMX_Z_[] = {0,0,0,0,0,0};
+int FixMap = 0;
+int Shutter = 1+3 ; //240
+int Dimmer = 2+3 ; //255
+int Colour = 3+3 ; // red 84, gren60, white 0
+int Focus = 6+3 ; //0-255
+int Pans = 8+3 ; //0=255
+int Tilt = 10+3 ; //0-255
+int Speed = 12+3 ; //3-245 fast - slow
 
 
 //digital button reads
@@ -43,15 +46,7 @@ int BUZZ_[] = {22,23,24,25,26,27,28,29};
 // 8/11/23 - updated pins , 
 // need to decrement port number by 1, 
 //need to set portB as output.
-/*
-int PORTB_1 = 53;
-int PORTB_2 = 52;
-int PORTB_3 = 51;
-int PORTB_4 = 50;
-int PORTB_5 = 10;
-int PORTB_6 = 11;
-int PORTB_7 = 12;
-int PORTB_8 = 13;*/
+
 int MP3_EN = 2;
 
 
@@ -115,7 +110,7 @@ void setup() {
   // put your setup code here, to run once:]
   Serial.begin(9600);
   //pinMode(reset,INPUT_PULLUP);
-  for (int x=0 ; x<8; x++){ 
+  for (int x=0 ; x<6; x++){ 
    pinMode(TEAM_[x], INPUT_PULLUP);
   }
   pinMode(42, INPUT_PULLUP);
@@ -128,7 +123,7 @@ void setup() {
   }
 
   DMX_LOAD();
-  //DMX_SETUP();
+  DMX_SETUP();
   /*for (int x=0 ; x<8; x++){ 
    pinMode(BUZZ_[x], OUTPUT);
    digitalWrite(BUZZ_[x],HIGH);
@@ -148,14 +143,14 @@ void loop() {
   if (readystate == 1){
   //Serial.print(TEAM_[0]); Serial.print(" T1 "); Serial.println(digitalRead(TEAM_[0]));
   //Serial.print(TEAM_[1]); Serial.print(" T2 "); Serial.println(digitalRead(TEAM_[1]));
-  //if (digitalRead(TEAM_[0]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; receivedChar = 'k' ;  digitalWrite(BUZZ_[0], LOW); soundoutput(); }
-  //if (digitalRead(TEAM_[1]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'W' ;  digitalWrite(BUZZ_[1], LOW); soundoutput(); }
-  if (digitalRead(TEAM_[2]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 's' ;  digitalWrite(BUZZ_[2], LOW); soundoutput(); }
-  if (digitalRead(TEAM_[3]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 'm' ;  digitalWrite(BUZZ_[3], LOW); soundoutput(); }
-  if (digitalRead(TEAM_[4]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 't' ;  digitalWrite(BUZZ_[4], LOW); soundoutput(); }
-  if (digitalRead(TEAM_[5]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[5], LOW);  soundoutput(); }   
-  if (digitalRead(TEAM_[6]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts7); Serial.println(" Answered"); SCORE_[6]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[6], LOW);  soundoutput(); }   
-  if (digitalRead(TEAM_[7]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts8); Serial.println(" Answered"); SCORE_[7]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[7], LOW);  soundoutput(); }   
+  if (digitalRead(TEAM_[0]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; receivedChar = 'k' ;  digitalWrite(BUZZ_[0], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[1]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'W' ;  digitalWrite(BUZZ_[1], LOW); soundoutput(); }
+  if (digitalRead(TEAM_[2]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 's' ;  digitalWrite(BUZZ_[2], LOW);  MOVE_HEAD(1,'W'); soundoutput(); }
+  if (digitalRead(TEAM_[3]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 'm' ;  digitalWrite(BUZZ_[3], LOW);   MOVE_HEAD(2,'W'); soundoutput(); }
+  if (digitalRead(TEAM_[4]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 't' ;  digitalWrite(BUZZ_[4], LOW);   MOVE_HEAD(3,'W'); soundoutput(); }
+  if (digitalRead(TEAM_[5]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[5], LOW);  MOVE_HEAD(4,'W'); soundoutput(); }   
+  //if (digitalRead(TEAM_[6]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts7); Serial.println(" Answered"); SCORE_[6]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[6], LOW);  MOVE_HEAD(5,'W'); soundoutput(); }   
+  //if (digitalRead(TEAM_[7]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts8); Serial.println(" Answered"); SCORE_[7]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[7], LOW);  MOVE_HEAD(6,'W'); soundoutput(); }   
   }
  
   delay(10);

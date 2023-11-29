@@ -6,8 +6,8 @@ void soundoutput() {
   if (receivedChar == 'm' ) { PORTB = B11111011;  team = 4;   score(); OUTOFF();} // } //TEAM_4 sound 0004
   if (receivedChar == 't' ) { PORTB = B11111010;  team = 5;   score(); OUTOFF();} // } //TEAM_5 sound 0005
   if (receivedChar == 'h' ) { PORTB = B11111001;  team = 6;   score(); OUTOFF();} // } //TEAM_6 sound 0006
-  if (receivedChar == 's' ) { PORTB = B11111100;  team = 7;   score(); OUTOFF();} // } //TEAM_3 sound 0003
-  if (receivedChar == 'm' ) { PORTB = B11111011;  team = 8;   score(); OUTOFF();} // } //TEAM_4 sound 0004
+  //if (receivedChar == 's' ) { PORTB = B11111100;  team = 7;   score(); OUTOFF();} // } //TEAM_3 sound 0003
+  //if (receivedChar == 'm' ) { PORTB = B11111011;  team = 8;   score(); OUTOFF();} // } //TEAM_4 sound 0004
  
   //Music  
   if (receivedChar == '1' ) { PORTB = B11111000;  OUTOFF();} // delay(500); } //007 Gladiator
