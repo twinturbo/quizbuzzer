@@ -1,0 +1,168 @@
+
+(session rxhardware.ses
+  (base_design rxhardware.dsn)
+  (placement
+    (resolution um 10)
+    (component Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical
+      (place J1 1491860 -877380 front 90)
+    )
+    (component MountingHole:MountingHole_3.2mm_M3_DIN965_Pad
+      (place H1 1568980 -969250 front 0)
+    )
+    (component "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical"
+      (place J2 1705620 -960880 front 180)
+    )
+    (component "AA-ROB-FULL:CR2032-HOLDER-VERTICAL"
+      (place BT1 1713390 -854490 front 180)
+    )
+    (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
+      (place R1 1699510 -915490 front 180)
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical
+      (place AE1 1682490 -877380 front 0)
+    )
+    (component LED_THT:LED_D3.0mm
+      (place D1 1502490 -954960 front 270)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version 7.0.2)
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net "Net-(BT1-+)"
+        (wire
+          (path F.Cu 2500
+            1551790 -842990
+            1651790 -842990
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1629420 -960880
+            1641373 -960880
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1651790 -842990
+            1656114 -847314
+            1656114 -934186
+            1641373 -948927
+            1641373 -960880
+          )
+        )
+      )
+      (net "Net-(BT1--)"
+        (wire
+          (path B.Cu 2500
+            1601790 -805990
+            1633362 -805990
+            1699510 -872138
+            1699510 -915490
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1699510 -915490
+            1680220 -934780
+            1680220 -960880
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1491860 -877380
+            1503613 -877380
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1601790 -805990
+            1570596 -805990
+            1503613 -872973
+            1503613 -877380
+          )
+        )
+      )
+      (net "Net-(D1-K)"
+        (wire
+          (path F.Cu 2500
+            1502490 -954960
+            1514743 -954960
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1514743 -954960
+            1554213 -915490
+            1623310 -915490
+          )
+        )
+      )
+      (net "Net-(D1-A)"
+        (wire
+          (path B.Cu 2500
+            1517260 -937202
+            1517260 -877380
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1502490 -980360
+            1517260 -965590
+            1517260 -937202
+          )
+        )
+        (wire
+          (path B.Cu 2500
+            1517260 -937202
+            1581234 -937202
+            1619337 -975305
+            1640395 -975305
+            1654820 -960880
+          )
+        )
+      )
+      (net "Net-(J1-Pin_4)"
+        (wire
+          (path F.Cu 2500
+            1568060 -877380
+            1579813 -877380
+          )
+        )
+        (wire
+          (path F.Cu 2500
+            1705620 -960880
+            1633873 -889133
+            1587892 -889133
+            1579813 -881054
+            1579813 -877380
+          )
+        )
+      )
+      (net "Net-(AE1-A)"
+        (wire
+          (path F.Cu 2500
+            1682490 -877380
+            1644260 -877380
+          )
+        )
+      )
+    )
+  )
+)
