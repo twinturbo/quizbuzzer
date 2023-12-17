@@ -4,12 +4,12 @@ void soundoutput(){
   //Serial.print("Recived IN Loop"); Serial.println(receivedChar);
   //delay(2000);
   Serial.println("=====================================");
-  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W');  OUTOFF();}
-  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W');  OUTOFF();} 
-  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W');  OUTOFF();} 
-  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts4); team = 4; MOVE_HEAD(4,'W');  OUTOFF();} 
-  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts5); team = 5; MOVE_HEAD(5,'W');  OUTOFF();} 
-  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts6); team = 6; MOVE_HEAD(6,'W');  OUTOFF();} 
+  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts1);  OUTOFF();}
+  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts2); OUTOFF();} 
+  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts3); OUTOFF();} 
+  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts4); team = 4; MOVE_HEAD(4,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts4); OUTOFF();} 
+  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts5); team = 5; MOVE_HEAD(5,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts5); OUTOFF();} 
+  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts6); team = 6; MOVE_HEAD(6,'W'); lcd.clear();lcd.setCursor(0,0);lcd.print(ts6); OUTOFF();} 
   // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
   
   //Decrement
@@ -27,53 +27,54 @@ void soundoutput(){
   //if (receivedChar == "m" ) { PORTB = B11111011;  team = 8;   score(); OUTOFF();} // } //TEAM_4 sound 0004
  
   //Adverts 
-  if (receivedChar == "a1")  { PORTB = B11101011; OUTOFF();}  //Cadburys
-  if (receivedChar == "a2")  { PORTB = B11101010; OUTOFF();}  //
-  if (receivedChar == "a3")  { PORTB = B11101000; OUTOFF();}  //Snickerrs
-  if (receivedChar == "a4")  { PORTB = B11100111; OUTOFF();}  //
-  if (receivedChar == "a5")  { PORTB = B11100110; OUTOFF();}  //Milky Way
-  if (receivedChar == "a6")  { PORTB = B11100101; OUTOFF();}  //
-  if (receivedChar == "a7")  { PORTB = B11100100; OUTOFF();}  //Birdsey
-  if (receivedChar == "a8")  { PORTB = B11100011; OUTOFF();}  //
-  if (receivedChar == "a9")  { PORTB = B11100010; OUTOFF();}  //Aquafresh
-  if (receivedChar == "a10") { PORTB = B11100001; OUTOFF();}  //
-  if (receivedChar == "a11") { PORTB = B11100000; OUTOFF();}  //Ferero Roche
-  if (receivedChar == "a12") { PORTB = B11011111; OUTOFF();}  //
-  if (receivedChar == "a13") { PORTB = B11011111; OUTOFF();}  //PG TIPS
-  if (receivedChar == "a14") { PORTB = B11011110; OUTOFF();}  //
-  if (receivedChar == "a15") { PORTB = B11011101; OUTOFF();}  //Lurpack
-  if (receivedChar == "a16") { PORTB = B11011100; OUTOFF();}  //
-  if (receivedChar == "a17") { PORTB = B11011011; OUTOFF();}  //Brut
-  if (receivedChar == "a18") { PORTB = B11011010; OUTOFF();}  //
-  if (receivedChar == "a19") { PORTB = B11011001; OUTOFF();}  //Fanta
-  if (receivedChar == "a20") { PORTB = B11011000; OUTOFF();}  //
+  if (receivedChar == "a1")  { PORTB = B11101011; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");}  //Cadburys
+  if (receivedChar == "a2")  { PORTB = B11101010; OUTOFF();}  // Domestos
+  if (receivedChar == "a3")  { PORTB = B11101000; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Snickers");}  //Snickerrs
+  if (receivedChar == "a4")  { PORTB = B11100111; OUTOFF();}  // Old Spice Oh Forytuna
+  if (receivedChar == "a5")  { PORTB = B11100110; OUTOFF();} lcd.clear();lcd.setCursor(0,0);lcd.print("Milky Way");  //Milky Way
+  if (receivedChar == "a6")  { PORTB = B11100101; OUTOFF();}  // Jimmy!!! Safety Video 
+  if (receivedChar == "a7")  { PORTB = B11100100; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Birdseye");}  //Birdsey
+  if (receivedChar == "a8")  { PORTB = B11100011; OUTOFF();}  // Lilt 
+  if (receivedChar == "a9")  { PORTB = B11100010; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Aquafresh");}  //Aquafresh
+  if (receivedChar == "a10") { PORTB = B11100001; OUTOFF();}  // Ford Everythin gwe do is driven by you
+  if (receivedChar == "a11") { PORTB = B11100000; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Ferero Roche");}  //Ferero Roche
+  if (receivedChar == "a12") { PORTB = B11011111; OUTOFF();}  // Hovis
+  if (receivedChar == "a13") { PORTB = B11011111; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("PG Tips");}  //PG TIPS
+  if (receivedChar == "a14") { PORTB = B11011110; OUTOFF();}  // Umbpongo
+  if (receivedChar == "a15") { PORTB = B11011101; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Lurpack");}  //Lurpack
+  if (receivedChar == "a16") { PORTB = B11011100; OUTOFF();}  // Milk Tray
+  if (receivedChar == "a17") { PORTB = B11011011; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Brut");}  //Brut
+  if (receivedChar == "a18") { PORTB = B11011010; OUTOFF();}  // Castlemain
+  if (receivedChar == "a19") { PORTB = B11011001; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Fanta");}  //Fanta
+  if (receivedChar == "a20") { PORTB = B11011000; OUTOFF();}  // The Lion Goes from strenght to Strengh Peugot
     
    //Films 
   
-  if (receivedChar == "f1")  { PORTB = B11010000; OUTOFF();} // Fast and Furious ( Hector Order )
+  if (receivedChar == "f1")  { PORTB = B11010000; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Fast And Furiois"); } // Fast and Furious ( Hector Order )
   if (receivedChar == "f2")  { PORTB = B11001111; OUTOFF();} // Cut the hard lines ( Transforemess )
-  if (receivedChar == "f3")  { PORTB = B11001110; OUTOFF();} // Ground Hog day
+  if (receivedChar == "f3")  { PORTB = B11001110; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Ground Hog Day");} // Ground Hog day
   if (receivedChar == "f4")  { PORTB = B11001101; OUTOFF();} // Now what the fuckare we suppoosed to do (Aliens)
-  if (receivedChar == "f5")  { PORTB = B11001100; OUTOFF();} // Home Alone 2
+  if (receivedChar == "f5")  { PORTB = B11001100; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Home Alone 2");} // Home Alone 2
   if (receivedChar == "f6")  { PORTB = B11001011; OUTOFF();} // Hal 2001
-  if (receivedChar == "f7")  { PORTB = B11001010; OUTOFF();} // Monthy Python the Meaning of life
+  if (receivedChar == "f7")  { PORTB = B11001010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Monty Pithon Meaning of Life");} // Monthy Python the Meaning of life
   if (receivedChar == "f8")  { PORTB = B11001001; OUTOFF();} // Tower this is Ghoist ruider ( Top Gun )
-  if (receivedChar == "f9")  { PORTB = B11001000; OUTOFF();} // Muppet Christmas Carrol
+  if (receivedChar == "f9")  { PORTB = B11001000; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Muppet Christmas Carol");} // Muppet Christmas Carrol
   if (receivedChar == "f10") { PORTB = B11000111; OUTOFF();} // Don't Shoot Tha greenn Shit at me ( Independance day )
-  if (receivedChar == "f11") { PORTB = B11000110; OUTOFF();} // Shawshank Redemption 
+  if (receivedChar == "f11") { PORTB = B11000110; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Shawchank Redemtion");} // Shawshank Redemption 
   if (receivedChar == "f12") { PORTB = B11000101; OUTOFF();} // Negative ghostrider , the paterni is full ( Top Gun )
-  if (receivedChar == "f13") { PORTB = B11000100; OUTOFF();} // Star Wars New Hope
+  if (receivedChar == "f13") { PORTB = B11000100; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Star wars New Hope");} // Star Wars New Hope
   if (receivedChar == "f14") { PORTB = B11000011; OUTOFF();} // Game Over ( Alien )
-  if (receivedChar == "f15") { PORTB = B11000010; OUTOFF();} // The Lion King
+  if (receivedChar == "f15") { PORTB = B11000010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Lion King");} // The Lion King
   if (receivedChar == "f16") { PORTB = B11000001; OUTOFF();} // it's a nUix System ( Jurassic Park )
-  if (receivedChar == "f17") { PORTB = B11000000; OUTOFF();} // Titanic 
+  if (receivedChar == "f17") { PORTB = B11000000; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Titanic");} // Titanic 
   if (receivedChar == "f18") { PORTB = B10111111; OUTOFF();} // That's not a knife, this is a Knife ( Crocadile Dundee 2)
-  if (receivedChar == "f19") { PORTB = B10111110; OUTOFF();} // Wolf Of wall Street
+  if (receivedChar == "f19") { PORTB = B10111110; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Wolf of wall street");} // Wolf Of wall Street
   if (receivedChar == "f20") { PORTB = B10111101; OUTOFF();} // It's the last of the V8 Interceptors.
  
   if (receivedChar == "c" ) {
       randNumber = random(1,6);
       Serial.print("Right "); Serial.println(randNumber);
+      lcd.clear();lcd.setCursor(0,1);lcd.print("THAT'S RIGHT");
       /*DMXSerial.write(Colour,72);
       delay(2000);
       DMXSerial.write(Colour,54);
@@ -114,6 +115,7 @@ void soundoutput(){
          
      randNumber = random(1,6);
      Serial.print("wrong "); Serial.println(randNumber);
+     lcd.clear();lcd.setCursor(0,1);lcd.print("WHO'S A MUPPIT!!");
      if (randNumber == 1 ) { PORTB = B11111110; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 2 ) { PORTB = B11111101; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 3 ) { PORTB = B11111100; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
@@ -170,6 +172,7 @@ void soundoutput(){
   String reset = Serial.readString();reset.trim();
   if ( reset == "e" ) { receivedChar = "Exit"; 
   Serial.print("reset2"); 
+  lcd.clear();lcd.setCursor(0,1);lcd.print("RE-ARM >>>>>>>");
   delay(4000);
   DMXSerial.write(Colour,0);
   score();

@@ -1,6 +1,10 @@
 #include <DMXSerial.h>
+//DMXX library on port2
 #include <DMXSerial_avr.h>
 #include <EEPROM.h>
+#include <LiquidCrystal_I2C.h>
+#include <Wire.h>
+LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x27, 16, 2);
 
 /*
 Quizbuzz by R Clayton 
@@ -88,11 +92,18 @@ String receivedChar = "hello";
 int team = 0;
 int readystate = 1;
 String ts1 = " Darren to be differnt - Kelton"; // Carlisle Institute of Squirrels and Technology
+String lcs1 = "DK";
 String ts2 = " Bessiesw BEsties   - Bestwick"; // Ducks Uni Cambridge
+String lcs2 = "JB";
 String ts3 = " Tashly whers ya Ash  - Wilson"; // Sumbag Uni Oxford
+String lcs3 = "AW";
 String ts4 = " APaulin Performance - Haliday"; // University of No Eye Deer.
+String lcs4 = "PH";
 String ts5 = " Cooo n Tooo in ma bru  - McClay "; // Llowda Tones University 
+String lcs5 = "MM";
 String ts6 = " Tones of Time  - Tones "; // university of life 
+String lcs6 = "LT";
+
 //String ts7 = "  ---  - Halliday"; // university of life 
 //String ts8 = "  ---  - Halliday"; // university of life 
 
@@ -108,6 +119,13 @@ int TEAM_6bp = 0;*/
 
 
 void setup() {
+  lcd.init();
+  lcd.backlight();
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("QUIZ BUZZER PRO!");
+   lcd.setCursor(0, 1);
+  lcd.print("================");
   DDRA = B11111111;
   PORTA = B00000000;
   DDRB = B11111111;
@@ -131,7 +149,8 @@ void setup() {
   //7BUTTON_CHECK();
   //lampcheck();
   DMX_LOAD();
-  DMX_SETUP();
+  DMX_DISPLAY();
+  delay(2000);
   /*for (int x=0 ; x<8; x++){ 
    pinMode(BUZZ_[x], OUTPUT);
    digitalWrite(BUZZ_[x],HIGH);

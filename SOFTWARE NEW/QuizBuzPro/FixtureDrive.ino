@@ -3,7 +3,8 @@ void FixtureDrive() {
   int CMap = FixMap;
   String strf = "";
   while (strf != "exit" ) {
-    
+    lcd.clear();lcd.setCursor(0, 0);lcd.print(" FIXTURE DRIVE");
+    lcd.setCursor(0, 1);            lcd.print("================");
     Serial.println("===============================");
     Serial.println("Fixture Drive");
     Serial.println("===============================");
