@@ -1,4 +1,4 @@
-void FixtureSelect() {
+void FIXTURE_SELECT() {
   CLS();
   int CMap = FixMap;
   String strf = "";

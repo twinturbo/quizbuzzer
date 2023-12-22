@@ -1,10 +1,11 @@
-void FixtureDrive() {
+void FIXTURE_DRIVE() {
   CLS();
   int CMap = FixMap;
   String strf = "";
   while (strf != "exit" ) {
-    lcd.clear();lcd.setCursor(0, 0);lcd.print(" FIXTURE DRIVE");
-    lcd.setCursor(0, 1);            lcd.print("================");
+    lcd.clear();lcd.setCursor(0, 0);lcd.print("====================");
+    lcd.setCursor(0, 1);            lcd.print("   FIXTURE DRIVE");
+    lcd.setCursor(0, 2);            lcd.print("====================");
     Serial.println("===============================");
     Serial.println("Fixture Drive");
     Serial.println("===============================");
