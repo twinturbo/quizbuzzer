@@ -10,8 +10,8 @@ void UTILITY_MENU(){
        char_u_m = Serial.readString();char_u_m.trim();
        if ( char_u_m == "S" ) { DMX_SETUP();}
        if ( char_u_m == "F" ) { FIXTURE_DRIVE();}
-       if ( char_u_m == "L" ) { DMX_LOAD();UTILITY_MX();UTILITY_MX();}
-       if ( char_u_m == "W" ) { DMX_SAVE();UTILITY_MX();UTILITY_MX();}
+       if ( char_u_m == "L" ) { DMX_LOAD();UTILITY_MX();}
+       if ( char_u_m == "W" ) { DMX_SAVE();UTILITY_MX();}
        if ( char_u_m == "FS" ) {FIXTURE_SELECT();}
        if ( char_u_m == "V" ) { DMX_DISPLAY();delay(5000);UTILITY_MX();}
        if ( char_u_m == "G" ) { GO_GREEN(); delay(1000); GO_BLUE(); delay(1000); GO_WHITE(); delay(1000); GO_RED(); delay(1000); GO_HOME();delay(2000);UTILITY_MX();} //GOOD

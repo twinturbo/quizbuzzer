@@ -35,6 +35,18 @@ int SCORE_[]  = {0,0,0,0,0,0,0,0};
 
 
 
+struct dmxdata
+{ 
+    int PAN;
+    int TILT;
+    int FOCUS;
+    int ZOOM;
+};
+
+dmxdata dmxset[6];
+
+
+
 //DMX Values for moving head per team
 int DMX_X_[] = {0,0,0,0,0,0};
 int DMX_Y_[] = {0,0,0,0,0,0};
