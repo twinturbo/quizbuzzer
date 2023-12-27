@@ -1,7 +1,7 @@
 void DMX_SAVE(){
 CLS();
 Serial.println("Saving DMX Values To EEPROM");
-Serial.println("===============================");
+LINES();
 Serial.print(" Saving X ");
 lcd.clear();lcd.setCursor(0, 0);lcd.print("SAVING X");
 lcd.setCursor(0, 1);
@@ -24,7 +24,7 @@ lcd.clear();lcd.setCursor(0, 0);lcd.print("SAVING F");
 lcd.setCursor(0, 1);
 for (int f=0 ; f<6; f++){EEPROM.write(f+20,DMX_F_[f]);Serial.print(">>");lcd.print(">>");delay(200);}
 Serial.println();
-Serial.println("===============================");
+LINES();
 Serial.println("Saved To EEPROM");
 lcd.setCursor(0, 0);lcd.print("Saved To EEPROM");
 lcd.setCursor(0, 1);lcd.print("<<<<<<<<>>>>>>>>");

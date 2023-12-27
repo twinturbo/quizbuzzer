@@ -3,12 +3,12 @@ void FIXTURE_DRIVE() {
   int CMap = FixMap;
   String strf = "";
   while (strf != "exit" ) {
-    lcd.clear();lcd.setCursor(0, 0);lcd.print("====================");
+    lcd.clear();LINE(0);
     lcd.setCursor(0, 1);            lcd.print("   FIXTURE DRIVE");
-    lcd.setCursor(0, 2);            lcd.print("====================");
-    Serial.println("===============================");
+    LINE(2);
+    LINES();
     Serial.println("Fixture Drive");
-    Serial.println("===============================");
+    LINES();
     //FLUSH();
     int TCf = 256;
     int XAX = 0;
@@ -23,7 +23,7 @@ void FIXTURE_DRIVE() {
     int TableD = 0;
     
     FLUSH();
-    Serial.println("===============================");
+    LINES();
     Serial.println("Select Table 1-6 or 10 to Exit");
     //========
     while ( TableD != 10 ){ 
@@ -72,24 +72,24 @@ void FIXTURE_DRIVE() {
 
 void DRIVE_MENU(int x){
   //CLS();
-  Serial.println("================================");
+  LINES();
   Serial.print(" Values For Table > "); Serial.println(x); 
-  Serial.println("=============================");
+  LINES();
   Serial.println("= Pan = Tilt = Zoom = Focus =");
-  Serial.println("=============================");
+  LINES();
   Serial.print ("  ");Serial.print(DMX_X_[x-1]);
   Serial.print("  "); Serial.print (DMX_Y_[x-1]); 
   Serial.print ("  "); Serial.print(DMX_Z_[x-1]); 
   Serial.print ("  "); Serial.println (DMX_F_[x-1]);
-  Serial.println("===============================");
+  LINES();
   Serial.println("= Select Option for the Table =");
-  Serial.println("===============================");
+  LINES();
   Serial.println("X to Set Pan");
   Serial.println("Y to Set Tilt");
   Serial.println("Z to Set Zoom");
   Serial.println("F to Set Focus");
   Serial.println("E to Select other table");
   Serial.println("S to Save now");
-  Serial.println("===============================");
+  LINES();
   
 }

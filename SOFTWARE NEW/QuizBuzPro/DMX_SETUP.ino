@@ -1,9 +1,9 @@
 void DMX_SETUP(){
     CLS();
     Menu:
-    Serial.println("===============================");
+    LINES();
     Serial.println("DMX SETUP");
-    Serial.println("===============================");
+    LINES();
     String str = "";
     String param2 = "";
     char param = "" ;
@@ -11,10 +11,10 @@ void DMX_SETUP(){
     int TC = 0;          
     while (str != "exit" ) {
           DMX_DISPLAY();
-          lcd.clear();lcd.setCursor(0, 0);lcd.print("====================");
+          lcd.clear();LINE(0);
           lcd.setCursor(0, 1);lcd.print("     DMX SETUP");
-          lcd.setCursor(0, 2);            lcd.print("====================");
-          Serial.println("===============================");
+          LINE(2);
+          LINES();
           Serial.println("Press table number to edit paramaters or 10 to exit ");
           Serial.println("Table 1, 1");
           Serial.println("Table 2, 2");
@@ -26,7 +26,7 @@ void DMX_SETUP(){
           Serial.println("Drive home, 8");
           Serial.println("System Check ,9");
           Serial.println("End, 10");
-          Serial.println("===============================");                
+          LINES();
           FLUSH();
           int TG = 0;
           
@@ -50,7 +50,7 @@ void DMX_SETUP(){
           lcd.clear();lcd.setCursor(0, 0);lcd.print("PARAMATER");
           if (FixMap == 1) {Serial.print("Press X - Pan, Y - Tilt, Z- Zoom  or F Focus .. for Table Paramater");Serial.println(Table);}
           if (FixMap == 2) {Serial.print("Press X - Pan or Y - Tilt .. for Table Paramater");Serial.println(Table);}
-          Serial.println("===============================");    
+          LINES();
           //FLUSH();            
           TC = 0;
           while ( TC == 0 ) {

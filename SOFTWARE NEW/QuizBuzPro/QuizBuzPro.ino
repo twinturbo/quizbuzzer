@@ -34,18 +34,15 @@ int TEAM_[] = {44,45,46,47,48,49};
 int SCORE_[]  = {0,0,0,0,0,0,0,0};
 
 
-
+/*
 struct dmxdata
 { 
-    int PAN;
-    int TILT;
-    int FOCUS;
-    int ZOOM;
-};
+    int PAN, TILT, FOCUS, ZOOM;
+} ;
 
-dmxdata dmxset[6];
-
-
+dmxdata dmxset[5]; 
+dmxset[5].PAN = 50;
+*/
 
 //DMX Values for moving head per team
 int DMX_X_[] = {0,0,0,0,0,0};
@@ -128,6 +125,10 @@ String lcs6 = "DK";
 
 
 
+int scTeam = 9;
+char PlusMinus = 'N';
+  int TeamX = 10 ;
+
 
 
 
@@ -174,17 +175,13 @@ void setup() {
 
 void loop() {
   if (readystate == 1){
-  //Serial.print(TEAM_[0]); Serial.print(" T1 "); Serial.println(digitalRead(TEAM_[0]));
-  //Serial.print(TEAM_[1]); Serial.print(" T2 "); Serial.println(digitalRead(TEAM_[1]));
-  //if (digitalRead(TEAM_[0]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; receivedChar = 'c1' ;  digitalWrite(BUZZ_[0], LOW); SOUND_OUTPUT(); }
-  //if (digitalRead(TEAM_[1]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'c2' ;  digitalWrite(BUZZ_[1], LOW); SOUND_OUTPUT(); }
-  //if (digitalRead(TEAM_[2]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 'c3' ;  digitalWrite(BUZZ_[2], LOW); SOUND_OUTPUT(); }
-  //if (digitalRead(TEAM_[3]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 'c4' ;  digitalWrite(BUZZ_[3], LOW); SOUND_OUTPUT(); }
-  //if (digitalRead(TEAM_[4]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 'c5' ;  digitalWrite(BUZZ_[4], LOW); SOUND_OUTPUT(); }
-  //if (digitalRead(TEAM_[5]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 'c6' ;  digitalWrite(BUZZ_[5], LOW); SOUND_OUTPUT(); }   
-  ////if (digitalRead(TEAM_[6]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts7); Serial.println(" Answered"); SCORE_[6]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[6], LOW);  MOVE_HEAD(5,'W'); SOUND_OUTPUT(); }   
-  ////if (digitalRead(TEAM_[7]) == 1 ) { Serial.println("----------------------------------------------------------------------"); Serial.print(ts8); Serial.println(" Answered"); SCORE_[7]++; readystate = 0; receivedChar = 'h' ;  digitalWrite(BUZZ_[7], LOW);  MOVE_HEAD(6,'W'); SOUND_OUTPUT(); }   
-  }
+  /*if (digitalRead(TEAM_[0]) == 1 ) { LINES(); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; receivedChar = 'c1' ;  digitalWrite(BUZZ_[0], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[1]) == 1 ) { LINES(); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'c2' ;  digitalWrite(BUZZ_[1], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[2]) == 1 ) { LINES(); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 'c3' ;  digitalWrite(BUZZ_[2], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[3]) == 1 ) { LINES(); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 'c4' ;  digitalWrite(BUZZ_[3], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[4]) == 1 ) { LINES(); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 'c5' ;  digitalWrite(BUZZ_[4], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[5]) == 1 ) { LINES(); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 'c6' ;  digitalWrite(BUZZ_[5], LOW); SOUND_OUTPUT(); }   
+  */}
  
   delay(10);
   if (Serial.available() >0){

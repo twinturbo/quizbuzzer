@@ -5,7 +5,6 @@ void SOUND_OUTPUT(){
   //BUZIN
   //Serial.print("Recived IN Loop"); Serial.println(receivedChar);
   //delay(2000);
-  Serial.println("=====================================");
   if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts1);lcd.setCursor(0,2);lcd.print(tm1); LINE(3); OUTOFF();}
   if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts2);lcd.setCursor(0,2);lcd.print(tm2); LINE(3); OUTOFF();} 
   if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts3);lcd.setCursor(0,2);lcd.print(tm3); LINE(3); OUTOFF();} 
@@ -15,7 +14,6 @@ void SOUND_OUTPUT(){
   // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
   
   //Decrement
-  Serial.println("=====================================");
   if (receivedChar == "d1" ) { PORTB = B11111000;  team = 1; MOVE_HEAD(1,'R'); OUTOFF(); DECREMENT();} // } //TEAM_1 sound 0001
   if (receivedChar == "d2" ) { PORTB = B11110111;  team = 2; MOVE_HEAD(2,'R'); OUTOFF(); DECREMENT();} // } //TEAM_2 sound 0002
   if (receivedChar == "d3" ) { PORTB = B11110110;  team = 3; MOVE_HEAD(3,'R'); OUTOFF(); DECREMENT();} // } //TEAM_3 sound 0003
@@ -66,7 +64,7 @@ void SOUND_OUTPUT(){
       randNumber = random(1,10);
       Serial.print("Right "); Serial.println(randNumber);
       lcd.clear();lcd.setCursor(0,0);lcd.print("  Ouda Da Park ");
-      lcd.setCursor(0,1);lcd.print("====================");
+      LINE(1);
                  
       GO_GREEN();
       /*DMXSerial.write(Colour,72);
@@ -136,9 +134,9 @@ void SOUND_OUTPUT(){
      //delay(2000);
      FLUSH();
      OUTOFF();
-     Serial.println("=====================================");
+     LINES();
      Serial.println("e to Reset ");
-     Serial.println("=====================================");
+     LINES();
      lcd.setCursor(0,2);lcd.print(" type e to reset or");
      lcd.setCursor(0,3);lcd.print(" press reset button");
      receivedChar = "exit";
@@ -148,9 +146,10 @@ void SOUND_OUTPUT(){
 
     if (receivedChar == "C" ) { 
       Serial.print("KD");
-      lcd.clear();lcd.setCursor(0,0);lcd.print("====================");
-                  lcd.setCursor(0,1);lcd.print("     CLIFF DOG");
-                  lcd.setCursor(0,2);lcd.print("====================");
+      lcd.clear();
+      LINE(0);
+      lcd.setCursor(0,1);lcd.print("     CLIFF DOG");
+      LINE(2);
       PORTB = B11110010; OUTOFF();
       receivedChar = "null";
       //readystate = 1;

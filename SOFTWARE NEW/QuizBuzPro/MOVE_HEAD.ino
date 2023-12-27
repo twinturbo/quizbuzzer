@@ -1,19 +1,20 @@
 void MOVE_HEAD(int X,char C){
-  lcd.clear();lcd.setCursor(0, 0);lcd.print("====================");
+  lcd.clear();
+  LINE(0);
               lcd.setCursor(0, 1);lcd.print("     MOVE HEAD      ");
-              lcd.setCursor(0, 2);lcd.print("====================");
+  LINE(2);
   int Table = X-1;
   if ( FixMap == 1 ) { 
     
-    Serial.println("======================================");
+    LINES();
     Serial.print("= Setting Moving Head for table = "); Serial.print(X); Serial.println(" =");
-    Serial.println("=====================================");
+    LINES();
     Serial.print("= Focus Set to = "); Serial.println(DMX_Z_[Table]); DMXSerial.write(Focus, DMX_Z_[Table]); 
     Serial.print("= Pan Set to = "); Serial.println(DMX_X_[Table]); DMXSerial.write(Pans, DMX_X_[Table]); 
     Serial.print("= Tilt Set to = "); Serial.println(DMX_Y_[Table]); DMXSerial.write(Tilt, DMX_Y_[Table]);
     Serial.print("= Zoom Set to = "); Serial.println(DMX_F_[Table]); DMXSerial.write(Zoom, DMX_F_[Table]);
     
-    Serial.println("=====================================");
+    LINES();
     if ( C == 'W' ){Serial.println("= Colour Set White"); DMXSerial.write(Colour,0);}
     if ( C == 'R' ){Serial.println("= Colour Set Red"); DMXSerial.write(Colour,18);}
     if ( C == 'G' ){Serial.println("= Colour Set Green"); DMXSerial.write(Colour,54);}
@@ -21,13 +22,13 @@ void MOVE_HEAD(int X,char C){
   }
 
   if ( FixMap == 2 ) { 
-    Serial.println("=====================================");
+    LINES();
     Serial.print("= Setting Moving Head for table = "); Serial.print(X); Serial.println(" =");
-    Serial.println("=====================================");
+    LINES();
     //Serial.print("= Focus Set to = "); Serial.print(DMX_Z_[Table]); DMXSerial.write(Focus, DMX_Z_[Table]); 
     Serial.print("= Pan Set to = "); Serial.println(DMX_X_[Table]); DMXSerial.write(Pans, DMX_X_[Table]); 
     Serial.print("= Tilt Set to = "); Serial.println(DMX_Y_[Table]); DMXSerial.write(Tilt, DMX_Y_[Table]);
-    Serial.println("====================================");
+    LINES();
     
     //Serial.println("Tilt Set"); DMXSerial.write(Tilt, DMX_Z_[X-1]);
     if ( C == 'W' ){Serial.println("= Colour Set White"); DMXSerial.write(Colour,0);}
@@ -36,9 +37,9 @@ void MOVE_HEAD(int X,char C){
     if ( C == 'B' ){Serial.println("= Colour Set Blue"); DMXSerial.write(Colour,72);}
     
   }
-  Serial.println("=====================================");
+  LINES();
   Serial.println("Press Correct Button = command c");
   Serial.println("Press Wrong Button = command w");
-  Serial.println("=====================================");
+  LINES();
   
 }

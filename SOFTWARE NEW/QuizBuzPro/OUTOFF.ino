@@ -6,7 +6,7 @@ if( digitalRead(MP3_EN) == 0 ){
     PORTB = B11111111;
         int playing = 1;
     while ( playing == 1 ) {
-    Serial.println("Playing "); Serial.println(digitalRead(MP3_EN));
+    Serial.print(">> "); Serial.println(digitalRead(MP3_EN));
     delay (500);
     lcd.setCursor(19,3),lcd.print(" ");
     delay (500);

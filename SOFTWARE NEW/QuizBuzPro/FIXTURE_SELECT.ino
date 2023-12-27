@@ -4,22 +4,22 @@ void FIXTURE_SELECT() {
   String strf = "";
   while (strf != "exit" ) {
     
-    Serial.println("===============================");
+    LINES();
     Serial.println("Primary Fixture Select");
-    Serial.println("===============================");
+    LINES();
     if (CMap == 1 ) {
       Serial.println("200 Zoom Selected");
     }
     if (CMap == 2 ) {
       Serial.println("Phantom 250 Selected");
     }
-    Serial.println("===============================");
+    LINES();
     Serial.println("Set Primary Fixture Map");
-    Serial.println("===============================");
+    LINES();
     Serial.println("1) 200 Zoom ");
     Serial.println("2) Phantom 250");
     Serial.println("3) exit");
-    Serial.println("===============================");
+    LINES();
     //FLUSH();
     int TCf = 0;
     while ( TCf == 0 ) {

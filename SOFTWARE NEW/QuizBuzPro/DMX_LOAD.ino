@@ -1,10 +1,11 @@
 void DMX_LOAD(){
 CLS();
 Serial.println("Loading DMX Values From EEPROM");
-Serial.println("===============================");
+LINES();
 lcd.clear(); lcd.setCursor(0, 0); lcd.print(" Loading DMX Values"); 
 lcd.setCursor(0,1);lcd.print("     From EEPROM");
-lcd.setCursor(0, 1);Serial.println("===============================");
+lcd.setCursor(0, 1);
+LINE(1);
 delay(500);
 lcd.setCursor(0, 2);
 lcd.print("X ");
@@ -41,7 +42,7 @@ lcd.print("<<<<<<<<<<>>>>>>>>>>");
 
 for (int x=1 ; x<7; x++){Serial.print ("Table "); Serial.print (x); Serial.print(" "); Serial.print (DMX_X_[x-1]),Serial.print (","); Serial.print (DMX_Y_[x-1]), Serial.print (","); Serial.println (DMX_Y_[x-1]) ;}
 Serial.println("Settings Load Complete");
-Serial.println("===============================");
+LINES();
 Serial.println("PAR TEST");
 DMXSerial.write(1, 255);
 delay(500);
@@ -53,8 +54,7 @@ DMXSerial.write(3, 255);
 delay(500);
 DMXSerial.write(0, 255);
 Serial.println("Fixture Map Primary fixture is");
-Serial.println("===============================");
-
+LINES();
 FixMap = EEPROM.read(40);
 if (FixMap == 1 ) 
 { Serial.println("200 Zoom");
@@ -69,7 +69,7 @@ Speed = 3 ; //3-245 fast - slow
 Gobo = 8 ; //Open 4 , Goboe  70
 Prism = 12 ; //open 4 , value 50 
 Serial.println("Configuring Starting Paramaters");
-Serial.println("===============================");
+LINES();
 Serial.println("Shutter Set");DMXSerial.write(Shutter, 255); 
 Serial.println("Dimmer Set");DMXSerial.write(Dimmer, 255); 
 Serial.println("Colour Set");DMXSerial.write(Colour, 18); 

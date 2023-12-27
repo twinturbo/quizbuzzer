@@ -19,6 +19,8 @@ void UTILITY_MENU(){
        if ( char_u_m == "R" ) { LAMP_CHECK();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "K" ) { KATY();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "Q" ) { LOGO();delay(2000);UTILITY_MX();}  //GOOF
+       if ( char_u_m == "SCORE" ) { SCORE_FIX();delay(2000);UTILITY_MX();}  //GOOF
+       
        
        
        
@@ -62,5 +64,8 @@ void UTILITY_MX() {
   Serial.println("SR = Righto");
   Serial.println("SW = Wrong");
   Serial.println("SC = Cliff");
+  LINES();
+  Serial.println("QUIZ ADAPTIONS");
+  Serial.println("SCORE = Score Update");
   
 }
