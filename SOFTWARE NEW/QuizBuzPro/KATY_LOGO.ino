@@ -4,7 +4,8 @@ void LOGO (){
   lcd.setCursor(0, 1);
   lcd.print("  QUIZ BUZZER PRO!  ");
   LINE(2);
-  delay(3000);
+  PORTB = B00000010; OUTOFF();
+  //delay(3000);
   
 }
 

@@ -1,7 +1,80 @@
+void YN(int YNA){
+  Serial.print("YNA"); Serial.println(YNA);
+  if (YNA == 0) { lcd.setCursor(0, 2);lcd.print("Is Disabled");}
+  if (YNA == 1) { lcd.setCursor(0, 2);lcd.print("Is Enabled");}
+  lcd.setCursor(0, 3);lcd.print("Right YES / Wrong NO");
+  }
+
+
+void BOOT_OPTIONS() {
+  int ANS = 0 ;
+  
+  lcd.clear();
+  LINE(0);
+  lcd.setCursor(0, 1);lcd.print("    BOOT OPTIONS");
+  LINE(2);
+  delay(2000);
+  lcd.clear();
+  LINE(0);
+  lcd.setCursor(0, 1);lcd.print("Katy Logo On Boot");
+  YN(katy);
+  while ( ANS == 0 ) { 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (KOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (KOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = No");} 
+    }
+  delay(2000);
+  ANS = 0;  
+  lcd.setCursor(0, 1);lcd.print("Quiz Logo On Boot");
+  YN(LOGOd);
+  while ( ANS == 0 ) { 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (LOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (LOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = No");} 
+    }
+  delay(2000);
+  ANS = 0;  
+  lcd.setCursor(0, 1);lcd.print("Lamp Test On Boot");
+  Serial.println(AOM);
+  YN(lamp);
+  while ( ANS == 0 ) { 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (AOM,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (AOM,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = No");} 
+    }
+  delay(2000);
+  ANS = 0;  
+  lcd.setCursor(0, 1);lcd.print("Button Test On Boot");
+  Serial.println(BOB);
+  YN(button);
+  while ( ANS == 0 ) { 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (BOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (BOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = No");} 
+    }
+  delay(2000);
+  ANS = 0;  
+  lcd.setCursor(0, 1);lcd.print("Captain Test On Boot");
+  Serial.println(COB);
+  YN(captain);
+  while ( ANS == 0 ) { 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (COB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (COB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = No");} 
+    }
+ 
+
+  /*
+  int LOGOd = 0; // Quiz Logo on boot
+  int lamp = 0; // Lamp Check on boot 
+  int button = 0; // Button Check on boot
+  int captain = 0; //captain sound on boot
+ */
+
+  
+}
+
+
 void BUTTON_CHECK() {
 lcd.clear();lcd.setCursor(0, 0);  lcd.print("====================");
               lcd.setCursor(0, 1);lcd.print("    BUTTON CHECK    ");
               lcd.setCursor(0, 2);lcd.print("====================");
+              PORTB = B00000000; OUTOFF();
 Serial.print("WRONG SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(WRONG));
 Serial.print("RIGHT SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(CORRECT));
 Serial.print("RESET SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(RESET));
@@ -13,12 +86,17 @@ int rtc = 0;
 int otc = 0;
 int ctc = 0;
 lcd.clear();
-lcd.setCursor(0,0);
+lcd.setCursor(0,0); lcd.print("Press Wrong      ");
+lcd.setCursor(0,1); lcd.print("Press Right      ");
+lcd.setCursor(0,3); lcd.print("Press Cliff      ");
+lcd.setCursor(0,2); lcd.print("Press Reset      ");
+
+
 while (xtc != 10){
     if (digitalRead(WRONG) == LOW) { Serial.println("WRONG PRESSED ");wtc = wtc+1; Serial.println(wtc); lcd.setCursor(0,0); lcd.print("Wrong Pressed");}
     if (digitalRead(CORRECT) == LOW) { Serial.println("CORRECT PRESSED ");ctc = ctc+1; Serial.println(ctc); lcd.setCursor(0,1); lcd.print("Right Pressed");}
     if (digitalRead(RESET) == LOW) { Serial.println("RESET PRESSED ");rtc = rtc+1; Serial.println(rtc); lcd.setCursor(0,2); lcd.print("Reset Pressed");} 
-    if (digitalRead(OTHER) == LOW) { Serial.println("OTHER PRESSED ");otc = otc+1; Serial.println(otc); lcd.setCursor(0,3); lcd.print("Cliff Presed");}
+    if (digitalRead(OTHER) == LOW) { Serial.println("OTHER PRESSED ");otc = otc+1; Serial.println(otc); lcd.setCursor(0,3); lcd.print("Cliff Pressed");}
     if (rtc > 1 and ctc > 1 and otc > 1 and wtc > 1) {xtc = 10;}
     
     
@@ -58,6 +136,7 @@ void LAMP_CHECK()
  LINE(2);
  lcd.setCursor(0, 3);
  lcd.print("  X  X  X  X  X  X");
+ PORTB = B00000001; OUTOFF();
  for (int y=0 ; y<2; y++){ 
   for (int x=0 ; x<6; x++){ 
    pinMode(BUZZ_[x], OUTPUT);

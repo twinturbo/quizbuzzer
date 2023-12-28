@@ -12,6 +12,10 @@ void FLUSH(){
  void LINE(int xl) {
   lcd.setCursor(0,xl);lcd.print("####################");
 }
+ void CLINE(int xl) {
+  lcd.setCursor(0,xl);lcd.print("                    ");
+}
+
 
 void LINES() {
   Serial.println("##############################");

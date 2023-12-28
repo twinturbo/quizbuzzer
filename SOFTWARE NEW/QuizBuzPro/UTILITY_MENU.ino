@@ -5,7 +5,8 @@ void UTILITY_MENU(){
  while ( exit_u_m != 0 ) {
   exit_u_m = 2;
   UTILITY_MX();
-   while ( exit_u_m = 2 ) {
+   Serial.print("Before While2 Exit UM = "); Serial.println(exit_u_m);
+   while ( exit_u_m == 2 ) {
     if (Serial.available() >0){
        char_u_m = Serial.readString();char_u_m.trim();
        if ( char_u_m == "S" ) { DMX_SETUP();}
@@ -20,15 +21,20 @@ void UTILITY_MENU(){
        if ( char_u_m == "K" ) { KATY();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "Q" ) { LOGO();delay(2000);UTILITY_MX();}  //GOOF
        if ( char_u_m == "SCORE" ) { SCORE_FIX();delay(2000);UTILITY_MX();}  //GOOF
-       
-       
-       
-       
-    }
+       if ( char_u_m == "O" ) { BOOT_OPTIONS();delay(2000);UTILITY_MX();}  //GOOF
+       if ( char_u_m == "E" ) { Serial.print("E?"); exit_u_m = 0; Serial.print("IF Exit UM = "); exit_u_m = 0; Serial.println(exit_u_m) ;}
+       if ( char_u_m == "I" ) { lcd.clear();
+          lcd.setCursor(0,0); lcd.print("         3"); delay(750);
+          lcd.setCursor(0,1); lcd.print("         2"); delay(750); 
+          lcd.setCursor(0,2); lcd.print("         1"); delay(750); 
+          lcd.setCursor(0,3); lcd.print("     REBOOTING");delay(1000);
+          resetFunc();}  //GOOF
+     }
+     
+   }
   
-   
- }
 }
+  SCORE();
 }
 
 void UTILITY_MX() {
@@ -58,6 +64,7 @@ void UTILITY_MX() {
   Serial.println("Q = Quiz Logo");
   LINES();
   Serial.println("SOUND CHECK");
+  LINES();
   Serial.println("SC = Captain");
   Serial.println("SA = Adverts");
   Serial.println("SF = Films");
@@ -66,6 +73,12 @@ void UTILITY_MX() {
   Serial.println("SC = Cliff");
   LINES();
   Serial.println("QUIZ ADAPTIONS");
+  LINES();
   Serial.println("SCORE = Score Update");
+  Serial.println("O = Boot Options");
+  Serial.println("E = Exit");
+  Serial.println("I = Init 6");
+  
+  LINES();
   
 }

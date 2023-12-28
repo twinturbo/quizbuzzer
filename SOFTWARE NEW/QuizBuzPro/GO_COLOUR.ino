@@ -1,16 +1,16 @@
 void GO_GREEN(){
-  lcd.clear();lcd.setCursor(0,0);lcd.print("GREEN");
+  //lcd.clear();lcd.setCursor(0,0);lcd.print("GREEN");
 }
 
 void GO_RED(){
-  lcd.clear();lcd.setCursor(0,0);lcd.print("RED");
+  //lcd.clear();lcd.setCursor(0,0);lcd.print("RED");
 }
 
 void GO_BLUE() {
-  lcd.clear();lcd.setCursor(0,0);lcd.print("BLUE");
+  //lcd.clear();lcd.setCursor(0,0);lcd.print("BLUE");
 }
 void GO_WHITE() {
-  lcd.clear();lcd.setCursor(0,0);lcd.print("WHITE");
+  //lcd.clear();lcd.setCursor(0,0);lcd.print("WHITE");
 }
 
 void GO_HOME() {

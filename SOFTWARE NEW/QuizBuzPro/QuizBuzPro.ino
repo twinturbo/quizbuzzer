@@ -15,15 +15,21 @@ V0.2.0
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x3F, 20, 4);
 
 
-
+void(* resetFunc) (void) = 0;
 
 //System Options ( 1 is on )
-int katy = 0; //KATY Logo on boot
-int LOGOd = 0; // Quiz Logo on boot
-int lamp = 0; // Lamp Check on boot
-int button = 0; // Button Check on boot
-int captain = 0; //captain sound on boot
+int KOB = 100;
+int LOB = 101;
+int AOM = 102;
+int BOB = 103;
+int COB = 104;
 
+
+int katy = EEPROM.read(KOB); //KATY Logo on boot
+int LOGOd = EEPROM.read(LOB); // Quiz Logo on boot
+int lamp = EEPROM.read(AOM); // Lamp Check on boot
+int button = EEPROM.read(BOB); // Button Check on boot
+int captain = EEPROM.read(COB); //captain sound on boot
 
 //Physical Pin Assignment
 //digital reciver reads
@@ -126,8 +132,8 @@ String lcs6 = "DK";
 
 
 int scTeam = 9;
-char PlusMinus = 'N';
-  int TeamX = 10 ;
+int PlusMinus = 0 ;
+int TeamX = 10 ;
 
 
 
@@ -140,7 +146,7 @@ void setup() {
   DDRA = B11111111;
   PORTA = B00000000;
   DDRB = B11111111;
-  PORTB = B00000000;
+  PORTB = B11111111;
   DMXSerial.init(DMXController);
   // put your setup code here, to run once:]
   Serial.begin(9600);
