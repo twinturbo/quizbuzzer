@@ -1,3 +1,48 @@
+void ROUNDER(){
+  Serial.println("ENTRY");
+  DMXSerial.write(Shutter, 200);
+  DMXSerial.write(Prism, 60); 
+  DMXSerial.write(Rotate, 120); 
+  SPEC_COL(random(3,5));
+  SPEC_FLASH(0);
+  GO_COLOUR(BLUE);
+  
+  for ( int show = 0 ; show <= 10 ; show ++ ){
+  int randy1 = random(0,3);
+  int randy[4] = {14,55,0,70};
+  int randy2 = randy[randy1];
+  SPEC_COL(random(3,5));
+  SPEC_FLASH(1);
+  DMXSerial.write(Tilt, 30); 
+  DMXSerial.write(Pans, 100); 
+  delay(700);
+  DMXSerial.write(Pans, 70);
+  delay(700);
+  DMXSerial.write(Tilt, 20); 
+  DMXSerial.write(Pans, 100); 
+  delay(700);
+  DMXSerial.write(Tilt, 35); 
+  DMXSerial.write(Pans, 85);
+  delay(700);
+  DMXSerial.write(Tilt, 20); 
+  DMXSerial.write(Pans, 85);
+  delay(700);
+  DMXSerial.write(Tilt, 50); 
+  DMXSerial.write(Pans, 85);
+  delay(700);
+  DMXSerial.write(Tilt, 30); 
+  DMXSerial.write(Pans, 100); 
+  delay(700);
+  GO_COLOUR(randy2);
+   
+}
+  DMXSerial.write(Shutter, 255);
+  DMXSerial.write(Prism, 2); 
+  DMXSerial.write(Rotate, 120); 
+  SPEC_FLASH(0); 
+}
+
+
 void MOVE_HEAD(int X,char C){
   /*lcd.clear();
   LINE(0);

@@ -1,4 +1,4 @@
-void FIXTURE_SELECT() {
+/*void FIXTURE_SELECT() {
   CLS();
   int CMap = FixMap;
   String strf = "";
@@ -44,4 +44,4 @@ void FIXTURE_SELECT() {
       }
   }
 
-}
+}*/

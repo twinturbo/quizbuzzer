@@ -115,7 +115,7 @@ String receivedChar = "hello"; //control character for most options
 int team = 0; //Used for score correction in decrement and wrong.
 int readystate = 1; //controls if the quiz buzers are active. 
 String reset = "null"; //controls the state to reset from wrong/right and re-enable the main loop.
-char SC = "P"; // Sound Check ( T = Team (main and Decremetn, A = Adverts , F = Films,  X = wrong  Y = right 
+String SC = "P"; // Sound Check ( T = Team (main and Decremetn, A = Adverts , F = Films,  X = wrong  Y = right 
 
 //Team Display Strings
 String ts1 = " Cooo n 2 in ma bru";
@@ -160,8 +160,6 @@ void setup() {
     
   }
   }  
-  delay(5000);
-  
   lcd.init();
   lcd.backlight();
     
@@ -175,7 +173,10 @@ void setup() {
     DMXSerial.write(sc+colour,0);
     
   }
+   DMX_LOAD();
+  GO_HOME();
   SPEC_COL(5);
+  
   
   // put your setup code here, to run once:]
   //pinMode(reset,INPUT_PULLUP);
@@ -194,16 +195,14 @@ void setup() {
   if ( LOGOd == 1 ){LOGO();}
   if ( lamp == 1 ){LAMP_CHECK();}
   if ( button == 1 ){BUTTON_CHECK();}
-  if ( captain == 1 ) {SC = 'T' ; soundcheck();} 
+  if ( captain == 1 ) {SC = "ST" ; SOUNDCHECK();} 
   //
-  delay(2000);
   /*for (int x=0 ; x<8; x++){ 
    pinMode(BUZZ_[x], OUTPUT);
    digitalWrite(BUZZ_[x],HIGH);
   }*/
-  Serial.println("MENU SCORE INIT");
   DMX_LOAD();
-  GO_HOME();
+  //QUIZBATTLE();
   SCORE();
   }
 

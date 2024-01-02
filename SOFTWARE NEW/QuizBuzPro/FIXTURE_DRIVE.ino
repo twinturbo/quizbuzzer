@@ -65,6 +65,8 @@ void FIXTURE_DRIVE() {
                    while (FAX != 256) { if (Serial.available() > 0) { FAX = Serial.parseInt(); if (FAX > -1 && FAX < 256){Serial.println(FAX); FAW = FAX; DMX_F_[TableD-1] = FAW ;DMXSerial.write(Focus, FAX);FLUSH();}}}DRIVE_MENU(TableD);}
                if (AX == 'E' or AX == 'e') {TCf = 0; break;};
                if (AX == 'S' or AX == 's') {TCf = 0; DMX_SAVE();break;};
+               if (AX == 'Q' or AX == 'q') {TCf = 0; strf = "exit" ; TableD = 10; break;};
+               
                 }
       
       
@@ -94,6 +96,7 @@ void DRIVE_MENU(int x){
   Serial.println("F to Set Focus");
   Serial.println("E to Select other table");
   Serial.println("S to Save now");
+  Serial.println("Q to Quit now");
   LINES();
   
 }

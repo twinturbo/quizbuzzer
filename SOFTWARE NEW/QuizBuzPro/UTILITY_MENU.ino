@@ -8,16 +8,34 @@ void UTILITY_MENU(){
     while ( exit_u_m == 2 ) {
     if (Serial.available() >0){
        char_u_m = Serial.readString();char_u_m.trim();
-       if ( char_u_m == "F" ) { FIXTURE_DRIVE();}
-       if ( char_u_m == "L" ) { DMX_LOAD();UTILITY_MX();}
-       if ( char_u_m == "W" ) { DMX_SAVE();UTILITY_MX();}
-       if ( char_u_m == "FS" ) {FIXTURE_SELECT();}
-       if ( char_u_m == "V" ) { DMX_DISPLAY();delay(5000);UTILITY_MX();}
+       //Lightting Checks
+       if ( char_u_m == "F" ) { FIXTURE_DRIVE();UTILITY_MX();}
+       if ( char_u_m == "L" ) { DMX_LOAD();UTILITY_MX();} //Good
+       if ( char_u_m == "W" ) { DMX_SAVE();UTILITY_MX();} //Good
+       //if ( char_u_m == "FS" ) {FIXTURE_SELECT();}  /removed
+       if ( char_u_m == "V" ) { DMX_DISPLAY();delay(5000);UTILITY_MX();} //good
        if ( char_u_m == "G" ) { GO_COLOUR(GREEN); delay(1000); GO_COLOUR(BLUE); delay(1000); GO_COLOUR(RED); delay(1000); GO_COLOUR(WHITE); delay(1000); GO_HOME();delay(2000);UTILITY_MX();} //GOOD
+       if ( char_u_m == "SL" ) { SPEC_SL(); UTILITY_MX();} //GOOD
+       if ( char_u_m == "HS" ) { ROUNDER(); UTILITY_MX();} //GOOD
+       //HArdware Checks
        if ( char_u_m == "B" ) { BUTTON_CHECK();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "R" ) { LAMP_CHECK();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "K" ) { KATY();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "Q" ) { LOGO();delay(2000);UTILITY_MX();}  //GOOF
+       if ( char_u_m == "ST") { SC = "ST"; SOUNDCHECK(); UTILITY_MX(); } //GOOG
+       if ( char_u_m == "SA") { SC = "SA"; SOUNDCHECK(); UTILITY_MX(); } //GOOD
+       if ( char_u_m == "SF") { SC = "SF"; SOUNDCHECK(); UTILITY_MX(); } //GOOG
+       if ( char_u_m == "SR") { SC = "SR"; SOUNDCHECK(); UTILITY_MX(); } //GOOD
+       if ( char_u_m == "SW") { SC = "SW"; SOUNDCHECK(); UTILITY_MX(); } //GOOD
+       if ( char_u_m == "SC") { CLIFF(); UTILITY_MX(); } //
+       
+       
+       
+       
+       
+       
+       
+       //Utilities/
        if ( char_u_m == "SCORE" ) { SCORE_FIX();delay(2000);UTILITY_MX();}  //GOOF
        if ( char_u_m == "O" ) { BOOT_OPTIONS();delay(2000);UTILITY_MX();}  //GOOF
        if ( char_u_m == "E" ) { exit_u_m = 0; delay(2000);UTILITY_MX();}
@@ -53,6 +71,9 @@ void UTILITY_MX() {
   Serial.println("FS = Fixture Select");
   Serial.println("V = DMX Values"); 
   Serial.println("G = Go Colour");
+  Serial.println("SL = SOUND2LITE");
+  Serial.println("HS = HEAD SWEEP");
+  
   LINES();
   Serial.println("TEST");
   LINES();
@@ -63,7 +84,7 @@ void UTILITY_MX() {
   LINES();
   Serial.println("SOUND CHECK");
   LINES();
-  Serial.println("SC = Captain");
+  Serial.println("ST = TEAM");
   Serial.println("SA = Adverts");
   Serial.println("SF = Films");
   Serial.println("SR = Righto");

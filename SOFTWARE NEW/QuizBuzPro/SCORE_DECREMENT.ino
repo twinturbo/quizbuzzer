@@ -23,6 +23,8 @@ void SCORE(){
   CLS();
   lcd.clear();
   LINES();
+  Serial.println("SCORE BOARD");
+  LINES();
   Serial.print(SCORE_[0]); Serial.println(ts1);
   lcd.setCursor(0, 0); lcd.print("*** SCORE  BOARD ***");
   lcd.setCursor(0, 1);lcd.print(lcs1);lcd.setCursor(4, 1);lcd.print(SCORE_[0]);EEPROM.write(SS_[0],SCORE_[0]);

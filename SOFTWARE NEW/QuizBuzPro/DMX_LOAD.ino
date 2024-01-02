@@ -1,6 +1,5 @@
 void DMX_LOAD(){
 CLS();
-Serial.println("BOOTING SYSTEM");
 LINES();
 lcd.clear(); lcd.setCursor(0, 0); lcd.print(" Loading DMX Values"); 
 lcd.setCursor(0,1);lcd.print("     From EEPROM");

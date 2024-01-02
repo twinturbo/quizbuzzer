@@ -84,10 +84,10 @@ lcd.clear();lcd.setCursor(0, 0);  lcd.print("====================");
               lcd.setCursor(0, 1);lcd.print("    BUTTON CHECK    ");
               lcd.setCursor(0, 2);lcd.print("====================");
               PORTB = B00000000; OUTOFF();
-Serial.print("WRONG SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(WRONG));
-Serial.print("RIGHT SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(CORRECT));
-Serial.print("RESET SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(RESET));
-Serial.print("OTHER SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(OTHER));  
+//Serial.print("WRONG SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(WRONG));
+//Serial.print("RIGHT SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(CORRECT));
+//Serial.print("RESET SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(RESET));
+//Serial.print("OTHER SHOULD BE UNPRESSED 1 > "); Serial.println(digitalRead(OTHER));  
 delay(1000);
 int xtc = 0; 
 int wtc = 0;
@@ -102,10 +102,10 @@ lcd.setCursor(0,2); lcd.print("Press Reset      ");
 
 
 while (xtc != 10){
-    if (digitalRead(WRONG) == LOW) { Serial.println("WRONG PRESSED ");wtc = wtc+1; Serial.println(wtc); lcd.setCursor(0,0); lcd.print("Wrong Pressed");}
-    if (digitalRead(CORRECT) == LOW) { Serial.println("CORRECT PRESSED ");ctc = ctc+1; Serial.println(ctc); lcd.setCursor(0,1); lcd.print("Right Pressed");}
-    if (digitalRead(RESET) == LOW) { Serial.println("RESET PRESSED ");rtc = rtc+1; Serial.println(rtc); lcd.setCursor(0,2); lcd.print("Reset Pressed");} 
-    if (digitalRead(OTHER) == LOW) { Serial.println("OTHER PRESSED ");otc = otc+1; Serial.println(otc); lcd.setCursor(0,3); lcd.print("Cliff Pressed");}
+    if (digitalRead(WRONG) == LOW) { /*Serial.println("WRONG PRESSED ")*/;wtc = wtc+1; /*Serial.println(wtc);*/ lcd.setCursor(0,0); lcd.print("Wrong Pressed");}
+    if (digitalRead(CORRECT) == LOW) { /*Serial.println("CORRECT PRESSED ");*/ctc = ctc+1; /*Serial.println(ctc); */lcd.setCursor(0,1); lcd.print("Right Pressed");}
+    if (digitalRead(RESET) == LOW) { /*Serial.println("RESET PRESSED ")*/;rtc = rtc+1; /*Serial.println(rtc);*/ lcd.setCursor(0,2); lcd.print("Reset Pressed");} 
+    if (digitalRead(OTHER) == LOW) { /*Serial.println("OTHER PRESSED ")*/;otc = otc+1; /*Serial.println(otc); */ lcd.setCursor(0,3); lcd.print("Cliff Pressed");}
     if (rtc > 1 and ctc > 1 and otc > 1 and wtc > 1) {xtc = 10;}
     
     

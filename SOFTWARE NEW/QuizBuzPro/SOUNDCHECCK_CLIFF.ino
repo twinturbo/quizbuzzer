@@ -1,7 +1,6 @@
-void soundcheck() { 
+void SOUNDCHECK() { 
+  if ( SC == "ST" ) {
   lcd.clear();lcd.setCursor(0,0);lcd.print("SOUNDCHECK");delay(2000);
-  
-  if ( SC == 'T' ) { 
   PORTB = B11111110; lcd.clear();lcd.setCursor(0,0);lcd.print(ts1); OUTOFF();
   PORTB = B11111000; OUTOFF(); //DECREMENT
   PORTB = B11111101; lcd.clear();lcd.setCursor(0,0);lcd.print(ts2); OUTOFF();
@@ -18,47 +17,47 @@ void soundcheck() {
 
   
   
-  if ( SC == 'A' ) {
+  if ( SC == "SA" ) {
 
-   PORTB = B11110001; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");  //Cadburys
-   PORTB = B11110000; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Snickers");  //Snickerrs
-   PORTB = B11101111; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Milky Way");  //Milky Way
-   PORTB = B11101110; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Birdseye");  //Birdsey
-   PORTB = B11101101; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Aquafresh");  //Aquafresh
-   PORTB = B11101100; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Domestos");  //Birdsey
-   PORTB = B11101011; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Ferero Roche");  //Ferero Roche
-   PORTB = B11101010; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("OldSpice");  //Old Spice
-   PORTB = B11101001; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("PG Tips");  //PG TIPS
-   PORTB = B11101000; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Umbongo");  // Umbpongo
-   PORTB = B11100111; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Lurpack"); //Lurpack
-   PORTB = B11100110; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Milk Tray"); // Milk Tray
-   PORTB = B11100101; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Brut"); //Brut
-   PORTB = B11100100; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Castlemain");  // Castlemain
-   PORTB = B11100011; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Fanta");  //Fanta
+   PORTB = B11110001; lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");     OUTOFF(); //Cadburys
+   PORTB = B11110000; lcd.clear();lcd.setCursor(0,0);lcd.print("Snickers");     OUTOFF(); //Snickerrs
+   PORTB = B11101111; lcd.clear();lcd.setCursor(0,0);lcd.print("Milky Way");    OUTOFF(); //Milky Way
+   PORTB = B11101110; lcd.clear();lcd.setCursor(0,0);lcd.print("Birdseye");     OUTOFF(); //Birdsey
+   PORTB = B11101101; lcd.clear();lcd.setCursor(0,0);lcd.print("Aquafresh");    OUTOFF(); //Aquafresh
+   PORTB = B11101100; lcd.clear();lcd.setCursor(0,0);lcd.print("Domestos");     OUTOFF(); //Birdsey
+   PORTB = B11101011; lcd.clear();lcd.setCursor(0,0);lcd.print("Ferero Roche"); OUTOFF(); //Ferero Roche
+   PORTB = B11101010; lcd.clear();lcd.setCursor(0,0);lcd.print("OldSpice");     OUTOFF(); //Old Spice
+   PORTB = B11101001; lcd.clear();lcd.setCursor(0,0);lcd.print("PG Tips");      OUTOFF(); //PG TIPS
+   PORTB = B11101000; lcd.clear();lcd.setCursor(0,0);lcd.print("Umbongo");      OUTOFF(); // Umbpongo
+   PORTB = B11100111; lcd.clear();lcd.setCursor(0,0);lcd.print("Lurpack");      OUTOFF(); //Lurpack
+   PORTB = B11100110; lcd.clear();lcd.setCursor(0,0);lcd.print("Milk Tray");    OUTOFF(); // Milk Tray
+   PORTB = B11100101; lcd.clear();lcd.setCursor(0,0);lcd.print("Brut");         OUTOFF(); //Brut
+   PORTB = B11100100; lcd.clear();lcd.setCursor(0,0);lcd.print("Castlemain");   OUTOFF(); // Castlemain
+   PORTB = B11100011; lcd.clear();lcd.setCursor(0,0);lcd.print("Fanta");        OUTOFF(); //Fanta
   }
 
 
-  if ( SC == 'F' ) {
- PORTB = B11100010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Fast And Furiois");  // Fast and Furious ( Hector Order )
- PORTB = B11100001; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Ground Hog Day"); // Ground Hog day
- PORTB = B11100000; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Transformers"); // Cut the ahrd Lines
- PORTB = B11011111; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Home Alone 2");// Home Alone 2
- PORTB = B11011110; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("2001 - Hal Shutdown"); // Home Alone 2
- PORTB = B11011101; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Monty Pithon Meaning of Life"); // Monthy Python the Meaning of life
- PORTB = B11011100; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("TOP GUN ");// Flyby
- PORTB = B11011011; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Muppet Christmas Carol"); // Muppet Christmas Carrol
- PORTB = B11011010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Aliens"); // Now what the fuck are we supposed to do.
- PORTB = B11011001; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Shawchank Redemtion"); // Shawshank Redemption
- PORTB = B11011000; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Crocadile Dundee 2 "); // Not a Knife
- PORTB = B11010111; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Star wars New Hope"); // Star Wars New Hope
- PORTB = B11010110; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Lion King"); // The Lion King
- PORTB = B11010101; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Titanic"); // Titanic 
- PORTB = B11010100; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Wolf of wall street"); // Wolf Of wall Street
- PORTB = B11010011; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Mad MAx"); // last of the V8 Interceptors
- PORTB = B11010010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk"); // It's a Unix System
+  if ( SC == "SF" ) {
+ PORTB = B11100010; lcd.clear();lcd.setCursor(0,0);lcd.print("Fast And Furiois");             OUTOFF();  // Fast and Furious ( Hector Order )
+ PORTB = B11100001; lcd.clear();lcd.setCursor(0,0);lcd.print("Ground Hog Day");               OUTOFF(); // Ground Hog day
+ PORTB = B11100000; lcd.clear();lcd.setCursor(0,0);lcd.print("Transformers");                 OUTOFF(); // Cut the ahrd Lines
+ PORTB = B11011111; lcd.clear();lcd.setCursor(0,0);lcd.print("Home Alone 2");                 OUTOFF(); // Home Alone 2
+ PORTB = B11011110; lcd.clear();lcd.setCursor(0,0);lcd.print("2001 - Hal Shutdown");          OUTOFF(); // Home Alone 2
+ PORTB = B11011101; lcd.clear();lcd.setCursor(0,0);lcd.print("Monty Pithon Meaning of Life"); OUTOFF();  // Monthy Python the Meaning of life
+ PORTB = B11011100; lcd.clear();lcd.setCursor(0,0);lcd.print("TOP GUN ");                     OUTOFF(); // Flyby
+ PORTB = B11011011; lcd.clear();lcd.setCursor(0,0);lcd.print("Muppet Christmas Carol");       OUTOFF(); // Muppet Christmas Carrol
+ PORTB = B11011010; lcd.clear();lcd.setCursor(0,0);lcd.print("Aliens");                       OUTOFF(); // Now what the fuck are we supposed to do.
+ PORTB = B11011001; lcd.clear();lcd.setCursor(0,0);lcd.print("Shawchank Redemtion");          OUTOFF(); // Shawshank Redemption
+ PORTB = B11011000; lcd.clear();lcd.setCursor(0,0);lcd.print("Crocadile Dundee 2 ");          OUTOFF();  // Not a Knife
+ PORTB = B11010111; lcd.clear();lcd.setCursor(0,0);lcd.print("Star wars New Hope");           OUTOFF(); // Star Wars New Hope
+ PORTB = B11010110; lcd.clear();lcd.setCursor(0,0);lcd.print("Lion King");                    OUTOFF();  // The Lion King
+ PORTB = B11010101; lcd.clear();lcd.setCursor(0,0);lcd.print("Titanic");                      OUTOFF();  // Titanic 
+ PORTB = B11010100; lcd.clear();lcd.setCursor(0,0);lcd.print("Wolf of wall street");          OUTOFF();  // Wolf Of wall Street
+ PORTB = B11010011; lcd.clear();lcd.setCursor(0,0);lcd.print("Mad MAx");                      OUTOFF();  // last of the V8 Interceptors
+ PORTB = B11010010; lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk");                OUTOFF();   // It's a Unix System
   }
 
- if ( SC == 'X' ) {
+ if ( SC == "SW" ) {
    PORTB = B11010001; OUTOFF();
    PORTB = B11010000; OUTOFF();
    PORTB = B11001111; OUTOFF();
@@ -72,7 +71,7 @@ void soundcheck() {
  }
 
 
-if ( SC == 'Y' ) {
+if ( SC == "SR" ) {
     PORTB = B11000110; OUTOFF();
     PORTB = B11000101; OUTOFF();
     PORTB = B11000100; OUTOFF();
@@ -99,5 +98,16 @@ void CLIFF(){
       
       }
 }
-  
+
+void QUIZBATTLE() {
+      SPEC_FLASH(1);
+      for ( int BAT = 0 ; BAT <= 10 ; BAT++){
+        int BATX = (random(1,3));   
+       if ( BATX == 1 ) { PORTB = B11111110; delay(1300); }
+       if ( BATX == 2 ) { PORTB = B11110010; delay(1300); }
+       if ( BATX == 3 ) { PORTB = B11110100; delay(1300); }
+      }
+      SPEC_FLASH(0);
+      PORTB = B11111111;
+}
   

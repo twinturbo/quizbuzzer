@@ -30,7 +30,8 @@ void GO_HOME() {
     DMXSerial.write(Dimmer, 255);
     DMXSerial.write(Shutter, 255);
     //Serial.println("Gobo Set");
-    DMXSerial.write(Prism, 60); 
+    DMXSerial.write(Gobo, random(8,77));  
+    DMXSerial.write(Prism, 50); 
     Serial.println("Prism Set");
     //DMXSerial.write(Prism, 50); 
     //Serial.println("Rotate Set");
