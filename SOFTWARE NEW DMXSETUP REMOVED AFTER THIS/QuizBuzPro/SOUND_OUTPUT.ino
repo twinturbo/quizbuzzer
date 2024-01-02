@@ -1,26 +1,25 @@
 void SOUND_OUTPUT(){
-
+  if (receivedChar == "D" ) { DMX_SETUP() ;}
   if (receivedChar == "U" ) { UTILITY_MENU() ;}
   
   //BUZIN
   //Serial.print("Recived IN Loop"); Serial.println(receivedChar);
   //delay(2000);
-  Serial.print(receivedChar);
-  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts1);lcd.setCursor(0,2);lcd.print(tm1); LINE(3); OUTOFF();}
-  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts2);lcd.setCursor(0,2);lcd.print(tm2); LINE(3); OUTOFF();} 
-  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts3);lcd.setCursor(0,2);lcd.print(tm3); LINE(3); OUTOFF();} 
-  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts4); team = 4; MOVE_HEAD(4,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts4);lcd.setCursor(0,2);lcd.print(tm4); LINE(3); OUTOFF();} 
-  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts5); team = 5; MOVE_HEAD(5,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts5);lcd.setCursor(0,2);lcd.print(tm5); LINE(3); OUTOFF();} 
-  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts6); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts6);lcd.setCursor(0,2);lcd.print(tm6); LINE(3); OUTOFF();} 
+  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts1);lcd.setCursor(0,2);lcd.print(tm1); LINE(3); OUTOFF();}
+  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts2);lcd.setCursor(0,2);lcd.print(tm2); LINE(3); OUTOFF();} 
+  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts3);lcd.setCursor(0,2);lcd.print(tm3); LINE(3); OUTOFF();} 
+  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts4); team = 4; MOVE_HEAD(4,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts4);lcd.setCursor(0,2);lcd.print(tm4); LINE(3); OUTOFF();} 
+  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts5); team = 5; MOVE_HEAD(5,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts5);lcd.setCursor(0,2);lcd.print(tm5); LINE(3); OUTOFF();} 
+  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts6); team = 6; MOVE_HEAD(6,'W'); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts6);lcd.setCursor(0,2);lcd.print(tm6); LINE(3); OUTOFF();} 
   // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
   
   //Decrement
-  if (receivedChar == "d1" ) { PORTB = B11111000; OUTOFF(); SCORE_[0] -=1; SCORE();} // } //TEAM_1 sound 0001
-  if (receivedChar == "d2" ) { PORTB = B11110111; OUTOFF(); SCORE_[1] -=1; SCORE();} // } //TEAM_2 sound 0002
-  if (receivedChar == "d3" ) { PORTB = B11110110; OUTOFF(); SCORE_[2] -=1; SCORE();} // } //TEAM_3 sound 0003
-  if (receivedChar == "d4" ) { PORTB = B11110101; OUTOFF(); SCORE_[3] -=1; SCORE();} // } //TEAM_4 sound 0004
-  if (receivedChar == "d5" ) { PORTB = B11110100; OUTOFF(); SCORE_[4] -=1; SCORE();} // } //TEAM_5 sound 0005
-  if (receivedChar == "d6" ) { PORTB = B11110011; OUTOFF(); SCORE_[5] -=1; SCORE();} // } //TEAM_6 sound 0006
+  if (receivedChar == "d1" ) { PORTB = B11111000;  team = 1; MOVE_HEAD(1,'R'); OUTOFF(); DECREMENT();} // } //TEAM_1 sound 0001
+  if (receivedChar == "d2" ) { PORTB = B11110111;  team = 2; MOVE_HEAD(2,'R'); OUTOFF(); DECREMENT();} // } //TEAM_2 sound 0002
+  if (receivedChar == "d3" ) { PORTB = B11110110;  team = 3; MOVE_HEAD(3,'R'); OUTOFF(); DECREMENT();} // } //TEAM_3 sound 0003
+  if (receivedChar == "d4" ) { PORTB = B11110101;  team = 4; MOVE_HEAD(4,'R'); OUTOFF(); DECREMENT();} // } //TEAM_4 sound 0004
+  if (receivedChar == "d5" ) { PORTB = B11110100;  team = 5; MOVE_HEAD(5,'R'); OUTOFF(); DECREMENT();} // } //TEAM_5 sound 0005
+  if (receivedChar == "d6" ) { PORTB = B11110011;  team = 6; MOVE_HEAD(6,'R'); OUTOFF(); DECREMENT();} // } //TEAM_6 sound 0006
    
   //Adverts 
    if (receivedChar == "a1")  { PORTB = B11110001; OUTOFF();  lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");}  //Cadburys
@@ -66,10 +65,8 @@ void SOUND_OUTPUT(){
       Serial.print("Right "); Serial.println(randNumber);
       lcd.clear();lcd.setCursor(0,0);lcd.print("  Ouda Da Park ");
       LINE(1);
-      SPEC_COL(4);           
-      GO_COLOUR(GREEN);
-      SPEC_FLASH(1);
-      HEAD_FLASH(1);
+                 
+      GO_GREEN();
       /*DMXSerial.write(Colour,72);
       delay(2000);
       DMXSerial.write(Colour,54);
@@ -97,11 +94,9 @@ void SOUND_OUTPUT(){
      if (randNumber == 10) { PORTB = B11001000; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      
      
-     
+     //digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
      OUTOFF();
      delay(2000);
-     SPEC_FLASH(0);
-     HEAD_FLASH(0);
      FLUSH();
      Serial.println("=====================================");
      Serial.println("e to Reset ");
@@ -116,16 +111,14 @@ void SOUND_OUTPUT(){
 
   //Play a wrong Chune
   if (receivedChar == "W" ) {
-     //DMXSerial.write(Colour,18);
+      DMXSerial.write(Colour,18);
          
      randNumber = random(1,9);
      Serial.print("wrong "); Serial.println(randNumber);
      lcd.clear();lcd.setCursor(0,0);lcd.print("  WHO'S A MUPPIT!!");
                  lcd.setCursor(0,1);lcd.print("====================");
-     SPEC_COL(3);            
-     GO_COLOUR(RED);
-     SPEC_FLASH(1);
-     HEAD_FLASH(1);
+                 
+     GO_RED();
      if (randNumber == 1 ) { PORTB = B11000111; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 2 ) { PORTB = B11000110; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 3 ) { PORTB = B11000101; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
@@ -141,8 +134,6 @@ void SOUND_OUTPUT(){
      //delay(2000);
      FLUSH();
      OUTOFF();
-     SPEC_FLASH(0);
-     HEAD_FLASH(0);
      LINES();
      Serial.println("e to Reset ");
      LINES();
@@ -154,25 +145,19 @@ void SOUND_OUTPUT(){
   }
 
     if (receivedChar == "C" ) { 
-      SPEC_COL(3);
-      GO_COLOUR(RED);
-      DMXSerial.write(Shutter, 200);
-      DMXSerial.write(Tilt, 0);
-      DMXSerial.write(Pans, 0);
-      DMXSerial.write(Speed, 200);
-      delay(2000);
-      PORTB = B11110010; 
-      DMXSerial.write(Tilt, 255); DMXSerial.write(Pans, 255 );
-      delay(2000);
-      DMXSerial.write(Tilt, 50); DMXSerial.write(Pans, 50 );
-          
-      OUTOFF();
+      Serial.print("KD");
+      lcd.clear();
+      LINE(0);
+      lcd.setCursor(0,1);lcd.print("     CLIFF DOG");
+      LINE(2);
+      PORTB = B11110010; OUTOFF();
       receivedChar = "null";
+      //readystate = 1;
+      delay(1000);
       PORTB = B11111111;
-      SCORE();
-      Serial.print(team);
-      if (team == 0 ) { GO_HOME();}
-      if (team >= 1 ) {DMXSerial.write(Shutter, 255);MOVE_HEAD(team,'W');GO_COLOUR(WHITE);}
+      
+    
+      
       }
  
 
@@ -180,19 +165,20 @@ void SOUND_OUTPUT(){
   //RESET
   while ( receivedChar == "exit" ) {
   if (digitalRead(OTHER) == 0 ) {CLIFF();}
+  Serial.println(digitalRead(RESET));
   if (digitalRead(RESET) == 0 ){ reset = "e";}
+  //if (Serial.available() >0){
+  //reset = Serial.readString();reset.trim();}
   if ( reset == "e" ) { receivedChar = "Exit"; 
      Serial.print("reset2"); 
      reset = "null";
      lcd.clear();lcd.setCursor(0,1);lcd.print("RE-ARM >>>>>>>");
      OUTOFF();
      readystate = 1;
-     for (int x=0 ; x<6; x++){ 
-        digitalWrite(BUZZ_[x], LOW);
-     }
-     GO_COLOUR(BLUE);
+     GO_BLUE();
      GO_HOME();
-     SCORE();
+     delay(2000);
+      SCORE();
      exit;
     }
   }

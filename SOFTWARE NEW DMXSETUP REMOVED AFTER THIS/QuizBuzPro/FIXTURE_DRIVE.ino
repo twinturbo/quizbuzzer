@@ -42,17 +42,13 @@ void FIXTURE_DRIVE() {
         Serial.print("Configure table > ");Serial.println(TableD); break;
      
     }
-     Serial.print("Configure table  > ");Serial.println(TableD);
+     Serial.print("Configure table 2 > ");Serial.println(TableD);
     DRIVE_MENU(TableD);
     if ( TableD == 10 ) {Serial.println("Tabel Exit"); delay(2000);break;}
-     DMXSerial.write(Pans, DMX_X_[TableD-1]);
-     DMXSerial.write(Tilt, DMX_Y_[TableD-1]);
-     DMXSerial.write(Zoom, DMX_Z_[TableD-1]);
-     DMXSerial.write(Focus, DMX_F_[TableD-1]);
     
     while ( TCf == 256 ) {
       if (Serial.available() > 0) { AX = Serial.read();
-               Serial.print("Configure table > ");Serial.println(TableD);
+               Serial.print("Configure table 3 > ");Serial.println(TableD);
                if (AX == 'x' or AX == 'X') { XAX=0; Serial.println("Moving X till 256") ;
                   while (XAX != 256) { if (Serial.available() > 0) { XAX = Serial.parseInt(); if (XAX > -1 && XAX < 256){ Serial.println(XAX); XAW = XAX; DMX_X_[TableD-1] = XAX ; DMXSerial.write(Pans, XAX);FLUSH();}}}DRIVE_MENU(TableD); }
                               

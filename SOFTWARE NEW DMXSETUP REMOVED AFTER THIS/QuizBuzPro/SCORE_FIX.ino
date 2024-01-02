@@ -31,7 +31,7 @@ void SCORE_FIX_TEAM() {
 void incdect() {
   PlusMinus = 0;
   LINES();
-  delay(500);
+  delay(1500);
   FLUSH();
   while ( PlusMinus != 999 ){ if (Serial.available() > 0) 
   { PlusMinus = Serial.parseInt();

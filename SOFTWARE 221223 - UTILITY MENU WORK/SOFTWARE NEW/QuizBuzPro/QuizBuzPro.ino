@@ -14,8 +14,6 @@ V0.2.0
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x3F, 20, 4);
 
-//spectrapix channel offset.
-int sc = 14;
 
 void(* resetFunc) (void) = 0;
 
@@ -33,8 +31,6 @@ int lamp = EEPROM.read(AOM); // Lamp Check on boot
 int button = EEPROM.read(BOB); // Button Check on boot
 int captain = EEPROM.read(COB); //captain sound on boot
 int SS_[] = {106, 107, 108, 109, 110 , 111} ; 
-
-
 
 //Physical Pin Assignment
 //digital reciver reads
@@ -170,13 +166,6 @@ void setup() {
   DDRB = B11111111;
   PORTB = B11111111;
   DMXSerial.init(DMXController);
-  //spectarpix set zero
-  for ( int colour  = 1; colour <= 53; colour++ ) {
-    DMXSerial.write(sc+colour,0);
-    
-  }
-  SPEC_COL(5);
-  
   // put your setup code here, to run once:]
   //pinMode(reset,INPUT_PULLUP);
   for (int x=0 ; x<6; x++){ 
@@ -208,26 +197,18 @@ void setup() {
   }
 
 void loop() {
-  //Serial.print("DR1 "); Serial.println(readystate);
   if (readystate == 1){
-  team = 0;
-  if (digitalRead(TEAM_[0]) == 1 ) { LINES(); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; Serial.print("DR2 "); receivedChar = "c1" ;  digitalWrite(BUZZ_[0], HIGH); SOUND_OUTPUT(); }
-  delay(100);
-  if (digitalRead(TEAM_[1]) == 1 ) { LINES(); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = "c2" ;  digitalWrite(BUZZ_[1], HIGH); SOUND_OUTPUT(); }
-  delay(100);
-  if (digitalRead(TEAM_[2]) == 1 ) { LINES(); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = "c3" ;  digitalWrite(BUZZ_[2], HIGH); SOUND_OUTPUT(); }
-  delay(100);
-  if (digitalRead(TEAM_[3]) == 1 ) { LINES(); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = "c4" ;  digitalWrite(BUZZ_[3], HIGH); SOUND_OUTPUT(); }
-  delay(100);
-  if (digitalRead(TEAM_[4]) == 1 ) { LINES(); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = "c5" ;  digitalWrite(BUZZ_[4], HIGH); SOUND_OUTPUT(); }
-  delay(100);
-  if (digitalRead(TEAM_[5]) == 1 ) { LINES(); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = "c6" ;  digitalWrite(BUZZ_[5], HIGH); SOUND_OUTPUT(); }   
-  }
+  /*if (digitalRead(TEAM_[0]) == 1 ) { LINES(); Serial.print(ts1); Serial.println(" Answered"); SCORE_[0]++; readystate = 0; receivedChar = 'c1' ;  digitalWrite(BUZZ_[0], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[1]) == 1 ) { LINES(); Serial.print(ts2); Serial.println(" Answered"); SCORE_[1]++; readystate = 0; receivedChar = 'c2' ;  digitalWrite(BUZZ_[1], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[2]) == 1 ) { LINES(); Serial.print(ts3); Serial.println(" Answered"); SCORE_[2]++; readystate = 0; receivedChar = 'c3' ;  digitalWrite(BUZZ_[2], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[3]) == 1 ) { LINES(); Serial.print(ts4); Serial.println(" Answered"); SCORE_[3]++; readystate = 0; receivedChar = 'c4' ;  digitalWrite(BUZZ_[3], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[4]) == 1 ) { LINES(); Serial.print(ts5); Serial.println(" Answered"); SCORE_[4]++; readystate = 0; receivedChar = 'c5' ;  digitalWrite(BUZZ_[4], LOW); SOUND_OUTPUT(); }
+  if (digitalRead(TEAM_[5]) == 1 ) { LINES(); Serial.print(ts6); Serial.println(" Answered"); SCORE_[5]++; readystate = 0; receivedChar = 'c6' ;  digitalWrite(BUZZ_[5], LOW); SOUND_OUTPUT(); }   
+  */}
  
   delay(10);
   if (Serial.available() >0){
   receivedChar = Serial.readString();receivedChar.trim();
-  Serial.println("RC1 "); Serial.println(receivedChar);
   //String str   = Serial.readString();str.trim();
   //Serial.print("Recived "); Serial.println(receivedChar);
   SOUND_OUTPUT();}

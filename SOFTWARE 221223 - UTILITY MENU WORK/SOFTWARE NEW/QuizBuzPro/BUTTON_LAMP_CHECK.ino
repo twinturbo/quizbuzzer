@@ -19,55 +19,50 @@ void BOOT_OPTIONS() {
   lcd.setCursor(0, 1);lcd.print("Katy Logo On Boot");
   YN(katy);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(KOB,1); katy = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(KOB,0); katy = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (KOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (KOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = No");} 
     }
   delay(2000);
   ANS = 0;  
   lcd.setCursor(0, 1);lcd.print("Quiz Logo On Boot");
   YN(LOGOd);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(LOB,1); LOGOd = 1 ;ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(LOB,0); LOGOd = 0 ;ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (LOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (LOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Quiz Logo = No");} 
     }
   delay(2000);
   ANS = 0;  
   lcd.setCursor(0, 1);lcd.print("Lamp Test On Boot");
   YN(lamp);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(AOM,1); lamp = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(AOM,0); lamp = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (AOM,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (AOM,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Lamp Test = No");} 
     }
   delay(2000);
   ANS = 0;  
   lcd.setCursor(0, 1);lcd.print("Button Test On Boot");
   YN(button);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(BOB,1); button = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(BOB,0); button = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (BOB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (BOB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Button Test = No");} 
     }
   delay(2000);
   ANS = 0;  
   lcd.setCursor(0, 1);lcd.print("Captain Test On Boot");
   YN(captain);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(COB,1); captain = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(COB,0); captain = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (COB,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (COB,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Captain Test = No");} 
     }
-  delay(2000);
   ANS = 0;  
   lcd.setCursor(0, 1);lcd.print("Score Persists ReBoot");
   YN(S_S);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(S_S,1); S_S = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(S_S,0); S_S = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write (S_S,1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write (S_S,0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
     }
-  Serial.println(EEPROM.read(KOB));
-  Serial.println(EEPROM.read(LOB));
-  Serial.println(EEPROM.read(AOM));
-  Serial.println(EEPROM.read(BOB));
-  Serial.println(EEPROM.read(COB));
-  Serial.println(EEPROM.read(S_S));
+ 
+
   /*
   int LOGOd = 0; // Quiz Logo on boot
   int lamp = 0; // Lamp Check on boot 
@@ -152,7 +147,7 @@ void LAMP_CHECK()
                  
    Serial.print("# Lamp                     "); Serial.print(x); Serial.println(" #");
     LINES();
-   digitalWrite(BUZZ_[x],HIGH);lcd.setCursor((x+1)*3-1,3);lcd.print("O");  delay(200);  digitalWrite(BUZZ_[x],LOW); lcd.setCursor((x+1)*3-1,3);lcd.print("X");
+   digitalWrite(BUZZ_[x],HIGH);lcd.setCursor((x+1)*3-1,3);lcd.print("O");  delay(400);  digitalWrite(BUZZ_[x],LOW); lcd.setCursor((x+1)*3-1,3);lcd.print("X");
   }
   delay(100);
  }

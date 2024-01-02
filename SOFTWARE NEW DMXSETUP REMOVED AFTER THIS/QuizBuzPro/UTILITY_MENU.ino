@@ -5,23 +5,24 @@ void UTILITY_MENU(){
  while ( exit_u_m != 0 ) {
   exit_u_m = 2;
   UTILITY_MX();
-    while ( exit_u_m == 2 ) {
+   Serial.print("Before While2 Exit UM = "); Serial.println(exit_u_m);
+   while ( exit_u_m == 2 ) {
     if (Serial.available() >0){
        char_u_m = Serial.readString();char_u_m.trim();
+       if ( char_u_m == "S" ) { DMX_SETUP();}
        if ( char_u_m == "F" ) { FIXTURE_DRIVE();}
        if ( char_u_m == "L" ) { DMX_LOAD();UTILITY_MX();}
        if ( char_u_m == "W" ) { DMX_SAVE();UTILITY_MX();}
        if ( char_u_m == "FS" ) {FIXTURE_SELECT();}
        if ( char_u_m == "V" ) { DMX_DISPLAY();delay(5000);UTILITY_MX();}
-       if ( char_u_m == "G" ) { GO_COLOUR(GREEN); delay(1000); GO_COLOUR(BLUE); delay(1000); GO_COLOUR(RED); delay(1000); GO_COLOUR(WHITE); delay(1000); GO_HOME();delay(2000);UTILITY_MX();} //GOOD
+       if ( char_u_m == "G" ) { GO_GREEN(); delay(1000); GO_BLUE(); delay(1000); GO_WHITE(); delay(1000); GO_RED(); delay(1000); GO_HOME();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "B" ) { BUTTON_CHECK();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "R" ) { LAMP_CHECK();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "K" ) { KATY();delay(2000);UTILITY_MX();} //GOOD
        if ( char_u_m == "Q" ) { LOGO();delay(2000);UTILITY_MX();}  //GOOF
        if ( char_u_m == "SCORE" ) { SCORE_FIX();delay(2000);UTILITY_MX();}  //GOOF
        if ( char_u_m == "O" ) { BOOT_OPTIONS();delay(2000);UTILITY_MX();}  //GOOF
-       if ( char_u_m == "E" ) { exit_u_m = 0; delay(2000);UTILITY_MX();}
-       if ( char_u_m == "Z" ) { ZERO(); Serial.print("IF Exit UM = "); exit_u_m = 0; Serial.println(exit_u_m) ;}
+       if ( char_u_m == "E" ) { Serial.print("E?"); exit_u_m = 0; Serial.print("IF Exit UM = "); exit_u_m = 0; Serial.println(exit_u_m) ;}
        if ( char_u_m == "I" ) { lcd.clear();
           lcd.setCursor(0,0); lcd.print("         3"); delay(750);
           lcd.setCursor(0,1); lcd.print("         2"); delay(750); 
@@ -47,6 +48,7 @@ void UTILITY_MX() {
   LINES();
   Serial.println("DMX");
   LINES();
+  Serial.println("S = DMX Setup");
   Serial.println("F = Fixture Drive");
   Serial.println("L = DMX Load");
   Serial.println("W = DMX Write");
@@ -74,7 +76,6 @@ void UTILITY_MX() {
   LINES();
   Serial.println("SCORE = Score Update");
   Serial.println("O = Boot Options");
-  Serial.println("Z = Zero Scores");
   Serial.println("E = Exit");
   Serial.println("I = Init 6");
   
