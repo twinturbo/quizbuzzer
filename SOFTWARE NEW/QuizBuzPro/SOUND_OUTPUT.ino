@@ -62,8 +62,8 @@ void SOUND_OUTPUT(){
   
  
   if (receivedChar == "R" ) {
-      randNumber = random(1,10);
-      Serial.print("Right "); Serial.println(randNumber);
+      randNumber = random(1,11);
+      //Serial.print("Right "); Serial.println(randNumber);
       lcd.clear();lcd.setCursor(0,0);lcd.print("  Ouda Da Park ");
       LINE(1);
       SPEC_COL(4);           
@@ -118,8 +118,8 @@ void SOUND_OUTPUT(){
   if (receivedChar == "W" ) {
      //DMXSerial.write(Colour,18);
          
-     randNumber = random(1,9);
-     Serial.print("wrong "); Serial.println(randNumber);
+     randNumber = random(1,10);
+     //Serial.print("wrong "); Serial.println(randNumber);
      lcd.clear();lcd.setCursor(0,0);lcd.print("  WHO'S A MUPPIT!!");
                  lcd.setCursor(0,1);lcd.print("====================");
      SPEC_COL(3);            
@@ -182,7 +182,6 @@ void SOUND_OUTPUT(){
   if (digitalRead(OTHER) == 0 ) {CLIFF();}
   if (digitalRead(RESET) == 0 ){ reset = "e";}
   if ( reset == "e" ) { receivedChar = "Exit"; 
-     Serial.print("reset2"); 
      reset = "null";
      lcd.clear();lcd.setCursor(0,1);lcd.print("RE-ARM >>>>>>>");
      OUTOFF();
@@ -190,8 +189,9 @@ void SOUND_OUTPUT(){
      for (int x=0 ; x<6; x++){ 
         digitalWrite(BUZZ_[x], LOW);
      }
-     int ranx=(random(1-60));
-     if (ranx == 30){QUIZBATTLE;}
+     int ranx=(random(1,6));
+     Serial.println("RAND ");Serial.print(ranx);
+     if (ranx == 5){QUIZBATTLE();}
      GO_COLOUR(BLUE);
      GO_HOME();
      SCORE();

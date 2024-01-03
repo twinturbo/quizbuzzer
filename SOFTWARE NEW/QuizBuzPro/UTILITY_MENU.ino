@@ -28,7 +28,7 @@ void UTILITY_MENU(){
        if ( char_u_m == "SR") { SC = "SR"; SOUNDCHECK(); UTILITY_MX(); } //GOOD
        if ( char_u_m == "SW") { SC = "SW"; SOUNDCHECK(); UTILITY_MX(); } //GOOD
        if ( char_u_m == "SC") { CLIFF(); UTILITY_MX(); } //
-       
+       if ( char_u_m == "QB") { QUIZBATTLE(); UTILITY_MX(); } //
        
        
        
@@ -90,6 +90,8 @@ void UTILITY_MX() {
   Serial.println("SR = Righto");
   Serial.println("SW = Wrong");
   Serial.println("SC = Cliff");
+  Serial.println("QB = QUIZBATTLE");
+  
   LINES();
   Serial.println("QUIZ ADAPTIONS");
   LINES();

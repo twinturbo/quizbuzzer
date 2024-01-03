@@ -102,10 +102,10 @@ void CLIFF(){
 void QUIZBATTLE() {
       SPEC_FLASH(1);
       for ( int BAT = 0 ; BAT <= 10 ; BAT++){
-        int BATX = (random(1,3));   
-       if ( BATX == 1 ) { PORTB = B11111110; delay(1300); }
+        int BATX = (random(1,4));   
+       if ( BATX == 1 ) { PORTB = B11111110; delay(1500); }
        if ( BATX == 2 ) { PORTB = B11110010; delay(1300); }
-       if ( BATX == 3 ) { PORTB = B11110100; delay(1300); }
+       if ( BATX == 3 ) { PORTB = B11110100; delay(2000); }
       }
       SPEC_FLASH(0);
       PORTB = B11111111;

@@ -201,7 +201,6 @@ void setup() {
    pinMode(BUZZ_[x], OUTPUT);
    digitalWrite(BUZZ_[x],HIGH);
   }*/
-  DMX_LOAD();
   //QUIZBATTLE();
   SCORE();
   }

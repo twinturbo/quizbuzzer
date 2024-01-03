@@ -1,6 +1,6 @@
 void DECREMENT(){
      
-     Serial.println("decrement");
+     //Serial.println("decrement");
      if (team == 1 ) SCORE_[0] -=1 ; 
      if (team == 2 ) SCORE_[1] -=1 ;
      if (team == 3 ) SCORE_[2] -=1 ;
