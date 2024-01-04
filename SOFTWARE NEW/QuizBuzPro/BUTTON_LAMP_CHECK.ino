@@ -56,11 +56,11 @@ void BOOT_OPTIONS() {
     }
   delay(2000);
   ANS = 0;  
-  lcd.setCursor(0, 1);lcd.print("Score Persists ReBoot");
-  YN(S_S);
+  lcd.setCursor(0, 1);lcd.print("Score Persist ReBoot");
+  YN(S_S_V);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(S_S,1); S_S = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(S_S,0); S_S = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(S_S_V,1); S_S_V = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(S_S_V,0); S_S_V = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
     }
   Serial.println(EEPROM.read(KOB));
   Serial.println(EEPROM.read(LOB));

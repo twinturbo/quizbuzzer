@@ -2,12 +2,13 @@ void SCORE_FIX ()  {
   SCORE_FIX_MENU();
   SCORE_FIX_TEAM();
   incdect();
+  SCORE_EEPROM();
 }
 
 void SCORE_FIX_MENU() {
   LINES();
   Serial.println("Which Team");
-    Serial.print("1 "); Serial.println(ts1);
+    //for ( T = 1 ; T <= 6 l ; T++ ){ String TM = "ts"  T ; Serial.print(T); Serial.println(TM);
     Serial.print("2 "); Serial.println(ts2);
     Serial.print("3 "); Serial.println(ts3);
     Serial.print("4 "); Serial.println(ts4);

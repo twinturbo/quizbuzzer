@@ -62,7 +62,7 @@ void SOUND_OUTPUT(){
   
  
   if (receivedChar == "R" ) {
-      randNumber = random(1,11);
+      randNumber = random(2,11);
       //Serial.print("Right "); Serial.println(randNumber);
       lcd.clear();lcd.setCursor(0,0);lcd.print("  Ouda Da Park ");
       LINE(1);
@@ -83,9 +83,8 @@ void SOUND_OUTPUT(){
       DMXSerial.write(Colour,54);
       delay(2000);
      */
-    
-    
-     if (randNumber == 1 ) { PORTB = B11010001; OUTOFF(); } // delay(500);  Serial.println(randNumber);} 
+          
+      
      if (randNumber == 2 ) { PORTB = B11010000; OUTOFF(); } // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 3 ) { PORTB = B11001111; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 4 ) { PORTB = B11001110; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 

@@ -57,7 +57,7 @@ void SOUNDCHECK() {
  PORTB = B11010010; lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk");                OUTOFF();   // It's a Unix System
   }
 
- if ( SC == "SW" ) {
+ if ( SC == "SR" ) {
    PORTB = B11010001; OUTOFF();
    PORTB = B11010000; OUTOFF();
    PORTB = B11001111; OUTOFF();
@@ -71,7 +71,8 @@ void SOUNDCHECK() {
  }
 
 
-if ( SC == "SR" ) {
+if ( SC == "SW" ) {
+           
     PORTB = B11000110; OUTOFF();
     PORTB = B11000101; OUTOFF();
     PORTB = B11000100; OUTOFF();
