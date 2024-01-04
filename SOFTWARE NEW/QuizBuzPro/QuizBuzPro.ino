@@ -1,10 +1,11 @@
 /*
   Quizbuzz by R Clayton
   For Arduino Mega Pro Mini
-  V0.2.0
+  Hardware QuiZbuzzer V0.1.3
+  V0.0.x
 */
 
-
+//LIBARY INCLDUES
 #include <DMXSerial.h>
 //DMXX library on port2
 #include <DMXSerial_avr.h>
@@ -14,10 +15,9 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd = LiquidCrystal_I2C(0x3F, 20, 4);
 
-//spectrapix channel offset.
-int sc = 14;
-
+//enable the reset function , used in utility menu
 void(* resetFunc) (void) = 0;
+
 
 //System Options eeprom locations
 int KOB = 100;
@@ -26,14 +26,16 @@ int AOM = 102;
 int BOB = 103;
 int COB = 104;
 int S_S = 105;
+
 //System Boot Options from eeprom ( set in utility mrnu )
 int katy = EEPROM.read(KOB); //KATY Logo on boot
 int LOGOd = EEPROM.read(LOB); // Quiz Logo on boot
 int lamp = EEPROM.read(AOM); // Lamp Check on boot
 int button = EEPROM.read(BOB); // Button Check on boot
 int captain = EEPROM.read(COB); //captain sound on boot
-int S_S_V = EEPROM.read(S_S); //captain sound on boot
+int S_S_V = EEPROM.read(S_S); //reload saved score on boot
 
+//Score values stored in eeprom
 int SS_[] = {106, 107, 108, 109, 110 , 111} ;
 
 
@@ -44,27 +46,23 @@ int SS_[] = {106, 107, 108, 109, 110 , 111} ;
 //Need to set portL as input
 int TEAM_[] = {44, 45, 46, 47, 48, 49};
 //Team Score
+//Runtime scores, loaded from SS_[] if boot option S_S = 1, set from utility menu.
 int SCORE_[]  = {0, 0, 0, 0, 0, 0, 0, 0};
 
-
-/*
-  struct dmxdata
-  {
-    int PAN, TILT, FOCUS, ZOOM;
-  } ;
-
-  dmxdata dmxset[5];
-  dmxset[5].PAN = 50;
-*/
-
-//DMX Values for moving head per team
+//DMX Values for moving head per team, initial set but loaed by DMX load if boot option enabled
 int DMX_X_[] = {0, 0, 0, 0, 0, 0};
 int DMX_Y_[] = {0, 0, 0, 0, 0, 0};
 int DMX_Z_[] = {0, 0, 0, 0, 0, 0};
 int DMX_F_[] = {0, 0, 0, 0, 0, 0};
 
-//Ligting fixture manual setup ( overridden by DMX_LOAD )
-int FixMap = 0;
+//spectrapix channel offset, used in SPEC_ routines to offset changel from CH1 
+//https://www.prolight.co.uk/product_manual/EQLED058_Manual.pdf
+int sc = 14;
+
+
+//Ligting fixture manual setup some overridden by DMX_LOAD ) 
+//https://www.prolight.co.uk/product_manual/EQLED054_EQLED054A_Manual.pdf
+int FixMap = 0; // Relativly redundant as not compensating for other primary fixrtures.
 int Shutter = 1 + 3 ; //240
 int Dimmer = 2 + 3 ; //255
 int Colour = 3 + 3 ; // red 14, gren 55, white 0, blue 70
@@ -77,10 +75,10 @@ int Pans = 8 + 3 ; //0=255
 int Tilt = 10 + 3 ; //0-255
 int Speed = 12 + 3 ; //3-245 fast - slow
 int Zoom = 0 ;
-
-int Gobo = 8 ;
-int Prism = 12 ;
+int Gobo = 8 ; // Standard Gobo
+int Prism = 12 ; // 3 Facet and linera prism 
 int Rotate = 13 ;
+
 
 
 // A table setting used somewhere.
@@ -89,25 +87,23 @@ int TableD = 0;
 //digital button reads
 //Auxiliary Buttons
 int BUT_[] = {30, 31, 32, 33, 34, 35, 36, 37};
-// Top Pannel Controls
-int RESET = BUT_[5];
-int CORRECT = BUT_[7];
-int WRONG = BUT_[4];
-int OTHER = BUT_[6];
+
+// Top Pannel Controls [from array] 
+int RESET = BUT_[5]; //0-7 35
+int CORRECT = BUT_[7]; //0-7 37
+int WRONG = BUT_[4]; //0-7 34
+int OTHER = BUT_[6]; //0-7 36
 
 
-//digital write lamps
-//IS THIS CORRECT??
-//8-11-23  updated array values to new Version Board
+//digital outputs for relays to control Lightboard Lamps.
 int BUZZ_[] = {22, 24, 26, 28, 23, 25};
-//Correct
 
 //digital mp3
-//MP3 Pin enable used in OUTOFF Routine
+//MP3 Pin enable used in OUTOFF Routine, low? when playing. 
 int MP3_EN = 2;
 
 //AUXILIARY
-// All worong
+// All worong not implemented
 //int AUX_[27] = {17,16,15,14,A0,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,47,48,49,3,8,9,10};
 //
 
@@ -119,39 +115,16 @@ int readystate = 1; //controls if the quiz buzers are active.
 String reset = "null"; //controls the state to reset from wrong/right and re-enable the main loop.
 String SC = "P"; // Sound Check ( T = Team (main and Decremetn, A = Adverts , F = Films,  X = wrong  Y = right
 
-//Team Display Strings
-String ts1 = " Cooo n 2 in ma bru";
-String tm1 = " McClay";
-String lcs1 = "MM";
-
-String ts2 = " Tones of Time";
-String tm2 = " Tones";
-String lcs2 = "LT";
-String ts3 = " Tashly wrs ya Ash";
-String tm3 = " Wilson";
-String lcs3 = "AW";
-
-String ts4 = " Bessies Besties";
-String tm4 = " Bestwick";
-String lcs4 = "JB";
-
-String ts5 = " APaulin Perfmnce";
-String tm5 = " Haliday";
-String lcs5 = "PH";
-
-String ts6 = " Daren to be difrnt";
-String tm6 = " Kelton";
-String lcs6 = "DK";
+//Team Display Strings ( TS = Long Team Name, Tm = Captains Name, LCS LCD Initials score Board.
+String ts[6] {" Cooo n 2 in ma bru", " Tones of Time", " Tashly wrs ya Ash" , " Bessies Besties" , " APaulin Perfmnce", " Daren to be difrnt"};
+String tm[6] {" McClay" , " Tones", " Wilson", " Breadstick", " Haliday", " Keton"};
+String lcs[6] {"MM","LT","AW","JB","PH","DK"};
 
 
 
 int scTeam = 9;
 int PlusMinus = 0 ;
 int TeamX = 10 ;
-
-
-
-
 
 void setup() {
   Serial.begin(9600);
@@ -172,6 +145,7 @@ void setup() {
   PORTA = B00000000;
   DDRB = B11111111;
   PORTB = B11111111;
+   
   DMXSerial.init(DMXController);
   //spectarpix set zero
   for ( int colour  = 1; colour <= 53; colour++ ) {
@@ -196,22 +170,11 @@ void setup() {
     pinMode(BUT_[x], INPUT_PULLUP);
   }
   //
-  if ( katy == 1 ) {
-    KATY();
-  }
-  if ( LOGOd == 1 ) {
-    LOGO();
-  }
-  if ( lamp == 1 ) {
-    LAMP_CHECK();
-  }
-  if ( button == 1 ) {
-    BUTTON_CHECK();
-  }
-  if ( captain == 1 ) {
-    SC = "ST" ;
-    SOUNDCHECK();
-  }
+  if ( katy == 1 ) {KATY();}
+  if ( LOGOd == 1 ) {LOGO();}
+  if ( lamp == 1 ) {LAMP_CHECK();}
+  if ( button == 1 ) {BUTTON_CHECK();}
+  if ( captain == 1 ) {SC = "ST" ; SOUNDCHECK(); }
   //
   /*for (int x=0 ; x<8; x++){
     pinMode(BUZZ_[x], OUTPUT);
@@ -227,7 +190,7 @@ void loop() {
     team = 0;
     if (digitalRead(TEAM_[0]) == 1 ) {
       LINES();
-      Serial.print(ts1);
+      Serial.print(ts[0]);
       Serial.println(" Answered");
       SCORE_[0]++;
       readystate = 0;
@@ -239,7 +202,7 @@ void loop() {
     delay(100);
     if (digitalRead(TEAM_[1]) == 1 ) {
       LINES();
-      Serial.print(ts2);
+      Serial.print(ts[1]);
       Serial.println(" Answered");
       SCORE_[1]++;
       readystate = 0;
@@ -250,7 +213,7 @@ void loop() {
     delay(100);
     if (digitalRead(TEAM_[2]) == 1 ) {
       LINES();
-      Serial.print(ts3);
+      Serial.print(ts[2]);
       Serial.println(" Answered");
       SCORE_[2]++;
       readystate = 0;
@@ -261,7 +224,7 @@ void loop() {
     delay(100);
     if (digitalRead(TEAM_[3]) == 1 ) {
       LINES();
-      Serial.print(ts4);
+      Serial.print(ts[3]);
       Serial.println(" Answered");
       SCORE_[3]++;
       readystate = 0;
@@ -272,7 +235,7 @@ void loop() {
     delay(100);
     if (digitalRead(TEAM_[4]) == 1 ) {
       LINES();
-      Serial.print(ts5);
+      Serial.print(ts[4]);
       Serial.println(" Answered");
       SCORE_[4]++;
       readystate = 0;
@@ -283,7 +246,7 @@ void loop() {
     delay(100);
     if (digitalRead(TEAM_[5]) == 1 ) {
       LINES();
-      Serial.print(ts6);
+      Serial.print(ts[5]);
       Serial.println(" Answered");
       SCORE_[5]++;
       readystate = 0;

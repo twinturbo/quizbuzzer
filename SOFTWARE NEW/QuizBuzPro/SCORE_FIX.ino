@@ -8,12 +8,8 @@ void SCORE_FIX ()  {
 void SCORE_FIX_MENU() {
   LINES();
   Serial.println("Which Team");
-    //for ( T = 1 ; T <= 6 l ; T++ ){ String TM = "ts"  T ; Serial.print(T); Serial.println(TM);
-    Serial.print("2 "); Serial.println(ts2);
-    Serial.print("3 "); Serial.println(ts3);
-    Serial.print("4 "); Serial.println(ts4);
-    Serial.print("5 "); Serial.println(ts5);
-    Serial.print("6 "); Serial.println(ts6);
+    LINES();
+    for ( int T = 0 ; T <= 5  ; T++ ){ Serial.print(T+1) ; Serial.print(ts[T]); Serial.print(" "); Serial.println(SCORE_[T]);}
     LINES();
 } 
 

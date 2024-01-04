@@ -1,4 +1,5 @@
 void ROUNDER(){
+  PORTB = 15;
   Serial.println("ENTRY");
   DMXSerial.write(Shutter, 200);
   DMXSerial.write(Prism, 60); 
@@ -40,6 +41,7 @@ void ROUNDER(){
   DMXSerial.write(Prism, 2); 
   DMXSerial.write(Rotate, 120); 
   SPEC_FLASH(0); 
+  PORTB = 255;
 }
 
 

@@ -6,18 +6,18 @@ void SOUND_OUTPUT(){
   //Serial.print("Recived IN Loop"); Serial.println(receivedChar);
   //delay(2000);
   Serial.print(receivedChar);
-  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts1); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts1);lcd.setCursor(0,2);lcd.print(tm1); LINE(3); OUTOFF();}
-  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts2); team = 2; MOVE_HEAD(2,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts2);lcd.setCursor(0,2);lcd.print(tm2); LINE(3); OUTOFF();} 
-  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts3); team = 3; MOVE_HEAD(3,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts3);lcd.setCursor(0,2);lcd.print(tm3); LINE(3); OUTOFF();} 
-  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts4); team = 4; MOVE_HEAD(4,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts4);lcd.setCursor(0,2);lcd.print(tm4); LINE(3); OUTOFF();} 
-  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts5); team = 5; MOVE_HEAD(5,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts5);lcd.setCursor(0,2);lcd.print(tm5); LINE(3); OUTOFF();} 
-  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts6); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts6);lcd.setCursor(0,2);lcd.print(tm6); LINE(3); OUTOFF();} 
+  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts[0]); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[0]);lcd.setCursor(0,2);lcd.print(tm[0]); LINE(3); OUTOFF();}
+  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts[1]); team = 2; MOVE_HEAD(2,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[1]);lcd.setCursor(0,2);lcd.print(tm[1]); LINE(3); OUTOFF();} 
+  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts[2]); team = 3; MOVE_HEAD(3,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[2]);lcd.setCursor(0,2);lcd.print(tm[2]); LINE(3); OUTOFF();} 
+  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts[3]); team = 4; MOVE_HEAD(4,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[3]);lcd.setCursor(0,2);lcd.print(tm[3]); LINE(3); OUTOFF();} 
+  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts[4]); team = 5; MOVE_HEAD(5,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[4]);lcd.setCursor(0,2);lcd.print(tm[4]); LINE(3); OUTOFF();} 
+  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts[5]); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[5]);lcd.setCursor(0,2);lcd.print(tm[5]); LINE(3); OUTOFF();} 
   // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
   
   //Decrement
   if (receivedChar == "d1" ) { PORTB = B11111000; OUTOFF(); SCORE_[0] -=1; SCORE();} // } //TEAM_1 sound 0001
   if (receivedChar == "d2" ) { PORTB = B11110111; OUTOFF(); SCORE_[1] -=1; SCORE();} // } //TEAM_2 sound 0002
-  if (receivedChar == "d3" ) { PORTB = B11110110; OUTOFF(); SCORE_[2] -=1; SCORE();} // } //TEAM_3 sound 0003
+  if (receivedChar == "d3" ) { PORTB = /*B11110110*/ 246; OUTOFF(); SCORE_[2] -=1; SCORE();} // } //TEAM_3 sound 0003
   if (receivedChar == "d4" ) { PORTB = B11110101; OUTOFF(); SCORE_[3] -=1; SCORE();} // } //TEAM_4 sound 0004
   if (receivedChar == "d5" ) { PORTB = B11110100; OUTOFF(); SCORE_[4] -=1; SCORE();} // } //TEAM_5 sound 0005
   if (receivedChar == "d6" ) { PORTB = B11110011; OUTOFF(); SCORE_[5] -=1; SCORE();} // } //TEAM_6 sound 0006
@@ -28,11 +28,11 @@ void SOUND_OUTPUT(){
    if (receivedChar == "a3")  { PORTB = B11101111; lcd.clear();lcd.setCursor(0,0);lcd.print("Milky Way");}  //Milky Way
    if (receivedChar == "a4")  { PORTB = B11101110; lcd.clear();lcd.setCursor(0,0);lcd.print("Birdseye");}  //Birdsey
    if (receivedChar == "a5")  { PORTB = B11101101; lcd.clear();lcd.setCursor(0,0);lcd.print("Aquafresh");}  //Aquafresh
- //if (receivedChar == "a6")  { PORTB = B11101100; lcd.clear();lcd.setCursor(0,0);lcd.print("Domestos");}  //Birdsey
+   if (receivedChar == "a6")  { PORTB = B11101100; lcd.clear();lcd.setCursor(0,0);lcd.print("Domestos");}  //Birdsey
    if (receivedChar == "a7")  { PORTB = B11101011; lcd.clear();lcd.setCursor(0,0);lcd.print("Ferero Roche");}  //Ferero Roche
- //if (receivedChar == "a8")  { PORTB = B11101010; lcd.clear();lcd.setCursor(0,0);lcd.print("OldSpice");}  //Old Spice
+   if (receivedChar == "a8")  { PORTB = B11101010; lcd.clear();lcd.setCursor(0,0);lcd.print("OldSpice");}  //Old Spice
    if (receivedChar == "a9")  { PORTB = B11101001; lcd.clear();lcd.setCursor(0,0);lcd.print("PG Tips");}  //PG TIPS
- //if (receivedChar == "a10") { PORTB = B11101000; lcd.clear();lcd.setCursor(0,0);lcd.print("Umbongo");}  // Umbpongo
+   if (receivedChar == "a10") { PORTB = B11101000; lcd.clear();lcd.setCursor(0,0);lcd.print("Umbongo");}  // Umbpongo
    if (receivedChar == "a11") { PORTB = B11100111; lcd.clear();lcd.setCursor(0,0);lcd.print("Lurpack");}  //Lurpack
    if (receivedChar == "a12") { PORTB = B11100110; lcd.clear();lcd.setCursor(0,0);lcd.print("Milk Tray");} // Milk Tray
    if (receivedChar == "a13") { PORTB = B11100101; lcd.clear();lcd.setCursor(0,0);lcd.print("Brut");}  //Brut
@@ -44,21 +44,21 @@ void SOUND_OUTPUT(){
   
   if (receivedChar == "f1")  { PORTB = B11100010; lcd.clear();lcd.setCursor(0,0);lcd.print("Fast And Furiois"); } // Fast and Furious ( Hector Order )
   if (receivedChar == "f2")  { PORTB = B11100001; lcd.clear();lcd.setCursor(0,0);lcd.print("Ground Hog Day");} // Ground Hog day
-  //if (receivedChar == "f3")  { PORTB = B11100000; lcd.clear();lcd.setCursor(0,0);lcd.print("Transformers");} // Cut the ahrd Lines
+  if (receivedChar == "f3")  { PORTB = B11100000; lcd.clear();lcd.setCursor(0,0);lcd.print("Transformers");} // Cut the ahrd Lines
   if (receivedChar == "f4")  { PORTB = B11011111; lcd.clear();lcd.setCursor(0,0);lcd.print("Home Alone 2");} // Home Alone 2
-  //if (receivedChar == "f5")  { PORTB = B11011110; lcd.clear();lcd.setCursor(0,0);lcd.print("2001 - Hal Shutdown");} // Home Alone 2
+  if (receivedChar == "f5")  { PORTB = B11011110; lcd.clear();lcd.setCursor(0,0);lcd.print("2001 - Hal Shutdown");} // Home Alone 2
   if (receivedChar == "f6")  { PORTB = B11011101; lcd.clear();lcd.setCursor(0,0);lcd.print("Monty Pithon Meaning of Life");} // Monthy Python the Meaning of life
-  //if (receivedChar == "f7")  { PORTB = B11011100; lcd.clear();lcd.setCursor(0,0);lcd.print("TOP GUN ");} // Flyby
+  if (receivedChar == "f7")  { PORTB = B11011100; lcd.clear();lcd.setCursor(0,0);lcd.print("TOP GUN ");} // Flyby
   if (receivedChar == "f8")  { PORTB = B11011011; lcd.clear();lcd.setCursor(0,0);lcd.print("Muppet Christmas Carol");} // Muppet Christmas Carrol
-  //if (receivedChar == "f9")  { PORTB = B11011010;  lcd.clear();lcd.setCursor(0,0);lcd.print("Aliens");} // Now what the fuck are we supposed to do.
+  if (receivedChar == "f9")  { PORTB = B11011010;  lcd.clear();lcd.setCursor(0,0);lcd.print("Aliens");} // Now what the fuck are we supposed to do.
   if (receivedChar == "f10") { PORTB = B11011001;  lcd.clear();lcd.setCursor(0,0);lcd.print("Shawchank Redemtion");} // Shawshank Redemption
-  //if (receivedChar == "f11") { PORTB = B11011000; lcd.clear();lcd.setCursor(0,0);lcd.print("Crocadile Dundee 2 ");} // Not a Knife
+  if (receivedChar == "f11") { PORTB = B11011000; lcd.clear();lcd.setCursor(0,0);lcd.print("Crocadile Dundee 2 ");} // Not a Knife
   if (receivedChar == "f12") { PORTB = B11010111;  lcd.clear();lcd.setCursor(0,0);lcd.print("Star wars New Hope");} // Star Wars New Hope
   if (receivedChar == "f13") { PORTB = B11010110;  lcd.clear();lcd.setCursor(0,0);lcd.print("Lion King");} // The Lion King
   if (receivedChar == "f14") { PORTB = B11010101;  lcd.clear();lcd.setCursor(0,0);lcd.print("Titanic");} // Titanic 
   if (receivedChar == "f15") { PORTB = B11010100;  lcd.clear();lcd.setCursor(0,0);lcd.print("Wolf of wall street");} // Wolf Of wall Street
-  //if (receivedChar == "f16") { PORTB = B11010011; lcd.clear();lcd.setCursor(0,0);lcd.print("Mad MAx");} // last of the V8 Interceptors
-  //if (receivedChar == "f17") { PORTB = B11010010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk");} // It's a Unix System
+  if (receivedChar == "f16") { PORTB = B11010011; lcd.clear();lcd.setCursor(0,0);lcd.print("Mad MAx");} // last of the V8 Interceptors
+  if (receivedChar == "f17") { PORTB = B11010010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk");} // It's a Unix System
   
  
   if (receivedChar == "R" ) {
@@ -177,7 +177,7 @@ void SOUND_OUTPUT(){
 
 
   //RESET
-  while ( receivedChar == "exit" ) {
+  while ( receivedChar == "exit" or "e" ) {
   if (digitalRead(OTHER) == 0 ) {CLIFF();}
   if (digitalRead(RESET) == 0 ){ reset = "e";}
   if ( reset == "e" ) { receivedChar = "Exit"; 
@@ -191,13 +191,15 @@ void SOUND_OUTPUT(){
      int ranx=(random(1,6));
      Serial.println("RAND ");Serial.print(ranx);
      if (ranx == 5){QUIZBATTLE();}
+     PORTB = 7; 
      GO_COLOUR(BLUE);
      GO_HOME();
      SCORE();
+     OUTOFF();
      exit;
     }
   }
-  
+  Serial.println(receivedChar);
   //SCORE();
   //delay(2000);
   //exit;

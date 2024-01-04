@@ -1,17 +1,17 @@
 void SOUNDCHECK() { 
   if ( SC == "ST" ) {
   lcd.clear();lcd.setCursor(0,0);lcd.print("SOUNDCHECK");delay(2000);
-  PORTB = B11111110; lcd.clear();lcd.setCursor(0,0);lcd.print(ts1); OUTOFF();
+  PORTB = B11111110; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[0]); OUTOFF();
   PORTB = B11111000; OUTOFF(); //DECREMENT
-  PORTB = B11111101; lcd.clear();lcd.setCursor(0,0);lcd.print(ts2); OUTOFF();
+  PORTB = B11111101; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[1]); OUTOFF();
   PORTB = B11110111; OUTOFF(); //DECREMENT
-  PORTB = B11111100; lcd.clear();lcd.setCursor(0,0);lcd.print(ts3); OUTOFF();
+  PORTB = B11111100; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[2]); OUTOFF();
   PORTB = B11110110; OUTOFF(); //DECREMENT
-  PORTB = B11111011; lcd.clear();lcd.setCursor(0,0);lcd.print(ts4); OUTOFF();
+  PORTB = B11111011; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[3]); OUTOFF();
   PORTB = B11110101; OUTOFF(); //DECREMENT
-  PORTB = B11111010; lcd.clear();lcd.setCursor(0,0);lcd.print(ts5); OUTOFF();
+  PORTB = B11111010; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[4]); OUTOFF();
   PORTB = B11110100; OUTOFF(); //DECREMENT
-  PORTB = B11111001; lcd.clear();lcd.setCursor(0,0);lcd.print(ts6); OUTOFF();
+  PORTB = B11111001; lcd.clear();lcd.setCursor(0,0);lcd.print(ts[5]); OUTOFF();
   PORTB = B11110011; OUTOFF(); //DECREMENT
   }
 

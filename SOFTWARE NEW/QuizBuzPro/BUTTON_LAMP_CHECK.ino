@@ -1,10 +1,11 @@
 void YN(int YNA){
   Serial.print("YNA"); Serial.println(YNA);
-  if (YNA == 0) { lcd.setCursor(0, 2);lcd.print("Is Disabled");}
-  if (YNA == 1) { lcd.setCursor(0, 2);lcd.print("Is Enabled");}
-  lcd.setCursor(0, 3);lcd.print("Right YES / Wrong NO");
+  switch(YNA){
+  case 0: lcd.setCursor(0, 2);lcd.print("Is Disabled");break;
+  case 1: lcd.setCursor(0, 2);lcd.print("Is Enabled");break;
   }
-
+  lcd.setCursor(0, 3);lcd.print("Right YES / Wrong NO");
+}
 
 void BOOT_OPTIONS() {
   int ANS = 0 ;
@@ -102,15 +103,15 @@ lcd.setCursor(0,2); lcd.print("Press Reset      ");
 
 
 while (xtc != 10){
-    if (digitalRead(WRONG) == LOW) { /*Serial.println("WRONG PRESSED ")*/;wtc = wtc+1; /*Serial.println(wtc);*/ lcd.setCursor(0,0); lcd.print("Wrong Pressed");}
-    if (digitalRead(CORRECT) == LOW) { /*Serial.println("CORRECT PRESSED ");*/ctc = ctc+1; /*Serial.println(ctc); */lcd.setCursor(0,1); lcd.print("Right Pressed");}
-    if (digitalRead(RESET) == LOW) { /*Serial.println("RESET PRESSED ")*/;rtc = rtc+1; /*Serial.println(rtc);*/ lcd.setCursor(0,2); lcd.print("Reset Pressed");} 
-    if (digitalRead(OTHER) == LOW) { /*Serial.println("OTHER PRESSED ")*/;otc = otc+1; /*Serial.println(otc); */ lcd.setCursor(0,3); lcd.print("Cliff Pressed");}
-    if (rtc > 1 and ctc > 1 and otc > 1 and wtc > 1) {xtc = 10;}
-    
-    
+    if (digitalRead(WRONG) == LOW) { /*Serial.println("WRONG PRESSED ")*/;wtc = wtc+1; /*Serial.println(wtc);*/ lcd.setCursor(0,0); lcd.print("Wrong Pressed");PORTB = 5;OUTOFF();}
+    if (digitalRead(CORRECT) == LOW) { /*Serial.println("CORRECT PRESSED ");*/ctc = ctc+1; /*Serial.println(ctc); */lcd.setCursor(0,1); lcd.print("Right Pressed");PORTB = 6;OUTOFF();}
+    if (digitalRead(RESET) == LOW) { /*Serial.println("RESET PRESSED ")*/;rtc = rtc+1; /*Serial.println(rtc);*/ lcd.setCursor(0,2); lcd.print("Reset Pressed");PORTB = 3;OUTOFF();} 
+    if (digitalRead(OTHER) == LOW) { /*Serial.println("OTHER PRESSED ")*/;otc = otc+1; /*Serial.println(otc); */ lcd.setCursor(0,3); lcd.print("Cliff Pressed");PORTB = 4;OUTOFF();}
+    if (rtc > 0 and ctc > 0 and otc > 0 and wtc > 0) {xtc = 10;}
+      
     delay(20);
    }
+   
    lcd.setCursor(16,0); lcd.print("#"); delay(100);
    lcd.setCursor(17,0); lcd.print("#"); delay(100);
    lcd.setCursor(18,0); lcd.print("#"); delay(100);
