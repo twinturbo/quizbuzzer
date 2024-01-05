@@ -284,5 +284,5 @@ void loop() {
     SOUND_OUTPUT();
     receivedChar = "null" ;
   }
-
+  //Serial.println(receivedChar);
 }

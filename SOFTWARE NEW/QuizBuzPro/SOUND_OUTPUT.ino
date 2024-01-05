@@ -5,13 +5,23 @@ void SOUND_OUTPUT(){
   //BUZIN
   //Serial.print("Recived IN Loop"); Serial.println(receivedChar);
   //delay(2000);
-  Serial.print(receivedChar);
-  if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts[0]); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[0]);lcd.setCursor(0,2);lcd.print(tm[0]); LINE(3); OUTOFF();}
+
+  //splitup the input string into type and number
+  char CA = receivedChar[0]; char CB = receivedChar[1] - 0 ; int  CC = CB - '0'; 
+
+  
+  if ( CA == 'c' ){
+   int S1 = 255;
+  /*if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts[0]); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[0]);lcd.setCursor(0,2);lcd.print(tm[0]); LINE(3); OUTOFF();}
   if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts[1]); team = 2; MOVE_HEAD(2,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[1]);lcd.setCursor(0,2);lcd.print(tm[1]); LINE(3); OUTOFF();} 
   if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts[2]); team = 3; MOVE_HEAD(3,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[2]);lcd.setCursor(0,2);lcd.print(tm[2]); LINE(3); OUTOFF();} 
   if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts[3]); team = 4; MOVE_HEAD(4,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[3]);lcd.setCursor(0,2);lcd.print(tm[3]); LINE(3); OUTOFF();} 
   if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts[4]); team = 5; MOVE_HEAD(5,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[4]);lcd.setCursor(0,2);lcd.print(tm[4]); LINE(3); OUTOFF();} 
-  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts[5]); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[5]);lcd.setCursor(0,2);lcd.print(tm[5]); LINE(3); OUTOFF();} 
+  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts[5]); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[5]);lcd.setCursor(0,2);lcd.print(tm[5]); LINE(3); OUTOFF();} */
+  PORTB = S1 - CC ; Serial.println(ts[CC-1]); team = CC ; MOVE_HEAD(CC,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[CC-1]);lcd.setCursor(0,2);lcd.print(tm[CC-1]); LINE(3); OUTOFF();
+  }
+  
+  //Serial.println("BREAK 1");
   // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
   
   //Decrement
@@ -21,6 +31,7 @@ void SOUND_OUTPUT(){
   if (receivedChar == "d4" ) { PORTB = B11110101; OUTOFF(); SCORE_[3] -=1; SCORE();} // } //TEAM_4 sound 0004
   if (receivedChar == "d5" ) { PORTB = B11110100; OUTOFF(); SCORE_[4] -=1; SCORE();} // } //TEAM_5 sound 0005
   if (receivedChar == "d6" ) { PORTB = B11110011; OUTOFF(); SCORE_[5] -=1; SCORE();} // } //TEAM_6 sound 0006
+  //Serial.println("BREAK 2");
    
   //Adverts 
    if (receivedChar == "a1")  { PORTB = B11110001; lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");}  //Cadburys
@@ -38,7 +49,7 @@ void SOUND_OUTPUT(){
    if (receivedChar == "a13") { PORTB = B11100101; lcd.clear();lcd.setCursor(0,0);lcd.print("Brut");}  //Brut
    if (receivedChar == "a14") { PORTB = B11100100; lcd.clear();lcd.setCursor(0,0);lcd.print("Castlemain");}  // Castlemain
    if (receivedChar == "a15") { PORTB = B11100011; lcd.clear();lcd.setCursor(0,0);lcd.print("Fanta");}  //Fanta
-
+   //Serial.println("BREAK 3");
     
    //Films 
   
@@ -59,8 +70,8 @@ void SOUND_OUTPUT(){
   if (receivedChar == "f15") { PORTB = B11010100;  lcd.clear();lcd.setCursor(0,0);lcd.print("Wolf of wall street");} // Wolf Of wall Street
   if (receivedChar == "f16") { PORTB = B11010011; lcd.clear();lcd.setCursor(0,0);lcd.print("Mad MAx");} // last of the V8 Interceptors
   if (receivedChar == "f17") { PORTB = B11010010; OUTOFF(); lcd.clear();lcd.setCursor(0,0);lcd.print("Jurassic PArk");} // It's a Unix System
+  //Serial.println("BREAK 4");
   
- 
   if (receivedChar == "R" ) {
       randNumber = random(2,11);
       //Serial.print("Right "); Serial.println(randNumber);
@@ -70,22 +81,20 @@ void SOUND_OUTPUT(){
       GO_COLOUR(GREEN);
       SPEC_FLASH(1);
       HEAD_FLASH(1);
-      /*DMXSerial.write(Colour,72);
-      delay(2000);
-      DMXSerial.write(Colour,54);
-      delay(2000);
-      DMXSerial.write(Colour,72);
-      delay(2000);
-      DMXSerial.write(Colour,54);
-      delay(2000);
-      DMXSerial.write(Colour,72);
-      delay(2000);
-      DMXSerial.write(Colour,54);
-      delay(2000);
-     */
           
-      
-     if (randNumber == 2 ) { PORTB = B11010000; OUTOFF(); } // delay(500);  Serial.println(randNumber);} 
+     //replace case
+     switch(randNumber) {
+        case 2: PORTB = 208 ;break; //208
+        case 3: PORTB = 207 ;break; //207
+        case 4: PORTB = 206 ;break; //206
+        case 5: PORTB = 205 ;break; //205
+        case 6: PORTB = 204 ;break; //204
+        case 7: PORTB = 203 ;break; //203
+        case 8: PORTB = 202 ;break; //202
+        case 9: PORTB = 201 ;break; //201
+        case 10: PORTB = 200; break; //200
+        }
+     /*if (randNumber == 2 ) { PORTB = B11010000; OUTOFF(); } // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 3 ) { PORTB = B11001111; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 4 ) { PORTB = B11001110; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 5 ) { PORTB = B11001101; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
@@ -93,7 +102,7 @@ void SOUND_OUTPUT(){
      if (randNumber == 7 ) { PORTB = B11001011; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 8 ) { PORTB = B11001010; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 9 ) { PORTB = B11001001; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
-     if (randNumber == 10) { PORTB = B11001000; OUTOFF(); } //delay(500);  Serial.println(randNumber);} 
+     if (randNumber == 10) { PORTB = B11001000; OUTOFF(); } //delay(500);  Serial.println(randNumber);} */
      
      
      
@@ -113,6 +122,7 @@ void SOUND_OUTPUT(){
      delay(1000);
      }
 
+  //Serial.println("BREAK 5");
   //Play a wrong Chune
   if (receivedChar == "W" ) {
      //DMXSerial.write(Colour,18);
@@ -125,7 +135,19 @@ void SOUND_OUTPUT(){
      GO_COLOUR(RED);
      SPEC_FLASH(1);
      HEAD_FLASH(1);
-     if (randNumber == 1 ) { PORTB = B11000111; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
+     switch(randNumber) {
+        case 1: PORTB = 199; break; //199
+        case 2: PORTB = 198; break; //198
+        case 3: PORTB = 199; break; //197
+        case 4: PORTB = 196; break; //196
+        case 5: PORTB = 195; break; //195
+        case 6: PORTB = 194; break; //194
+        case 7: PORTB = 193; break; //193
+        case 8: PORTB = 192; break; //192
+        case 9: PORTB = 191; break; //191
+     }
+     OUTOFF();
+     /*if (randNumber == 1 ) { PORTB = B11000111; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 2 ) { PORTB = B11000110; OUTOFF();} // delay(500);  Serial.println(randNumber);} 
      if (randNumber == 3 ) { PORTB = B11000101; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 4 ) { PORTB = B11000100; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
@@ -133,7 +155,10 @@ void SOUND_OUTPUT(){
      if (randNumber == 6 ) { PORTB = B11000010; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 7 ) { PORTB = B11000001; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
      if (randNumber == 8 ) { PORTB = B11000000; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
-     if (randNumber == 9 ) { PORTB = B10111111; OUTOFF();} //delay(500);  Serial.println(randNumber);} 
+     if (randNumber == 9 ) { PORTB = B10111111; OUTOFF();} //delay(500);  Serial.println(randNumber);} */
+     
+     
+     
      DECREMENT();
      DECREMENT();
      //digitalWrite(BUZZ_1, HIGH); digitalWrite(BUZZ_2, HIGH); digitalWrite(BUZZ_3, HIGH); digitalWrite(BUZZ_4, HIGH); digitalWrite(BUZZ_5, HIGH); digitalWrite(BUZZ_6, HIGH);
@@ -152,6 +177,9 @@ void SOUND_OUTPUT(){
      PORTB = B11111111;
   }
 
+
+  
+    //Serial.println("BREAK 6");
     if (receivedChar == "C" ) { 
       SPEC_COL(3);
       GO_COLOUR(RED);
@@ -173,13 +201,18 @@ void SOUND_OUTPUT(){
       if (team == 0 ) { GO_HOME();}
       if (team >= 1 ) {DMXSerial.write(Shutter, 255);MOVE_HEAD(team,'W');GO_COLOUR(WHITE);}
       }
+
+
+
+
  
-
-
+  // Serial.println(receivedChar);
+  // Serial.println("BREAK 7");
   //RESET
-  while ( receivedChar == "exit" or "e" ) {
+  //if ( receivedChar == "exit" or receivedChar == "e" ) {delay(5000);}
+  while ( receivedChar == "exit" or receivedChar == "e" ) {
   if (digitalRead(OTHER) == 0 ) {CLIFF();}
-  if (digitalRead(RESET) == 0 ){ reset = "e";}
+  if (digitalRead(RESET) == 0 ){ reset = "e" ;}
   if ( reset == "e" ) { receivedChar = "Exit"; 
      reset = "null";
      lcd.clear();lcd.setCursor(0,1);lcd.print("RE-ARM >>>>>>>");
@@ -197,11 +230,13 @@ void SOUND_OUTPUT(){
      SCORE();
      OUTOFF();
      exit;
-    }
-  }
-  Serial.println(receivedChar);
+         }
+         //Serial.println("BREAK 8");
+ }
+  
+  
+  //Serial.println("made it heer 5");
+  //Serial.println(receivedChar);
   //SCORE();
-  //delay(2000);
-  //exit;
 }
   
