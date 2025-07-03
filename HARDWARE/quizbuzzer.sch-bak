@@ -357,7 +357,6 @@ NoConn ~ 9450 3050
 NoConn ~ 9450 2850
 NoConn ~ 9450 2750
 NoConn ~ 9450 2650
-NoConn ~ 9400 1550
 NoConn ~ 9400 1750
 NoConn ~ 9400 1850
 NoConn ~ 9400 1950
@@ -446,23 +445,21 @@ F 3 "" H 9300 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:Conn_01x02_Female J4
+L Connector:Barrel_Jack_Switch J4
 U 1 1 63C04674
-P 7050 5850
-F 0 "J4" H 7078 5876 50  0000 L CNN
-F 1 "Powerjack" H 7000 6000 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 7050 5850 50  0001 C CNN
-F 3 "~" H 7050 5850 50  0001 C CNN
-	1    7050 5850
-	-1   0    0    1   
+P 6800 5850
+F 0 "J4" H 6828 5876 50  0000 L CNN
+F 1 "Powerjack" H 6750 6000 50  0000 L CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 6800 5850 50  0001 C CNN
+F 3 "~" H 6800 5850 50  0001 C CNN
+	1    6800 5850
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 5850 7250 6050
+	7250 5850 7250 5950
 Wire Wire Line
 	7250 6050 7850 6050
 Connection ~ 7850 6050
-Wire Wire Line
-	7250 5750 7550 5750
 $Comp
 L power:+12V #PWR011
 U 1 1 63C0CE1E
@@ -865,4 +862,24 @@ F 3 "" H 7250 1200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 7250 1200
+$Comp
+L power:GND #PWR?
+U 1 1 640CC346
+P 9400 1550
+F 0 "#PWR?" H 9400 1300 50  0001 C CNN
+F 1 "GND" V 9405 1422 50  0000 R CNN
+F 2 "" H 9400 1550 50  0001 C CNN
+F 3 "" H 9400 1550 50  0001 C CNN
+	1    9400 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5850 7250 5850
+Wire Wire Line
+	7100 5950 7250 5950
+Connection ~ 7250 5950
+Wire Wire Line
+	7250 5950 7250 6050
+Wire Wire Line
+	7100 5750 7550 5750
 $EndSCHEMATC

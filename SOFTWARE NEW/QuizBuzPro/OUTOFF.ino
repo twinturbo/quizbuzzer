@@ -1,6 +1,6 @@
 void OUTOFF()
 {
-Serial.println("outoffstarted");
+//Serial.println("outoffstarted");
 delay(500);
 if( digitalRead(MP3_EN) == 0 ){
     lcd.setCursor(19,3),lcd.print("#");
@@ -14,5 +14,5 @@ if( digitalRead(MP3_EN) == 0 ){
     if (digitalRead(MP3_EN) == 1 ) { break;}
    }
 }
-Serial.println("OUTOFF");
+//Serial.println("OUTOFF");
 }

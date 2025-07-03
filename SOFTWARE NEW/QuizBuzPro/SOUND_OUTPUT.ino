@@ -8,31 +8,22 @@ void SOUND_OUTPUT(){
 
   //splitup the input string into type and number
   char CA = receivedChar[0]; char CB = receivedChar[1] - 0 ; int  CC = CB - '0'; 
-
+  //Serial.print("Dubdig ");Serial.println(CC);
+  //delay(5000);
   
-  if ( CA == 'c' ){
+  if ( CA == 'c' or CA == 'C'){
+   //one integer above the starting sound
    int S1 = 255;
-  /*if (receivedChar == "c1" ) { PORTB = B11111110; Serial.println(ts[0]); team = 1; MOVE_HEAD(1,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[0]);lcd.setCursor(0,2);lcd.print(tm[0]); LINE(3); OUTOFF();}
-  if (receivedChar == "c2" ) { PORTB = B11111101; Serial.println(ts[1]); team = 2; MOVE_HEAD(2,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[1]);lcd.setCursor(0,2);lcd.print(tm[1]); LINE(3); OUTOFF();} 
-  if (receivedChar == "c3" ) { PORTB = B11111100; Serial.println(ts[2]); team = 3; MOVE_HEAD(3,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[2]);lcd.setCursor(0,2);lcd.print(tm[2]); LINE(3); OUTOFF();} 
-  if (receivedChar == "c4" ) { PORTB = B11111011; Serial.println(ts[3]); team = 4; MOVE_HEAD(4,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[3]);lcd.setCursor(0,2);lcd.print(tm[3]); LINE(3); OUTOFF();} 
-  if (receivedChar == "c5" ) { PORTB = B11111010; Serial.println(ts[4]); team = 5; MOVE_HEAD(5,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[4]);lcd.setCursor(0,2);lcd.print(tm[4]); LINE(3); OUTOFF();} 
-  if (receivedChar == "c6" ) { PORTB = B11111001; Serial.println(ts[5]); team = 6; MOVE_HEAD(6,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[5]);lcd.setCursor(0,2);lcd.print(tm[5]); LINE(3); OUTOFF();} */
-  PORTB = S1 - CC ; Serial.println(ts[CC-1]); team = CC ; MOVE_HEAD(CC,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[CC-1]);lcd.setCursor(0,2);lcd.print(tm[CC-1]); LINE(3); OUTOFF();
+   PORTB = S1 - CC ; Serial.println(ts[CC-1]); team = CC ; MOVE_HEAD(CC,'W'); SPEC_WHITE(); lcd.clear();LINE(0);lcd.setCursor(0,1);lcd.print(ts[CC-1]);lcd.setCursor(0,2);lcd.print(tm[CC-1]); LINE(3); OUTOFF();
   }
   
-  //Serial.println("BREAK 1");
-  // Serial.print("Recived Out Loop"); Serial.println(receivedChar);
-  
-  //Decrement
-  if (receivedChar == "d1" ) { PORTB = B11111000; OUTOFF(); SCORE_[0] -=1; SCORE();} // } //TEAM_1 sound 0001
-  if (receivedChar == "d2" ) { PORTB = B11110111; OUTOFF(); SCORE_[1] -=1; SCORE();} // } //TEAM_2 sound 0002
-  if (receivedChar == "d3" ) { PORTB = /*B11110110*/ 246; OUTOFF(); SCORE_[2] -=1; SCORE();} // } //TEAM_3 sound 0003
-  if (receivedChar == "d4" ) { PORTB = B11110101; OUTOFF(); SCORE_[3] -=1; SCORE();} // } //TEAM_4 sound 0004
-  if (receivedChar == "d5" ) { PORTB = B11110100; OUTOFF(); SCORE_[4] -=1; SCORE();} // } //TEAM_5 sound 0005
-  if (receivedChar == "d6" ) { PORTB = B11110011; OUTOFF(); SCORE_[5] -=1; SCORE();} // } //TEAM_6 sound 0006
-  //Serial.println("BREAK 2");
-   
+  if ( CA == 'd' or CA == 'D'){
+    int S1 = 249;
+     PORTB = S1 - CC ; OUTOFF(); SCORE_[CC-1] -=1; SCORE(); 
+    //Decrement
+  }
+
+ 
   //Adverts 
    if (receivedChar == "a1")  { PORTB = B11110001; lcd.clear();lcd.setCursor(0,0);lcd.print("Cadburys");}  //Cadburys
    if (receivedChar == "a2")  { PORTB = B11110000; lcd.clear();lcd.setCursor(0,0);lcd.print("Snickers");}  //Snickerrs

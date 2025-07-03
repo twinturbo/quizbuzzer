@@ -128,8 +128,10 @@ int TeamX = 10 ;
 
 void setup() {
   Serial.begin(9600);
-  Serial.print("SV ");Serial.println(S_S_V);
-  if ( EEPROM.read(S_S_V) == 1 ) {
+  
+  Serial.print("S_S_UV ");Serial.println(S_S_V);
+  delay(5000);
+  if ( S_S_V == 1 ) {
     for (int x = 0 ; x < 6; x++) {
 
       (SCORE_[x] = EEPROM.read(SS_[x]));

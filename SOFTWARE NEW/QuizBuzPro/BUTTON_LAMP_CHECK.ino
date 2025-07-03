@@ -18,6 +18,46 @@ void BOOT_OPTIONS() {
   lcd.clear();
   LINE(0);
   lcd.setCursor(0, 1);lcd.print("Katy Logo On Boot");
+  /*
+  
+  Serial.print(EEPROM.read(KOB)); Serial.print(" K "); Serial.println(katy);
+  Serial.print(EEPROM.read(LOB)); Serial.print(" Log "); Serial.println(LOGOd);
+  Serial.print(EEPROM.read(AOM)); Serial.print(" Lamp "); Serial.println(lamp);
+  Serial.print(EEPROM.read(BOB)); Serial.print(" B ");Serial.println(button);
+  Serial.print(EEPROM.read(COB)); Serial.print(" C ");Serial.println(captain);
+  Serial.print(EEPROM.read(S_S)); Serial.print(" P ");Serial.println(S_S_V);
+  for ( int opt = 1 ; opt <= 6 ; opt ++){
+  int optarray = opt - 1; 
+  
+  int BE[6] {KOB,LOB,AOM,BOB,COB,S_S};
+  int BV[6] { katy, LOGOd, lamp, button, captain, S_S_V };
+  String BT[6] {"Katy Logo", "Quiz Logo" , "Lamp test" , "Button Test", "Captain Test", "Persistence"};
+
+  lcd.setCursor(0, 1);lcd.print(BT[optarray]);lcd.print(" On Boot");
+  Serial.print("OPT ARRAY ");Serial.println(optarray);
+  Serial.print("OPT ");Serial.println(opt);
+  Serial.print("LOGOd " ); Serial.println(LOGOd);
+    Serial.print(BT[optarray]); Serial.print(" BE BEFORE "); Serial.println(EEPROM.read(BE[optarray]));
+  Serial.print(BT[optarray]); Serial.print(" BV BEFORE "); Serial.println(BV[optarray]);
+  YN(BV[optarray]);
+  Serial.print(BT[optarray]); Serial.print(" BV SELECT "); Serial.println(BV[optarray]);
+  while ( ANS == 0 ) { 
+    Serial.print(BT[optarray]); Serial.print(" inloop "); Serial.println(BV[optarray]);
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(BE[optarray],1); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print(BT[optarray]);lcd.print(" = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(BE[optarray],0); ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print(BT[optarray]);lcd.print(" = No");} 
+    delay(1000);
+    }
+  //Serial.print(BT[optarray]); Serial.print(" BV AFTER "); Serial.println(BV[optarray]);
+  Serial.print(BT[optarray]); Serial.print(" BE AFTER "); Serial.println(EEPROM.read(BE[optarray]));
+  delay(2000);
+  
+  ANS = 0;  
+  }*/
+
+
+  
+  
+  lcd.setCursor(0, 1);lcd.print("Katy Logo On Boot");
   YN(katy);
   while ( ANS == 0 ) { 
     if (digitalRead(CORRECT) == 0 ) {EEPROM.write(KOB,1); katy = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Katy Logo = Yes");} 
@@ -60,15 +100,11 @@ void BOOT_OPTIONS() {
   lcd.setCursor(0, 1);lcd.print("Score Persist ReBoot");
   YN(S_S_V);
   while ( ANS == 0 ) { 
-    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(S_S_V,1); S_S_V = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
-    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(S_S_V,0); S_S_V = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
+    if (digitalRead(CORRECT) == 0 ) {EEPROM.write(S_S,1); S_S_V = 1; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = Yes");} 
+    if (digitalRead(WRONG)   == 0 ) {EEPROM.write(S_S,0); S_S_V = 0; ANS = 1; CLINE(1),CLINE(2),CLINE(3),lcd.setCursor(0, 1); lcd.print("Persistence = No");} 
     }
-  Serial.println(EEPROM.read(KOB));
-  Serial.println(EEPROM.read(LOB));
-  Serial.println(EEPROM.read(AOM));
-  Serial.println(EEPROM.read(BOB));
-  Serial.println(EEPROM.read(COB));
-  Serial.println(EEPROM.read(S_S));
+  
+
   /*
   int LOGOd = 0; // Quiz Logo on boot
   int lamp = 0; // Lamp Check on boot 
